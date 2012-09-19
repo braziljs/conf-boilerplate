@@ -1,1 +1,1 @@
-jekyll && git checkout gh-pages && git rm -rf . && mv _site/* . && rm -rf _site && git add . && git commit -m "update" && git push origin gh-pages
+jekyll && git checkout gh-pages && git rm -rf . && mv _site/* . && rm -rf _site && git add . && git commit -m "update" && git push origin gh-pages && git checkout master
