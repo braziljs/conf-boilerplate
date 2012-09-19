@@ -1,0 +1,19 @@
+active: true
+bio:
+  This is a sample persons bio.
+email: sample@person.com
+github: sampleperson
+image:
+  url: /images/sample-person.jpg
+  title: Sample Person
+  alt: Sample Person
+  attribution:
+layout: profile
+linkedin: sampleperson
+name: Sample Person
+role: Founder & CEO
+short:
+  <a href="/team/sample-person">Sample Person</a> is the founder and CEO of the company.
+twitter: sampleperson
+type: employee
+website: http://sampleperson.com/
