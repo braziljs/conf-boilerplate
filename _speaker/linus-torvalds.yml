@@ -1,6 +1,6 @@
 active: true
 bio:
-  This is a sample persons bio.
+  Lorem Bio
 email: sample@person.com
 github: sampleperson
 image:
@@ -11,7 +11,7 @@ image:
 layout: profile
 linkedin: sampleperson
 name: Sample Person
-role: CEO & Founder
+role: Front-end Engineer
 short:
   <a href="/team/sample-person">Sample Person</a> is the founder and CEO of the company.
 twitter: sampleperson
