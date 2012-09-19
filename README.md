@@ -8,7 +8,7 @@ Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para 
 
 ## Primeiros passos
 
-[Instale o Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não tenha ainda.
+[Instale o Ruby](http://www.ruby-lang.org/pt/downloads/) (>= 1.9.2), caso você não tenha ainda.
 
 Agora, a melhor forma de instalar o [Jekyll](http://jekyllrb.com/) é via [RubyGems](http://rubygems.org/):
 
@@ -46,7 +46,7 @@ We use [Jekyll](http://jekyllrb.com/), a static generator in Ruby, to create an 
 
 ## Getting started
 
-[Install Ruby](http://www.ruby-lang.org/en/downloads/), if you don't have it yet.
+[Install Ruby](http://www.ruby-lang.org/en/downloads/) (>= 1.9.2), if you don't have it yet.
 
 Now, the best way to install [Jekyll](http://jekyllrb.com/) is via [RubyGems](http://rubygems.org/):
 
