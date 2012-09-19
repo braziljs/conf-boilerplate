@@ -28,6 +28,12 @@ E finalmente rode:
 
 Agora você irá ver o site rodando em `localhost:4000` :D
 
+## Deploy
+
+*Atenção: Essa não é a versão definitiva disso, nós precisamos de um modo melhor para automatizar esse processo (talvez com git hooks…)*
+
+* Rode `./publish.sh` na raíz do projeto.
+
 ## Quem está por trás disso?
 
 Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil.
@@ -65,6 +71,12 @@ And finally run:
 	jekyll --server --auto
 
 Now you can see the website running in `localhost:4000` :D
+
+## Deploy
+
+*Attention: This is not the definitive version of it, we need a better way to automate this process (maybe with some git hooks…)*
+
+* Run `./publish.sh` on the root folder.
 
 ## Who is behind of it?
 
