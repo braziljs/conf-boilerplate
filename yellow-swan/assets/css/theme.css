@@ -1,0 +1,141 @@
+/* =============================================================================
+   MAIN LAYOUT
+   ========================================================================== */
+html {
+  background:#F6F6F6;
+  font:normal normal 10px/1.2em helvetica, arial, sans-serif;
+  color:#777;
+}
+
+/* =============================================================================
+   BASIC STYLES
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {color:#2b2b2b;}
+
+/* =============================================================================
+   NAVIGATION
+   ========================================================================== */
+nav {
+  background: #2b2b2b;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.nav-link {color:#e7e7e7;}
+.nav-link:active,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {color:#fff;}
+
+/* =============================================================================
+   HEADER
+   ========================================================================== */
+.header {
+  background: #b5c9d8 url(../img/866591_24254643.jpg) no-repeat center top;
+  background-size: 100% auto;
+}
+.logo-link, .tagline, .call-action-area .price {
+  color:#fff;
+  text-shadow: 1px 2px 1px rgba(0,0,0,.3);
+}
+.tagline {font-weight: normal;}
+.call-action-area .price {color:#fddd52;}
+.call-action-area .call-action-link, .btn {
+  background-color: #fddd52;
+  background-image: -moz-linear-gradient(top, #fddd52 30%, #f0a303 150%);
+  background-image: -webkit-linear-gradient(top, #fddd52 30%, #f0a303 150%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fddd52', endColorstr='#f0a303');
+  background-image: linear-gradient(top, #fddd52 30%, #f0a303 150%);
+  color:#2b2b2b;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.4), inset 0 -2px 3px 0 #cc7f0a, inset 0 1px 0 0 #fff9b1;
+  border-radius: 40px;
+}
+
+/* =============================================================================
+   CONTENT
+   ========================================================================== */
+.content a {color:#f0a303;}
+.content a:hover, .content a:focus {
+  color:#fddd52;
+  text-decoration: underline;
+}
+
+/* =============================================================================
+   ABOUT
+   ========================================================================== */
+.about {
+  border:1px solid #e7e7e7;
+  background:#fff;
+  border-radius:4px;
+}
+
+/* =============================================================================
+   LOCATION
+   ========================================================================== */
+.location-area {
+  background: #e7e7e7 url(../img/ic-location.png) no-repeat center center;
+  border:1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* =============================================================================
+   SPEAKER
+   ========================================================================== */
+.speaker-photo .photo {
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0,0,0,.07);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.speakers-item:hover .speaker-photo .photo {box-shadow: 0 0 0 8px rgba(0,0,0,.3);}
+.speech-time {
+  color:#fff;
+  background:#2b2b2b;
+  border-radius: 8px;
+}
+
+/* =============================================================================
+   SCHEDULE
+   ========================================================================== */
+.schedule-tbl {
+  background:#fff;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);
+}
+.schedule-tbl table {background:#fff;}
+.schedule-tbl td, .schedule-tbl th {border-bottom:1px solid #e7e7e7;}
+.schedule-tbl tbody tr:nth-child(2n+1) {background:#f6f6f6;}
+.schedule-tbl th {color:#2b2b2b;}
+.schedule-tbl .speaker-photo .photo {box-shadow: 0 0 0 1px rgba(0,0,0,.3);}
+.speakers-company {color:#999;}
+.schedule-slot {color:#2b2b2b;}
+.schedule-tbl tbody tr:hover {background:#fffde1;}
+.schedule-coffee, .schedule-closing, .schedule-lunch {color:#214f87;}
+
+/* =============================================================================
+   SPONSORS
+   ========================================================================== */
+.sponsor-link, .partner-link {
+  background:#fff;
+  border:1px solid #ccc;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);
+}
+.sponsor-link:hover, .sponsor-link:focus, .partner-link:hover, .partner-link:focus {border-color: #f0a303;}
+
+
+/* =============================================================================
+   CONTATO
+   ========================================================================== */
+.form-contato input[type=text], .form-contato input[type=email], .form-contato textarea{
+  color:#777;
+  border:1px solid #e7e7e7;
+  background:#fff;
+  border-radius:4px;
+}
+.form-contato input[type=text]:focus, .form-contato input[type=email]:focus, .form-contato textarea:focus {border-color:#aaa;outline:0;}
+
