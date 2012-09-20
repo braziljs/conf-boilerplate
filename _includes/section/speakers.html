@@ -4,11 +4,11 @@
   <ul>
   {% for speaker in site.speakers %}
     <li>
-      <img src="{{ speaker.photo }}" alt="{{ speaker[1].name }} - Photo">
+      <img src="{{ speaker.photo }}" alt="{{ speaker.name }} - Photo">
       <p class="time">{{ speaker.presentation.time }}</p>
       <p class="title">{{ speaker.presentation.title }}</p>
       <p class="name">{{ speaker.name }}</p>
-      <a href="http://twitter.com/{{ speaker[1].twitter }}">@{{ speaker.twitter }}</a>
+      <a href="http://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a>
       <p class="bio">{{ speaker.bio }}</p>
     </li>
   {% endfor %}

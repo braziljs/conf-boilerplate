@@ -4,7 +4,8 @@
   <table>
   {% for hour in (0..23) %}
     {% for minute in (0..59) %}
-      {% capture currenttime %}{{hour}}h{% if minute < 10 %}0{% endif %}{{ minute }}{% endcapture %}
+
+      {% capture currenttime %}{{ hour }}h{% if minute < 10 %}0{% endif %}{{ minute }}{% endcapture %}
 
       {% for schedule in site.schedule %}
         {% if schedule.time == currenttime %}
@@ -27,7 +28,7 @@
       {% endfor %}
 
     {% endfor %}
-  {% endfor %}  
+  {% endfor %}
   </table>
 </section>
 {% endif %}
