@@ -30,7 +30,7 @@ speakers:
     presentation:
       title: Digging into a Linux Kernel
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: 9:00
+      time: 9h00
   bill:
     active: true
     name: Bill Gates
@@ -39,7 +39,7 @@ speakers:
     presentation:
       title: Introducing Windows 12
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: 10:00
+      time: 10h00
   chuck:
     active: true
     name: Chuck Norris
@@ -48,4 +48,4 @@ speakers:
     presentation:
       title: How to kill a elephant with one finger
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: 11:00
+      time: 11h00
