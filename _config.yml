@@ -11,13 +11,13 @@ conf:
 # Active sections on the website
 
 sections:
-  about.html: true
-  location.html: true
-  speakers.html: true
-  schedule.html: true
-  sponsors.html: true
-  partners.html: true
-  contact.html: true
+  about: true
+  location: false
+  speakers: true
+  schedule: true
+  sponsors: true
+  partners: true
+  contact: true
 
 # Speakers lineup
 
