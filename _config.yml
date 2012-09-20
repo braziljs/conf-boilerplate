@@ -1,9 +1,24 @@
+# Conference information
+
 conf:
   name: The Amazing Conference
   date: November, 15
   venue: Coco Bongo
   city: Cancún
   price: $100
+
+# Active sections on the website
+
+sections:
+  about: true
+  location: true
+  speakers: true
+  schedule: true
+  sponsors: true
+  partners: true
+  contact: true
+
+# Speakers lineup
 
 speakers:
   linus:
