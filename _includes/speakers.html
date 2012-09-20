@@ -1,0 +1,8 @@
+<section id="speakers">
+  <h3>Speakers</h3>
+  <ul>
+  {% for speaker in site.speakers %}
+    <li>{{ speaker[1].name }}</li>
+  {% endfor %}
+  </ul>
+</section>
