@@ -22,7 +22,7 @@ sections:
 # Other schedule items
 schedule:
   - name: Check-in / Breakfast
-    time: '09h00'
+    time: '9h00'
 
   - name: Lunch
     time: '12h00'
@@ -31,7 +31,7 @@ schedule:
     time: '15h00'
 
   - name: Soon
-    time: '08h00'
+    time: '8h00'
 
 # Speakers lineup
 
@@ -43,7 +43,7 @@ speakers:
     presentation:
       title: Digging into a Linux Kernel
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '09h00'
+      time: '9h00'
 
   - name: Bill Gates
     active: true
