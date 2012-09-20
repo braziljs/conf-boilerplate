@@ -1,10 +1,9 @@
 <nav>
   <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#location">Location</a></li>
-    <li><a href="#speakers">Speakers</a></li>
-    <li><a href="#schedule">Schedule</a></li>
-    <li><a href="#sponsors">Sponsors</a></li>
-    <li><a href="#contact">Contact</a></li>
+  {% for section in site.sections %}
+    {% if section[1] == true %}
+      <li><a href="#{{ section[0] }}">{{ section[0] }}</a></li>
+    {% endif %}
+  {% endfor %}
   </ul>
 </nav>
