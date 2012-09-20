@@ -5,8 +5,10 @@ layout: default
 {% include nav.html %}
 {% include intro.html %}
 
-{% for section in site.sections %}
-  {% if section[1] == true %}
-    {% include $section[0] %}
-  {% endif %}
-{% endfor %}
+{% include section/about.html %}
+{% include section/location.html %}
+{% include section/speakers.html %}
+{% include section/schedule.html %}
+{% include section/sponsors.html %}
+{% include section/partners.html %}
+{% include section/contact.html %}
