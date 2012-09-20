@@ -19,6 +19,15 @@ sections:
   partners: true
   contact: true
 
+# Other schedule items
+schedule:
+  9h00:
+    name: Check-in / Breakfast
+  12h00:
+    name: Lunch
+  15h00:
+    name: Coffee break
+
 # Speakers lineup
 
 speakers:
