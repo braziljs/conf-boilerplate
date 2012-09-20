@@ -4,10 +4,9 @@ layout: default
 
 {% include nav.html %}
 {% include intro.html %}
-{% include about.html %}
-{% include location.html %}
-{% include speakers.html %}
-{% include schedule.html %}
-{% include sponsors.html %}
-{% include partners.html %}
-{% include contact.html %}
+
+{% for section in site.sections %}
+  {% if section[1] == true %}
+    {% include $section[0] %}
+  {% endif %}
+{% endfor %}
