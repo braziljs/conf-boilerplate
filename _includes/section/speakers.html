@@ -4,12 +4,12 @@
   <ul>
   {% for speaker in site.speakers %}
     <li>
-      <img src="{{ speaker[1].photo }}" alt="{{ speaker[1].name }} - Photo">
-      <p class="time">{{ speaker[1].presentation.time }}</p>
-      <p class="title">{{ speaker[1].presentation.title }}</p>
-      <p class="name">{{ speaker[1].name }}</p>
-      <a href="http://twitter.com/{{ speaker[1].twitter }}">@{{ speaker[1].twitter }}</a>
-      <p class="bio">{{ speaker[1].bio }}</p>
+      <img src="{{ speaker.photo }}" alt="{{ speaker[1].name }} - Photo">
+      <p class="time">{{ speaker.presentation.time }}</p>
+      <p class="title">{{ speaker.presentation.title }}</p>
+      <p class="name">{{ speaker.name }}</p>
+      <a href="http://twitter.com/{{ speaker[1].twitter }}">@{{ speaker.twitter }}</a>
+      <p class="bio">{{ speaker.bio }}</p>
     </li>
   {% endfor %}
   </ul>

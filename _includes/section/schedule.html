@@ -2,13 +2,31 @@
 <section id="schedule">
   <h3>Schedule</h3>
   <table>
-  {% for speaker in site.speakers %}
-    <tr>
-      <td>{{ speaker[1].presentation.time }}</td>
-      <td>{{ speaker[1].presentation.title }}</td>
-      <td>{{ speaker[1].presentation.description }}</td>
-    </tr>
-  {% endfor %}
+
+  {% for i in (180..1619) %}
+    {% capture currenttime %}{{ i | times: 60 | date: "%Hh%M" %}}{% endcapture %}
+
+    {% for schedule in site.schedule %}
+      {% if schedule.time == currenttime %}
+      <tr>
+        <td>{{ schedule.time }}</td>
+        <td><strong>item</strong></td>
+        <td>{{ schedule.name }}</td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+
+    {% for speaker in site.speakers %}
+      {% if speaker.presentation.time == currenttime %}
+      <tr>
+        <td>{{ speaker.presentation.time }}</td>
+        <td>{{ speaker.presentation.title }}</td>
+        <td>{{ speaker.presentation.description }}</td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+
+  {% endfor %}  
   </table>
 </section>
 {% endif %}

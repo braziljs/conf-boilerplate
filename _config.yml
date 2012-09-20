@@ -21,40 +21,44 @@ sections:
 
 # Other schedule items
 schedule:
-  9h00:
-    name: Check-in / Breakfast
-  12h00:
-    name: Lunch
-  15h00:
-    name: Coffee break
+  - name: Check-in / Breakfast
+    time: '09h00'
+
+  - name: Lunch
+    time: '12h00'
+
+  - name: Coffee break
+    time: '15h00'
+
+  - name: Soon
+    time: '08h00'
 
 # Speakers lineup
 
 speakers:
-  linus:
+  - name: Linus Torvalds 
     active: true
-    name: Linus Torvalds
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: linus
     presentation:
       title: Digging into a Linux Kernel
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: 9h00
-  bill:
+      time: '09h00'
+
+  - name: Bill Gates
     active: true
-    name: Bill Gates
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: billy95
     presentation:
       title: Introducing Windows 12
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: 10h00
-  chuck:
+      time: '20h00'
+
+  - name: Chuck Norris
     active: true
-    name: Chuck Norris
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: littlechuck
     presentation:
       title: How to kill a elephant with one finger
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: 11h00
+      time: '18h00'
