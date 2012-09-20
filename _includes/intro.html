@@ -1,5 +1,9 @@
 <header>
+{% if site.conf.logo %}
+  <img src="{{ site.conf.logo }}" alt="{{ site.conf.name }} - Logo" />
+{% else %}
   <h1>{{ site.conf.name }}</h1>
+{% endif %}
   <h2>{{ site.conf.date }}, {{ site.conf.venue }}, {{ site.conf.city }}</h2>
   <h3>Only {{ site.conf.price }}</h3>
   <a href="#">Register Now!</a>
