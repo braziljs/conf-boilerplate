@@ -11,8 +11,8 @@
         {% if schedule.time == currenttime %}
         <tr>
           <td>{{ schedule.time }}</td>
-          <td><strong>item</strong></td>
           <td>{{ schedule.name }}</td>
+          <td> - </td>
         </tr>
         {% endif %}
       {% endfor %}
