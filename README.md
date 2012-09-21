@@ -14,7 +14,11 @@ Agora, a melhor forma de instalar o [Jekyll](http://jekyllrb.com/) é via [RubyG
 
 	gem install jekyll
 
-Uma vez instalado, você só precisa clonar o projeto:
+Também instale o Packr:
+
+  gem install packr
+
+Uma vez tendo essas gems instaladas, você só precisa clonar o projeto:
 
 	git clone git@github.com:braziljs/conf-boilerplate.git
 
