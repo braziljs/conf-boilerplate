@@ -1,5 +1,4 @@
-# Conference information
-
+# Basic conference information
 conf:
   name: Conference name
   date: November 15
@@ -8,7 +7,6 @@ conf:
   price: $100
 
 # Active sections on the website
-
 sections:
   about: true
   location: true
@@ -18,7 +16,57 @@ sections:
   partners: true
   contact: true
 
-# Other schedule items
+# List of Speakers
+speakers:
+  - name: Linus Torvalds
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    twitter: linus
+    presentation:
+      title: Digging into a Linux Kernel
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      time: '10h00'
+
+  - name: Bill Gates
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    twitter: billy95
+    presentation:
+      title: Introducing Windows 12
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      time: '11h00'
+
+  - name: Chuck Norris
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    twitter: littlechuck
+    presentation:
+      title: How to kill a elephant with one finger
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      time: '13h00'
+
+  - name: Steve Jobs
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    twitter: stevie
+    presentation:
+      title: Presenting iPad
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      time: '14h00'
+
+  - name: Mark Zuckerberg
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    twitter: zuck
+    presentation:
+      title: Revealing Facebook Secrets
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      time: '16h00'
+
+  - name: Steve Wozniak
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    twitter: woz
+    presentation:
+      title: Why do I prefer Android over iPhone
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      time: '17h00'
+
+# List of other Schedule items
 schedule:
   - name: Check-in / Breakfast
     time: '9h00'
@@ -29,70 +77,13 @@ schedule:
   - name: Coffee-break
     time: '15h00'
 
-# Speakers lineup
-
-speakers:
-  - name: Linus Torvalds
-    active: true
-    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    twitter: linus
-    presentation:
-      title: Digging into a Linux Kernel
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '10h00'
-
-  - name: Bill Gates
-    active: true
-    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    twitter: billy95
-    presentation:
-      title: Introducing Windows 12
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '11h00'
-
-  - name: Chuck Norris
-    active: true
-    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    twitter: littlechuck
-    presentation:
-      title: How to kill a elephant with one finger
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '13h00'
-
-  - name: Steve Jobs
-    active: true
-    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    twitter: stevie
-    presentation:
-      title: Presenting iPad
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '14h00'
-
-  - name: Mark Zuckerberg
-    active: true
-    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    twitter: zuck
-    presentation:
-      title: Revealing Facebook Secrets
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '16h00'
-
-  - name: Steve Wozniak
-    active: true
-    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    twitter: woz
-    presentation:
-      title: Why do I prefer Android over iPhone
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '17h00'
-
-# Sponsors
+# List of Sponsors
 sponsors:
   - name: Eventick
     logo: http://frontinbh.com.br/assets/imagens/apoiadores/eventick.png
     url: http://eventick.com.br
 
-# Partners
+# List of Partners
 partners:
   - name: Eventick
     logo: http://frontinbh.com.br/assets/imagens/apoiadores/eventick.png
