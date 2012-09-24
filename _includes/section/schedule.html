@@ -21,7 +21,7 @@
 
           {% for schedule in site.schedule %}
             {% if schedule.time == currenttime %}
-            <tr>
+            <tr class="schedule-other">
               <td class="schedule-time">{{ schedule.time }}</td>
               <td class="schedule-slot">{{ schedule.name }}</td>
               <td class="schedule-description">-</td>

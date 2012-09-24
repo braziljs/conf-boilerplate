@@ -115,7 +115,7 @@ nav {
 .speakers-company {color:#999;}
 .schedule-slot {color:#2b2b2b;}
 .schedule-tbl tbody tr:hover {background:#fffde1;}
-.schedule-coffee, .schedule-closing, .schedule-lunch {color:#214f87;}
+.schedule-coffee, .schedule-closing, .schedule-lunch, .schedule-other {color:#214f87;}
 
 /* =============================================================================
    SPONSORS
