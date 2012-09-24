@@ -1,17 +1,20 @@
 {% if site.sections.speakers %}
-<section id="speakers">
-  <h3>Speakers</h3>
-  <ul>
+<!-- SPEAKERS -->
+<section class="speakers" id="speakers">
+
+  <h2 class="section-title">Speakers</h2>
+
+  <ul class="speakers-list">
   {% for speaker in site.speakers %}
-    <li>
-      <img src="{{ speaker.photo }}" alt="{{ speaker.name }} - Photo">
-      <p class="time">{{ speaker.presentation.time }}</p>
-      <p class="title">{{ speaker.presentation.title }}</p>
-      <p class="name">{{ speaker.name }}</p>
-      <a href="http://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a>
-      <p class="bio">{{ speaker.bio }}</p>
+    <li class="speakers-item">
+      <span class="speaker-photo"><img class="photo" src="assets/img/speaker.jpg" alt="{{ speaker.name }}" /></span>
+      <h3 class="speech-title"><span class="speech-time">{{ speaker.presentation.time }}</span> {{ speaker.presentation.title }}</h3>
+      <h3 class="speakers-name">{{ speaker.name }} <a href="http://www.twitter.com/{{ speaker.twitter }}" title="Twitter @{{ speaker.twitter }}">@{{ speaker.twitter }}</a></h3>
+      <p class="speakers-bio">{{ speaker.bio }}</p>
     </li>
   {% endfor %}
   </ul>
+
 </section>
+<!-- / SPEAKERS -->
 {% endif %}
