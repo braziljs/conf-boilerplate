@@ -34,9 +34,13 @@ Agora você irá ver o site rodando em `localhost:4000` :D
 
 ## Deploy
 
-*Atenção: Essa não é a versão definitiva disso, nós precisamos de um modo melhor para automatizar esse processo (talvez com git hooks…)*
+Se você está utilizando algum plugin:
 
 * Rode `./publish.sh` na raíz do projeto.
+
+Se não estiver, basta enviar os arquivos para branch `gh-pages`:
+
+	git push origin gh-pages
 
 ## Quem está por trás disso?
 
@@ -78,9 +82,13 @@ Now you can see the website running in `localhost:4000` :D
 
 ## Deploy
 
-*Attention: This is not the definitive version of it, we need a better way to automate this process (maybe with some git hooks…)*
+If you are using any plugin:
 
 * Run `./publish.sh` on the root folder.
+
+If you're not, just send your files to `gh-pages` branch:
+
+	git push origin gh-pages
 
 ## Who is behind of it?
 
