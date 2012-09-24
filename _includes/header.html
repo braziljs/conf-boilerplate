@@ -1,10 +1,14 @@
-<header>
-{% if site.conf.logo %}
-  <img src="{{ site.conf.logo }}" alt="{{ site.conf.name }} - Logo" />
-{% else %}
-  <h1>{{ site.conf.name }}</h1>
-{% endif %}
-  <h2>{{ site.conf.date }}, {{ site.conf.venue }}, {{ site.conf.city }}</h2>
-  <h3>Only {{ site.conf.price }}</h3>
-  <a href="#">Register Now!</a>
+<!-- HEADER -->
+<header class="header">
+  <div class="wrapper">
+    <h1 class="logo-name"><a class="logo-link" href="#" title="{{ site.conf.name }}">{{ site.conf.name }}</a></h1>
+    <h2 class="tagline">{{ site.conf.date }}, {{ site.conf.venue }}, {{ site.conf.city }}</h2>
+    <div class="call-action-area">
+      <span class="price">Only {{ site.conf.price }}</span>
+      <a href="#" class="call-action-link" title="Register now!">Register now!</a>
+    </div>
+  </div>
 </header>
+<!--  / HEADER -->
+
+<hr />
