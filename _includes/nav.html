@@ -1,9 +1,15 @@
-<nav>
-  <ul>
+<!-- NAVIGATION -->
+<nav id="nav">
+  <ul class="wrapper">
   {% for section in site.sections %}
     {% if section[1] == true %}
-      <li><a href="#{{ section[0] }}">{{ section[0] }}</a></li>
+      <li class="nav-item">
+        <a href="#{{ section[0] }}" class="nav-link">{{ section[0] }}</a>
+      </li>
     {% endif %}
   {% endfor %}
   </ul>
 </nav>
+<!-- / NAVIGATION -->
+
+<hr />
