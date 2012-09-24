@@ -1,9 +1,8 @@
 # Conference information
 
 conf:
-  name: The Amazing Conference
-  logo: http://braziljs.com.br/images/braziljs-logo.png
-  date: November, 15
+  name: Conference name
+  date: November 15
   venue: Coco Bongo
   city: Cancún
   price: $100
@@ -12,7 +11,7 @@ conf:
 
 sections:
   about: true
-  location: false
+  location: true
   speakers: true
   schedule: true
   sponsors: true
