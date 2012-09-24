@@ -1,34 +1,50 @@
 {% if site.sections.schedule %}
-<section id="schedule">
-  <h3>Schedule</h3>
-  <table>
-  {% for hour in (0..23) %}
-    {% for minute in (0..59) %}
-
-      {% capture currenttime %}{{ hour }}h{% if minute < 10 %}0{% endif %}{{ minute }}{% endcapture %}
-
-      {% for schedule in site.schedule %}
-        {% if schedule.time == currenttime %}
+<!-- SCHEDULE -->
+<section class="schedule" id="schedule">
+  <h2 class="section-title">Schedule</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+  <div class="schedule-tbl">
+    <table>
+      <thead>
         <tr>
-          <td>{{ schedule.time }}</td>
-          <td>{{ schedule.name }}</td>
-          <td> - </td>
+          <th class="schedule-time">Hora</th>
+          <th class="schedule-slot">Slot</th>
+          <th class="schedule-description">Descrição</th>
         </tr>
-        {% endif %}
+      </thead>
+      <tbody>
+      {% for hour in (0..23) %}
+        {% for minute in (0..59) %}
+
+          {% capture currenttime %}{{ hour }}h{% if minute < 10 %}0{% endif %}{{ minute }}{% endcapture %}
+
+          {% for schedule in site.schedule %}
+            {% if schedule.time == currenttime %}
+            <tr>
+              <td class="schedule-time">{{ schedule.time }}</td>
+              <td class="schedule-slot">{{ schedule.name }}</td>
+              <td class="schedule-description">-</td>
+            </tr>
+            {% endif %}
+          {% endfor %}
+
+          {% for speaker in site.speakers %}
+            {% if speaker.presentation.time == currenttime %}
+            <tr>
+              <td class="schedule-time">{{ speaker.presentation.time }}</td>
+              <td class="schedule-slot"><span class="speaker-photo"><img class="photo" src="assets/img/speaker.jpg" alt="Andrews Medina" /></span> {{ speaker.presentation.title }} <span class="speakers-company">Yahoo</span></td>
+              <td class="schedule-description">{{ speaker.presentation.description }}</td>
+            </tr>
+            {% endif %}
+          {% endfor %}
+
+        {% endfor %}
       {% endfor %}
 
-      {% for speaker in site.speakers %}
-        {% if speaker.presentation.time == currenttime %}
-        <tr>
-          <td>{{ speaker.presentation.time }}</td>
-          <td>{{ speaker.presentation.title }}</td>
-          <td>{{ speaker.presentation.description }}</td>
-        </tr>
-        {% endif %}
-      {% endfor %}
-
-    {% endfor %}
-  {% endfor %}
-  </table>
+      </tbody>
+    </table>
+  </div>
 </section>
+<!-- / SCHEDULE -->
 {% endif %}
