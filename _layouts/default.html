@@ -40,5 +40,12 @@
 
   </div>
 
+  <script src="assets/js/jquery.js"></script>
+
+  {% if site.conf.address %}
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="assets/js/map.js"></script>
+  {% endif %}
+
 </body>
 </html>
