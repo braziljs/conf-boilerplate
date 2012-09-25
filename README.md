@@ -66,6 +66,10 @@ Now, the best way to install [Jekyll](http://jekyllrb.com/) is via [RubyGems](ht
 
 	gem install jekyll
 
+Also install Packr:
+	
+	gem install packr
+
 Once Jekyll is installed, you just need to clone the project:
 
 	git clone git@github.com:braziljs/conf-boilerplate.git
