@@ -33,7 +33,7 @@
             {% if speaker.presentation.time == currenttime %}
             <tr>
               <td class="schedule-time">{{ speaker.presentation.time }}</td>
-              <td class="schedule-slot"><span class="speaker-photo"><img class="photo" src="assets/img/speaker.jpg" alt="Andrews Medina" /></span> {{ speaker.presentation.title }} <span class="speakers-company">Yahoo</span></td>
+              <td class="schedule-slot"><span class="speaker-photo"><img class="photo" src="{{ speaker.photo }}" alt="{{ speaker.name }}" /></span> {{ speaker.presentation.title }} <span class="speakers-company">Yahoo</span></td>
               <td class="schedule-description">{{ speaker.presentation.description }}</td>
             </tr>
             {% endif %}

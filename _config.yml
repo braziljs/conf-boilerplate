@@ -19,6 +19,7 @@ sections:
 # List of Speakers
 speakers:
   - name: Linus Torvalds
+    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: linus
     presentation:
@@ -27,6 +28,7 @@ speakers:
       time: '10h00'
 
   - name: Bill Gates
+    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: billy95
     presentation:
@@ -35,6 +37,7 @@ speakers:
       time: '11h00'
 
   - name: Chuck Norris
+    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: littlechuck
     presentation:
@@ -43,6 +46,7 @@ speakers:
       time: '13h00'
 
   - name: Steve Jobs
+    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: stevie
     presentation:
@@ -51,6 +55,7 @@ speakers:
       time: '14h00'
 
   - name: Mark Zuckerberg
+    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: zuck
     presentation:
@@ -59,6 +64,7 @@ speakers:
       time: '16h00'
 
   - name: Steve Wozniak
+    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     twitter: woz
     presentation:
