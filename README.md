@@ -10,11 +10,11 @@ Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para 
 
 [Instale o Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não tenha ainda.
 
-Agora, a melhor forma de instalar o [Jekyll](http://jekyllrb.com/) é via [RubyGems](http://rubygems.org/):
+Agora, instale o [Jekyll](http://jekyllrb.com/) através do comando:
 
-	gem install jekyll
+	make install
 
-Uma vez tendo essas gems instaladas, você só precisa clonar o projeto:
+Uma vez tendo instalado, você só precisa clonar o projeto:
 
 	git clone git@github.com:braziljs/conf-boilerplate.git
 
@@ -24,7 +24,7 @@ Depois vá para pasta do projeto:
 
 E finalmente rode:
 
-	jekyll --server --auto
+	make run
 
 Agora você irá ver o site rodando em `localhost:4000` :D
 
@@ -112,13 +112,19 @@ sponsors:
 
 ## Deploy
 
-Se você está utilizando algum plugin:
+Para isso utilizaremos o recurso de [Github Pages](http://pages.github.com).
 
-* Rode `./publish.sh` na raíz do projeto.
+* Rode `make deploy` na raíz do projeto.
 
-Se não estiver, basta enviar os arquivos para branch `gh-pages`:
+Depois é só acessar: `http://seuUsuario.github.com/seuFork`
 
-	git push origin gh-pages
+## Domínio personalizado
+
+Caso você não queira utilizar o domínio do Github, é possível usar seu próprio com alguns passos.
+
+1. Crie um arquivo `CNAME` na raíz do seu projeto e preencha com o nome do domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME).
+2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+
 
 ## Quem está por trás disso?
 
