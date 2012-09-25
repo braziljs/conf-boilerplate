@@ -16,7 +16,7 @@ Agora, a melhor forma de instalar o [Jekyll](http://jekyllrb.com/) é via [RubyG
 
 Também instale o Packr:
 
-  gem install packr
+  	gem install packr
 
 Uma vez tendo essas gems instaladas, você só precisa clonar o projeto:
 
