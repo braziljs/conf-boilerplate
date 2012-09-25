@@ -8,7 +8,7 @@ Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para 
 
 ## Primeiros passos
 
-[Instale o Ruby](http://www.ruby-lang.org/pt/downloads/) (>= 1.9.2), caso você não tenha ainda.
+[Instale o Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não tenha ainda.
 
 Agora, a melhor forma de instalar o [Jekyll](http://jekyllrb.com/) é via [RubyGems](http://rubygems.org/):
 
@@ -31,6 +31,86 @@ E finalmente rode:
 	jekyll --server --auto
 
 Agora você irá ver o site rodando em `localhost:4000` :D
+
+## Funcionalidades
+
+Nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `_config.yml`.
+
+### Informações básicas
+
+Quer alterar o nome, data, endereço, cidade ou preço do evento? É só mudar.
+
+```
+conf:
+  name: Conference name
+  date: November 15
+  venue: Coco Bongo
+  city: Cancún
+  price: $100`
+```  
+
+### Seções ativas
+
+Ainda não definiu a programação completa do evento? Não tem problema, basta alterar a variável `schedule` para `false`.
+
+Ainda não sabe quem irá palestrar? Tudo bem, basta alterar a variável `speakers` para `false`. 
+
+E por aí vai.
+
+```
+sections:
+  about: true
+  location: true
+  speakers: true
+  schedule: true
+  sponsors: true
+  partners: true
+  contact: true
+```
+
+### Lista de Palestrantes
+
+Para incluir ou excluir um palestrante também é igualmente simples, basta adicionar mais um item na variável `speakers`. 
+
+```
+speakers:
+  - name: Chuck Norris
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    twitter: littlechuck
+    presentation:
+      title: How to kill a elephant with one finger
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      time: '13h00'
+```      
+
+Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar.
+
+### Lista de outros itens da Agenda
+
+Para alterar os horários de check-in, almoço e coffee-break, é só recorrer as variáveis de `schedule`.
+
+```
+schedule:
+  - name: Check-in / Breakfast
+    time: '9h00'
+  - name: Lunch
+    time: '12h00'
+  - name: Coffee-break
+    time: '15h00'
+```    
+
+Mas se você quiser adicionar mais um coffee-break ou qualquer outro tipo de item na agenda do evento, é só acrescentar mais um item nessa lista.
+
+### Lista de Patrocinadores/Apoio
+
+Para adicionar qualquer patrocinador ou apoio no evento, é só recorrer as variáveis `sponsors` e `partners`.
+
+```
+sponsors:
+  - name: Eventick
+    logo: http://frontinbh.com.br/assets/imagens/apoiadores/eventick.png
+    url: http://eventick.com.br
+```    
 
 ## Deploy
 
