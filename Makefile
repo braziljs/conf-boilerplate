@@ -3,10 +3,10 @@ install:
 	@echo "\nJekyll installed!\n"
 
 run:
-	jekyll --server --auto
+	@jekyll --server --auto
 
 build:
-	jekyll
+	@jekyll
 	@echo "\nBuild succeed!\n"
 
 deploy:
