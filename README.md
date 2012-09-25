@@ -32,9 +32,11 @@ E finalmente rode:
 
 Agora você irá ver o site rodando em `localhost:4000` :D
 
-## Funcionalidades
+## Customização
 
-Nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `_config.yml`.
+O projeto já vem com um template pronto pra você, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
+
+De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `_config.yml` e alterar o valor das variáveis.
 
 ### Informações básicas
 
