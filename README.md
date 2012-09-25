@@ -2,6 +2,12 @@
 
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
+* [Como funciona?](https://github.com/braziljs/conf-boilerplate#como-funciona)
+* [Primeiros passos](https://github.com/braziljs/conf-boilerplate#primeiros-passos)
+* [Customização](https://github.com/braziljs/conf-boilerplate#customiza%C3%A7%C3%A3o)
+* [Deploy](https://github.com/braziljs/conf-boilerplate#deploy)
+* [Quem está por trás disso?](https://github.com/braziljs/conf-boilerplate#quem-est%C3%A1-por-tr%C3%A1s-disso)
+
 ## Como funciona?
 
 Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio.
@@ -118,11 +124,11 @@ Para isso utilizaremos o recurso de [Github Pages](http://pages.github.com).
 
 Depois é só acessar: `http://seuUsuario.github.com/seuFork`
 
-## Domínio personalizado
+### Domínio personalizado
 
 Caso você não queira utilizar o domínio do Github, é possível usar seu próprio com alguns passos.
 
-1. Crie um arquivo `CNAME` na raíz do seu projeto e preencha com o nome do domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME).
+1. Altere o arquivo `CNAME` na raíz do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME).
 2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
 
