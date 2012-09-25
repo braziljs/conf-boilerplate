@@ -2,9 +2,10 @@
 conf:
   name: Conference name
   date: November 15
+  price: $100
+  address: Av. Pasteur, 458 - Urca
   venue: Coco Bongo
   city: Cancún
-  price: $100
 
 # Active sections on the website
 sections:
@@ -21,6 +22,7 @@ speakers:
   - name: Linus Torvalds
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    company: Linux Foundation
     twitter: linus
     presentation:
       title: Digging into a Linux Kernel
@@ -30,6 +32,7 @@ speakers:
   - name: Bill Gates
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    company: Microsoft
     twitter: billy95
     presentation:
       title: Introducing Windows 12
@@ -39,6 +42,7 @@ speakers:
   - name: Chuck Norris
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    company: Delta Command
     twitter: littlechuck
     presentation:
       title: How to kill a elephant with one finger
@@ -48,6 +52,7 @@ speakers:
   - name: Steve Jobs
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    company: Apple, Inc.
     twitter: stevie
     presentation:
       title: Presenting iPad
@@ -57,6 +62,7 @@ speakers:
   - name: Mark Zuckerberg
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    company: Facebook
     twitter: zuck
     presentation:
       title: Revealing Facebook Secrets
@@ -66,6 +72,7 @@ speakers:
   - name: Steve Wozniak
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    company: Apple, Inc.
     twitter: woz
     presentation:
       title: Why do I prefer Android over iPhone
