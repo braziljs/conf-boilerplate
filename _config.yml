@@ -94,11 +94,11 @@ schedule:
 # List of Sponsors
 sponsors:
   - name: Eventick
-    logo: http://frontinbh.com.br/assets/imagens/apoiadores/eventick.png
+    logo: http://f.cl.ly/items/1U3p0Z0e2w0I1i3z1X22/Image%202012.09.25%203:00:58%20PM.png
     url: http://eventick.com.br
 
 # List of Partners
 partners:
-  - name: Eventick
-    logo: http://frontinbh.com.br/assets/imagens/apoiadores/eventick.png
-    url: http://eventick.com.br
+  - name: BrazilJS
+    logo: http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png
+    url: http://braziljs.org
