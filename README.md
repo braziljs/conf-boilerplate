@@ -16,7 +16,7 @@ Agora, a melhor forma de instalar o [Jekyll](http://jekyllrb.com/) é via [RubyG
 
 Também instale o Packr:
 
-  	gem install packr
+	gem install packr
 
 Uma vez tendo essas gems instaladas, você só precisa clonar o projeto:
 
@@ -48,7 +48,7 @@ Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades orga
 
 **Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
 
----
+<!-- ---
 
 # Conf Boilerplate
 
@@ -98,4 +98,4 @@ If you're not, just send your files to `gh-pages` branch:
 
 We're a group of developers who have been through hard times organizing conferences around Brazil.
 
-**Project Lead**: [Zeno Rocha](http://github.com/zenorocha)
+**Project Lead**: [Zeno Rocha](http://github.com/zenorocha) -->
