@@ -14,10 +14,6 @@ Agora, a melhor forma de instalar o [Jekyll](http://jekyllrb.com/) é via [RubyG
 
 	gem install jekyll
 
-Também instale o Packr:
-
-	gem install packr
-
 Uma vez tendo essas gems instaladas, você só precisa clonar o projeto:
 
 	git clone git@github.com:braziljs/conf-boilerplate.git
@@ -49,13 +45,13 @@ conf:
   venue: Coco Bongo
   city: Cancún
   price: $100`
-```  
+```
 
 ### Seções ativas
 
 Ainda não definiu a programação completa do evento? Não tem problema, basta alterar a variável `schedule` para `false`.
 
-Ainda não sabe quem irá palestrar? Tudo bem, basta alterar a variável `speakers` para `false`. 
+Ainda não sabe quem irá palestrar? Tudo bem, basta alterar a variável `speakers` para `false`.
 
 E por aí vai.
 
@@ -72,7 +68,7 @@ sections:
 
 ### Lista de Palestrantes
 
-Para incluir ou excluir um palestrante também é igualmente simples, basta adicionar mais um item na variável `speakers`. 
+Para incluir ou excluir um palestrante também é igualmente simples, basta adicionar mais um item na variável `speakers`.
 
 ```
 speakers:
@@ -83,7 +79,7 @@ speakers:
       title: How to kill a elephant with one finger
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       time: '13h00'
-```      
+```
 
 Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar.
 
@@ -99,7 +95,7 @@ schedule:
     time: '12h00'
   - name: Coffee-break
     time: '15h00'
-```    
+```
 
 Mas se você quiser adicionar mais um coffee-break ou qualquer outro tipo de item na agenda do evento, é só acrescentar mais um item nessa lista.
 
@@ -112,7 +108,7 @@ sponsors:
   - name: Eventick
     logo: http://frontinbh.com.br/assets/imagens/apoiadores/eventick.png
     url: http://eventick.com.br
-```    
+```
 
 ## Deploy
 
@@ -149,7 +145,7 @@ Now, the best way to install [Jekyll](http://jekyllrb.com/) is via [RubyGems](ht
 	gem install jekyll
 
 Also install Packr:
-	
+
 	gem install packr
 
 Once Jekyll is installed, you just need to clone the project:
