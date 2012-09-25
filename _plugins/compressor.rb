@@ -91,8 +91,8 @@ module Jekyll
       case File.extname(dest_path)
         when '.html'
           self.output_html(dest_path, File.read(path))
-        when '.js'
-          self.output_js(dest_path, File.read(path))
+        # when '.js'
+        #   self.output_js(dest_path, File.read(path))
         else
           FileUtils.mkdir_p(File.dirname(dest_path))
           FileUtils.cp(path, dest_path)
