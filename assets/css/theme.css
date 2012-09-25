@@ -31,7 +31,7 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  background: #b5c9d8 url(../img/866591_24254643.jpg) no-repeat center top;
+  background: #b5c9d8 no-repeat center top;
   background-size: 100% auto;
 }
 .logo-link, .tagline, .call-action-area .price {
