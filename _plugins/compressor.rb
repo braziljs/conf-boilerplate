@@ -19,7 +19,7 @@
 # be danger to use this plugin.
 #
 
-require 'packr'
+# require 'packr'
 
 module Jekyll
 
@@ -42,11 +42,11 @@ module Jekyll
       self.output_file(path, compress_html(content))
     end
 
-    def output_js(dest, content)
-      self.output_file(dest, Packr.pack(content,
-        :shrink_vars => true
-      ))
-    end
+    # def output_js(dest, content)
+    #   self.output_file(dest, Packr.pack(content,
+    #     :shrink_vars => true
+    #   ))
+    # end
 
   end
 
