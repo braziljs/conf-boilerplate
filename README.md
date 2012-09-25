@@ -118,7 +118,7 @@ sponsors:
 
 ## Deploy
 
-Para isso utilizaremos o recurso de [Github Pages](http://pages.github.com).
+Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [Github Pages](http://pages.github.com) que ainda é gratuito.
 
 * Rode `make deploy` na raíz do projeto.
 
@@ -130,6 +130,14 @@ Caso você não queira utilizar o domínio do Github, é possível usar seu pró
 
 1. Altere o arquivo `CNAME` na raíz do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME).
 2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+
+### Como fazer sem utilizar Github Pages
+
+Se você prefere utilizar seu próprio servidor para hospedar o site:
+
+* Rode `make build` na raíz do projeto.
+
+Esse comando irá gerar uma pasta `_site` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
 
 
 ## Quem está por trás disso?
