@@ -2,11 +2,21 @@
 <!-- LOCATION -->
 <section class="location" id="location">
   <h2 class="section-title">Location</h2>
-  <p>Teatro Ney Soares Rua Diamantina nº 463 UNIBH Bairro Lagoinha (veja no <a href="http://g.co/maps/626z8" class="ver-maps">google maps</a>)</p>
+  
 
   {% if site.conf.address %}
   <div id="map-canvas" class="location-area" data-address="{{ site.conf.address }}"></div>
+  <!-- <div id="map-canvas" data-lat="22.902763" data-lng="43.184853"></div> -->
+  <style type="text/css">
+  	/*#map-canvas {
+  		float: left;
+		height: 335px;
+		width: 100%;
+		margin-bottom: 50px;
+  	}*/
+  </style>
   {% endif %}
+
 
 </section>
 <!-- / LOCATION -->
