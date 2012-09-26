@@ -18,8 +18,11 @@ sections:
   partners: true
   contact: true
 
-# List of Speakers
-speakers:
+# The entire schedule
+schedule:
+  - name: Check-in / Breakfast
+    time: '9h00'
+
   - name: Linus Torvalds
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -40,6 +43,8 @@ speakers:
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       time: '11h00'
 
+  - name: Lunch
+    time: '12h00'
   - name: Chuck Norris
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -60,6 +65,8 @@ speakers:
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       time: '14h00'
 
+  - name: Coffee-break
+    time: '15h00'
   - name: Mark Zuckerberg
     photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -79,17 +86,6 @@ speakers:
       title: Why do I prefer Android over iPhone
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       time: '17h00'
-
-# List of other Schedule items
-schedule:
-  - name: Check-in / Breakfast
-    time: '9h00'
-
-  - name: Lunch
-    time: '12h00'
-
-  - name: Coffee-break
-    time: '15h00'
 
 # List of Sponsors
 sponsors:
