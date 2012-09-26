@@ -2,21 +2,10 @@
 <!-- LOCATION -->
 <section class="location" id="location">
   <h2 class="section-title">Location</h2>
-  
 
   {% if site.conf.address %}
   <div id="map-canvas" class="location-area" data-address="{{ site.conf.address }}"></div>
-  <!-- <div id="map-canvas" data-lat="22.902763" data-lng="43.184853"></div> -->
-  <style type="text/css">
-  	/*#map-canvas {
-  		float: left;
-		height: 335px;
-		width: 100%;
-		margin-bottom: 50px;
-  	}*/
-  </style>
   {% endif %}
-
 
 </section>
 <!-- / LOCATION -->
