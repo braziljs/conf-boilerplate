@@ -10,5 +10,7 @@ build:
 	@echo "\n~ Build succeed!\n"
 
 deploy:
+	@git checkout gh-pages
+	@git merge master
 	@git push origin gh-pages
 	@echo "\n~ Deploy succeed!\n"
