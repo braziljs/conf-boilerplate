@@ -40,18 +40,33 @@ O projeto já vem com um template pronto pra você, use-o à vontade, mas nós r
 
 De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `_config.yml` e alterar o valor das variáveis.
 
-### Informações básicas
+### Informações básicas sobre a conferência
 
 Quer alterar o nome, data, endereço, cidade ou preço do evento? É só mudar.
 
 ```
 conf:
   name: Conference name
+  description: Conference description
   date: November 15
+  price: $100
+  address: Boulevard Kukulcan, 30, México
   venue: Coco Bongo
   city: Cancún
-  price: $100`
 ```
+
+### Informações básicas sobre o site
+
+Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em frente!
+
+```
+url: http://confboilerplate.com
+favicon: http://braziljs.org/favicon.ico
+google-analytics: UA-33656081-1
+images:
+  cover: http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg
+  facebook: http://braziljs.org/img/fb-share.jpg
+```  
 
 ### Seções ativas
 
