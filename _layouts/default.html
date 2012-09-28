@@ -22,10 +22,11 @@
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-  <!--  STYLES -->
+  <!-- STYLES -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/base.css">
   <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+  <!-- / STYLES -->
 
 </head>
 <body>
@@ -41,7 +42,7 @@
         {{ content }}
       </div>
     </section>
-    <!--  / CONTENT -->
+    <!-- / CONTENT -->
 
     <hr />
 
@@ -59,11 +60,11 @@
   {% endif %}
 
 
-  <!--  GOOGLE ANALYTICS -->
+  <!-- GOOGLE ANALYTICS -->
 
   <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{{ site.conf.ga }}']);
+      _gaq.push(['_setAccount', '{{ site.conf.google-analytics }}']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -73,7 +74,7 @@
       })();
   </script>
 
-  <!--  /GOOGLE ANALYTICS -->
+  <!-- /GOOGLE ANALYTICS -->
 
 </body>
 </html>
