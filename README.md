@@ -199,7 +199,9 @@ Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto util
 
 * Rode `make deploy` na raíz do projeto.
 
-Depois é só acessar: `http://seuUsuario.github.com/seuFork`
+Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
+
+OBS: Lembre-se de remover o arquivo `CNAME`, caso você queira hospedar no Github.
 
 ### Domínio personalizado
 
