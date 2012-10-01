@@ -1,6 +1,6 @@
 var geocoder,
     map;
-    icon = '/assets/img/marker-default.png';
+    icon = 'assets/img/marker-default.png';
 
 function initialize() {
 
@@ -32,7 +32,7 @@ $(document).ready ( function() {
     initialize();
 
     geocoder.geocode( { 'address': address}, function(results, status) {
-      
+
       if (status == google.maps.GeocoderStatus.OK) {
 
         map.setCenter(results[0].geometry.location);
