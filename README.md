@@ -153,17 +153,19 @@ sections:
 
 ### Lista de Palestrantes
 
-Para incluir ou excluir um palestrante também é igualmente simples, basta adicionar mais um item na variável `speakers`.
+Para incluir/alterar/excluir um palestrante também é igualmente simples, basta recorrer ao `schedule`.
 
 ```
-speakers:
+schedule:
   - name: Chuck Norris
+    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    company: Delta Command
     twitter: littlechuck
     presentation:
       title: How to kill a elephant with one finger
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: '13h00'
+      time: 13h00
 ```
 
 Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar no `_config.yml` e depois exibí-lo com `{{ speaker.seuNovoAtributo }}` no [speakers.html](https://github.com/braziljs/conf-boilerplate/blob/master/_includes/section/speakers.html).
@@ -175,11 +177,7 @@ Para alterar os horários de check-in, almoço e coffee-break, é só recorrer a
 ```
 schedule:
   - name: Check-in / Breakfast
-    time: '9h00'
-  - name: Lunch
-    time: '12h00'
-  - name: Coffee-break
-    time: '15h00'
+    time: 9h00
 ```
 
 Mas se você quiser adicionar mais um coffee-break ou qualquer outro tipo de item na agenda do evento, é só acrescentar mais um item nessa lista.
