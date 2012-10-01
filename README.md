@@ -12,6 +12,23 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio.
 
+## Como funciona?
+
+Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio (mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#deploy)).
+
+Por padrão, definimos as seguintes seções:
+
+* *About* - Para que você possa descrever o objetivo do seu evento.
+* *Location* - Para que você possa exibir a localização do seu evento através do Google Maps.
+* *Speakers* - Para que você possa listar informações sobre os palestrantes.
+* *Schedule* - Para que você possa mostrar a agenda do evento.
+* *Sponsors* - Para que você possa fazer propaganda dos seus patrocinadores.
+* *Partners* - Para que você possa fazer propaganda dos seus apoiadores.
+
+*OBS 1: Não há integração com nenhum sistema de inscrição e/ou pagamento. Por conta disso, indicamos o [Eventick](http://eventick.com.br/).*
+
+*OBS 2: Por enquanto ainda não conseguimos desenvolver uma solução altamente automatizada e customizável para formulários de contato (acompanhe/ajude na discussão em [#4](https://github.com/braziljs/conf-boilerplate/issues/4)). Por conta disso, indicamos o [Wufoo](http://wufoo.com/).*
+
 ## Primeiros passos
 
 [Instale o Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não tenha ainda.
