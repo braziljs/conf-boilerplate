@@ -24,7 +24,7 @@ sections:
   schedule: true
   sponsors: true
   partners: true
-  contact: true
+  contact: false
 
 # The entire schedule
 schedule:
