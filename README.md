@@ -3,6 +3,7 @@
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
 * [Como funciona?](https://github.com/braziljs/conf-boilerplate#como-funciona)
+* [Estrutura](https://github.com/braziljs/conf-boilerplate#estrutura)
 * [Primeiros passos](https://github.com/braziljs/conf-boilerplate#primeiros-passos)
 * [Customização](https://github.com/braziljs/conf-boilerplate#customiza%C3%A7%C3%A3o)
 * [Deploy](https://github.com/braziljs/conf-boilerplate#deploy)
@@ -10,7 +11,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 ## Como funciona?
 
-Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio (mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#deploy)).
+Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio (mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado)).
 
 Por padrão, definimos as seguintes seções:
 
@@ -24,6 +25,56 @@ Por padrão, definimos as seguintes seções:
 *OBS 1: Não há integração com nenhum sistema de inscrição e/ou pagamento. Por conta disso, indicamos o [Eventick](http://eventick.com.br/).*
 
 *OBS 2: Por enquanto ainda não conseguimos desenvolver uma solução altamente automatizada e customizável para formulários de contato (acompanhe/ajude na discussão em [#4](https://github.com/braziljs/conf-boilerplate/issues/4)). Por conta disso, indicamos o [Wufoo](http://wufoo.com/).*
+
+## Estrutura
+
+A estrutura básica do projeto se dá na seguinte forma:
+
+<pre>
+.
+|-- _includes
+|-- _layouts
+|-- _site
+|-- assets
+|-- _config.yml
+|-- CNAME
+|-- index.html
+`-- Makefile
+</pre>
+
+### [_includes](https://github.com/braziljs/conf-boilerplate/tree/master/_includes)
+
+São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/index.html)).
+
+### [_layouts](https://github.com/braziljs/conf-boilerplate/tree/master/_layouts)
+
+Contém o template padrão da aplicação.
+
+### _site
+
+É onde os arquivos gerados são armazenados, uma vez que o Jekyll tenha sido rodado. Porém, esse diretório se torna desnecessário no nosso modelo, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
+
+### [assets](https://github.com/braziljs/conf-boilerplate/tree/master/assets)
+
+Possue as imagens, arquivos CSS e JS.
+
+### [_config.yml](https://github.com/braziljs/conf-boilerplate/blob/master/_config.yml)
+
+Armazena de forma fácil a maior parte das configurações da aplicação.
+
+### [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME)
+
+Indica o domínio personalizado que deve ser usado (mais informações sobre como usar seu domínio próprio em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado)).
+
+### [index.html](https://github.com/braziljs/conf-boilerplate/blob/master/index.html)
+
+É o arquivo que importa todas as seções da aplicação.
+
+### [Makefile](https://github.com/braziljs/conf-boilerplate/blob/master/Makefile)
+
+Contém as tarefas que lhe auxiliam em todos os passos do projeto.
+
+*Mais informações sobre a estrutura de arquivos do Jekyll, [clique aqui](https://github.com/mojombo/jekyll/wiki/Usage).*
 
 ## Primeiros passos
 
@@ -49,7 +100,7 @@ Agora você irá ver o site rodando em `localhost:4000` :D
 
 ## Customização
 
-O projeto já vem com um template pronto pra você, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
+O projeto já vem com um template visual pronto pra você, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
 
 De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `_config.yml` e alterar o valor das variáveis.
 
