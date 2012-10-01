@@ -100,7 +100,7 @@ Agora você irá ver o site rodando em `localhost:4000` :D
 
 ## Customização
 
-O projeto já vem com um template visual pronto pra você, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
+O projeto já vem com um template visual pronto, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
 
 De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `_config.yml` e alterar o valor das variáveis.
 
@@ -148,7 +148,7 @@ sections:
   schedule: true
   sponsors: true
   partners: true
-  contact: true
+  contact: false
 ```
 
 ### Lista de Palestrantes
@@ -166,7 +166,7 @@ speakers:
       time: '13h00'
 ```
 
-Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar.
+Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar no `_config.yml` e depois exibí-lo com `{{ speaker.seuNovoAtributo }}` no [speakers.html](https://github.com/braziljs/conf-boilerplate/blob/master/_includes/section/speakers.html).
 
 ### Lista de outros itens da Agenda
 
@@ -210,7 +210,7 @@ Caso você não queira utilizar o domínio do Github, é possível usar seu pró
 1. Altere o arquivo `CNAME` na raíz do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME).
 2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-### Como fazer sem utilizar Github Pages
+### Como fazer sem Deploy utilizar Github Pages
 
 Se você prefere utilizar seu próprio servidor para hospedar o site:
 
@@ -221,7 +221,7 @@ Esse comando irá gerar uma pasta `_site` contendo apenas arquivos estáticos, d
 
 ## Quem está por trás disso?
 
-Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil.
+Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
 
 **Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
 
