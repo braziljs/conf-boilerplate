@@ -56,7 +56,7 @@ Contém o template padrão da aplicação.
 
 ### [assets](https://github.com/braziljs/conf-boilerplate/tree/master/assets)
 
-Possue as imagens, arquivos CSS e JS.
+Possui as imagens, arquivos CSS e JS.
 
 ### [_config.yml](https://github.com/braziljs/conf-boilerplate/blob/master/_config.yml)
 
