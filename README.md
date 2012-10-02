@@ -78,9 +78,13 @@ Contém as tarefas que lhe auxiliam em todos os passos do projeto.
 
 ## Primeiros passos
 
-Instale o [Ruby](http://www.ruby-lang.org/pt/downloads/) e o [Git](http://git-scm.com/downloads), caso você não os tenha ainda.
+Instale o [Git](http://git-scm.com/downloads) e o [Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não os tenha ainda.
 
-Uma vez tendo instalado essas dependências, você só precisa abrir o terminal e clonar o projeto:
+Uma vez tendo instalado essas dependências, abra o terminal e instale o [Jekyll](http://jekyllrb.com/) através do comando:
+
+	gem install jekyll
+
+Agora clone o projeto:
 
 	git clone git@github.com:braziljs/conf-boilerplate.git
 
@@ -88,13 +92,9 @@ Depois vá para pasta do projeto:
 
 	cd conf-boilerplate
 
-Instale o [Jekyll](http://jekyllrb.com/) através do comando:
-
-	make install
-
 E finalmente rode:
 
-	make run
+	jekyll --server --auto
 
 Agora você irá ver o site rodando em `localhost:4000` :D
 
@@ -197,7 +197,7 @@ sponsors:
 
 Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [Github Pages](http://pages.github.com) que ainda é gratuito.
 
-* Rode `make deploy` na raíz do projeto.
+* Rode `sh publish.sh` na raíz do projeto.
 
 Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
 
@@ -214,7 +214,7 @@ Caso você não queira utilizar o domínio do Github, é possível usar seu pró
 
 Se você prefere utilizar seu próprio servidor para hospedar o site:
 
-* Rode `make build` na raíz do projeto.
+* Rode `jekyll` na raíz do projeto.
 
 Esse comando irá gerar uma pasta `_site` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
 
