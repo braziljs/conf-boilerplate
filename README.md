@@ -80,7 +80,7 @@ Contém as tarefas que lhe auxiliam em todos os passos do projeto.
 
 [Instale o Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não tenha ainda.
 
-Agora, instale o [Jekyll](http://jekyllrb.com/) através do comando:
+Agora abra o terminal e instale o [Jekyll](http://jekyllrb.com/) através do comando:
 
 	make install
 
