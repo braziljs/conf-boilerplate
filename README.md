@@ -78,8 +78,7 @@ Contém as tarefas que lhe auxiliam em todos os passos do projeto.
 
 ## Primeiros passos
 
-[Instale o Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não tenha ainda.
-[Instale o Git](http://git-scm.com/downloads), caso você não tenha ainda.
+Instale o [Ruby](http://www.ruby-lang.org/pt/downloads/) e o [Git](http://git-scm.com/downloads), caso você não os tenha ainda.
 
 Uma vez tendo instalado essas dependências, você só precisa abrir o terminal e clonar o projeto:
 
