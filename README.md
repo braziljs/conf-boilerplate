@@ -80,17 +80,17 @@ Contém as tarefas que lhe auxiliam em todos os passos do projeto.
 
 [Instale o Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não tenha ainda.
 
-Agora abra o terminal e instale o [Jekyll](http://jekyllrb.com/) através do comando:
-
-	make install
-
-Uma vez tendo instalado, você só precisa clonar o projeto:
+Uma vez tendo instalado, você só precisa abrir o terminal e clonar o projeto:
 
 	git clone git@github.com:braziljs/conf-boilerplate.git
 
 Depois vá para pasta do projeto:
 
 	cd conf-boilerplate
+
+Instale o [Jekyll](http://jekyllrb.com/) através do comando:
+
+	make install
 
 E finalmente rode:
 
