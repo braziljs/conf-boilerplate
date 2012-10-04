@@ -1,13 +1,41 @@
 <!-- NAVIGATION -->
 <nav id="nav">
   <ul class="wrapper">
-  {% for section in site.sections %}
-    {% if section[1] == true %}
+    {% if site.sections.location %}
       <li class="nav-item">
-        <a href="#{{ section[0] }}" class="nav-link">{{ section[0] }}</a>
+        <a href="#location" class="nav-link">Location</a>
       </li>
     {% endif %}
-  {% endfor %}
+
+    {% if site.sections.speakers %}
+      <li class="nav-item">
+        <a href="#speakers" class="nav-link">Speakers</a>
+      </li>
+    {% endif %}
+
+    {% if site.sections.schedule %}
+      <li class="nav-item">
+        <a href="#schedule" class="nav-link">Schedule</a>
+      </li>
+    {% endif %}
+
+    {% if site.sections.sponsors %}
+      <li class="nav-item">
+        <a href="#sponsors" class="nav-link">Sponsors</a>
+      </li>
+    {% endif %}
+
+    {% if site.sections.partners %}
+      <li class="nav-item">
+        <a href="#partners" class="nav-link">Partners</a>
+      </li>
+    {% endif %}
+
+    {% if site.sections.contact %}
+      <li class="nav-item">
+        <a href="#contact" class="nav-link">Contact</a>
+      </li>
+    {% endif %}
   </ul>
 </nav>
 <!-- / NAVIGATION -->
