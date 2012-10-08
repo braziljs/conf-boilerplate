@@ -218,12 +218,13 @@ Se você prefere utilizar seu próprio servidor para hospedar o site:
 
 Esse comando irá gerar uma pasta `_site` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
 
-
 ## Quem está por trás disso?
 
 Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
 
 **Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
+
+Agradecimento especial a todos os membros da comunidade pelos feedbacks e contribuições.
 
 <!-- ---
 
@@ -276,3 +277,4 @@ If you're not, just send your files to `gh-pages` branch:
 We're a group of developers who have been through hard times organizing conferences around Brazil.
 
 **Project Lead**: [Zeno Rocha](http://github.com/zenorocha) -->
+
