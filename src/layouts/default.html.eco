@@ -33,7 +33,7 @@
   <div class="global">
 
     <%-@partial('nav.html.eco')%>
-    <%-@partial('header.html.eco')%>
+    <%-@partial('header.html.eco', @)%>
 
     <!-- CONTENT -->
     <section class="content" id="content">
