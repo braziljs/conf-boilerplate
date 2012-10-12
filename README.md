@@ -8,13 +8,13 @@
 
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
-* [Como funciona?](https://github.com/braziljs/conf-boilerplate#como-funciona)
-* [Estrutura](https://github.com/braziljs/conf-boilerplate#estrutura)
-* [Primeiros passos](https://github.com/braziljs/conf-boilerplate#primeiros-passos)
-* [Customização](https://github.com/braziljs/conf-boilerplate#customiza%C3%A7%C3%A3o)
-* [Deploy](https://github.com/braziljs/conf-boilerplate#deploy)
-* [Showcase](https://github.com/braziljs/conf-boilerplate#showcase)
-* [Quem está por trás disso?](https://github.com/braziljs/conf-boilerplate#quem-est%C3%A1-por-tr%C3%A1s-disso)
+* [Como funciona?](#como-funciona)
+* [Estrutura](#estrutura)
+* [Primeiros passos](#primeiros-passos)
+* [Customização](#customiza%C3%A7%C3%A3o)
+* [Deploy](#deploy)
+* [Showcase](#showcase)
+* [Quem está por trás disso?](#quem-est%C3%A1-por-tr%C3%A1s-disso)
 
 ## Como funciona?
 
