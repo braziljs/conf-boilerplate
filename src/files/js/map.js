@@ -1,6 +1,6 @@
 var geocoder,
     map;
-    icon = 'assets/img/marker-default.png';
+    icon = 'img/marker-default.png';
 
 function initialize() {
 
