@@ -9,6 +9,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 * [Primeiros passos](https://github.com/braziljs/conf-boilerplate#primeiros-passos)
 * [Customização](https://github.com/braziljs/conf-boilerplate#customiza%C3%A7%C3%A3o)
 * [Deploy](https://github.com/braziljs/conf-boilerplate#deploy)
+* [Showcase](https://github.com/braziljs/conf-boilerplate#showcase)
 * [Quem está por trás disso?](https://github.com/braziljs/conf-boilerplate#quem-est%C3%A1-por-tr%C3%A1s-disso)
 
 ## Como funciona?
@@ -227,6 +228,12 @@ Se você prefere utilizar seu próprio servidor para hospedar o site:
 * Rode `docpad generate` na raíz do projeto.
 
 Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
+
+## Showcase
+
+Confira os eventos que usaram esse projeto como pontapé inicial:
+
+* [FrontInterior](http://frontinterior.com.br)
 
 ## Quem está por trás disso?
 
