@@ -1,23 +1,25 @@
-{% if site.sections.contact %}
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2 class="section-title">Contato</h2>
-  <p>Qualquer dúvida pode ser tirada pelo email <a href="mailto:contato@frontinrio.com.br" title="contato@frontinrio.com.br">contato@frontinrio.com.br</a>, pelo twitter <a href="http://twitter.com/frontinrio" title="@frontinrio">@frontinrio</a> e através do formulário abaixo.</p>
-  <form method="post" action="contato.php" id="form-contato" class="form-contato">
-    <div class="control-group control-group-name">
-      <label for="name">Qual o seu nome?</label>
-      <input type="text" name="name" id="name" placeholder="Qual o seu nome?" />
-    </div>
-    <div class="control-group control-group-email">
-      <label for="email">Diga o seu email para contato</label>
-    <input type="email" name="email" id="email" placeholder="Diga o seu email para contato" />
-    </div>
-    <div class="control-group">
-      <label for="mensagem">Escreva sua mensagem</label>
-    <textarea name="" id="mensagem" cols="30" rows="10" placeholder=""></textarea>
-    </div>
-    <input class="btn btn-send" type="submit" value="Enviar" />
-  </form>
-</section>
-<!-- / CONTACT -->
-{% endif %}
+<% if @sections.contact == true: %>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contato</h2>
+    <p>Qualquer dúvida pode ser tirada pelo email <a href="mailto:contato@frontinrio.com.br" title="contato@frontinrio.com.br">contato@frontinrio.com.br</a>, pelo twitter <a href="http://twitter.com/frontinrio" title="@frontinrio">@frontinrio</a> e através do formulário abaixo.</p>
+    <form method="post" action="contato.php" id="form-contato" class="form-contato">
+      <div class="control-group control-group-name">
+        <label for="name">Qual o seu nome?</label>
+        <input type="text" name="name" id="name" placeholder="Qual o seu nome?" />
+      </div>
+      <div class="control-group control-group-email">
+        <label for="email">Diga o seu email para contato</label>
+      <input type="email" name="email" id="email" placeholder="Diga o seu email para contato" />
+      </div>
+      <div class="control-group">
+        <label for="mensagem">Escreva sua mensagem</label>
+      <textarea name="" id="mensagem" cols="30" rows="10" placeholder=""></textarea>
+      </div>
+      <input class="btn btn-send" type="submit" value="Enviar" />
+    </form>
+  </section>
+  <!-- / CONTACT -->
+
+<% end %>

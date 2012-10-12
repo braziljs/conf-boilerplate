@@ -1,13 +1,15 @@
-{% if site.sections.location %}
-<!-- LOCATION -->
-<section class="location" id="location">
-  <h2 class="section-title">Location</h2>
+<% if @sections.location == true: %>
 
-  {% if site.conf.address %}
-  <p>{{ site.conf.address }}</p>
-  <div id="map-canvas" class="location-area" data-address="{{ site.conf.address }}"></div>
-  {% endif %}
+  <!-- LOCATION -->
+  <section class="location" id="location">
+    <h2 class="section-title">Location</h2>
 
-</section>
-<!-- / LOCATION -->
-{% endif %}
+    <% if @conf.address != '': %>
+      <p><%= @conf.address %></p>
+      <div id="map-canvas" class="location-area" data-address="<%= @conf.address %>"></div>
+    <% end %>
+
+  </section>
+  <!-- / LOCATION -->
+
+<% end %>
