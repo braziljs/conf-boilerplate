@@ -1,0 +1,37 @@
+{% if site.sections.schedule %}
+<!-- SCHEDULE -->
+<section class="schedule" id="schedule">
+  <h2 class="section-title">Schedule</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+  <div class="schedule-tbl">
+    <table>
+      <thead>
+        <tr>
+          <th class="schedule-time">Time</th>
+          <th class="schedule-slot">Slot</th>
+          <th class="schedule-description">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for slot in site.schedule %}
+          {% if slot.presentation %}
+            <tr>
+              <td class="schedule-time">{{ slot.presentation.time }}</td>
+              <td class="schedule-slot"><span class="speaker-photo"><img class="photo" src="{{ slot.photo }}" alt="{{ slot.name }}" /></span> {{ slot.presentation.title }} <span class="speakers-company">{{ slot.company }}</span></td>
+              <td class="schedule-description">{{ slot.presentation.description }}</td>
+            </tr>
+          {% else %}
+            <tr class="schedule-other">
+              <td class="schedule-time">{{ slot.time }}</td>
+              <td class="schedule-slot">{{ slot.name }}</td>
+              <td class="schedule-description">-</td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- / SCHEDULE -->
+{% endif %}
