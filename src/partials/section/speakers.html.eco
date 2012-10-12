@@ -1,28 +1,31 @@
-{% if site.sections.speakers %}
-<!-- SPEAKERS -->
-<section class="speakers" id="speakers">
+<% if @sections.speakers == true: %>
 
-  <h2 class="section-title">Speakers</h2>
+  <!-- SPEAKERS -->
+  <section class="speakers" id="speakers">
 
-  <ul class="speakers-list">
-  {% for speaker in site.schedule %}
-    {% if speaker.presentation %}
-      <li class="speakers-item">
-        <span class="speaker-photo"><img class="photo" src="{{ speaker.photo }}" alt="{{ speaker.name }}" /></span>
-        <h3 class="speech-title">
-          {% if speaker.presentation.time %}
-          <span class="speech-time">{{ speaker.presentation.time }}</span>
-          {% endif %}
-          <span> {{ speaker.presentation.title }}</span>
-        </h3>
+    <h2 class="section-title">Speakers</h2>
 
-        <h3 class="speakers-name">{{ speaker.name }} <a href="http://www.twitter.com/{{ speaker.twitter }}" title="Twitter @{{ speaker.twitter }}">@{{ speaker.twitter }}</a></h3>
-        <p class="speakers-bio">{{ speaker.bio }}</p>
-      </li>
-    {% endif %}
-  {% endfor %}
-  </ul>
+    <ul class="speakers-list">
+    <% for speaker in @schedule: %>
+      <% if speaker.presentation: %>
+        <li class="speakers-item">
+          <span class="speaker-photo"><img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" /></span>
 
-</section>
-<!-- / SPEAKERS -->
-{% endif %}
+          <h3 class="speech-title">
+            <% if speaker.presentation.time: %>
+              <span class="speech-time"><%= speaker.presentation.time %></span>
+            <% end %>
+              <span> <%= speaker.presentation.title %></span>
+          </h3>
+
+          <h3 class="speakers-name"><%= speaker.name %> <a href="http://www.twitter.com/<%= speaker.twitter %>" title="Twitter @<%= speaker.twitter %>">@<%= speaker.twitter %></a></h3>
+          <p class="speakers-bio"><%= speaker.bio %></p>
+        </li>
+      <% end %>
+    <% end %>
+    </ul>
+
+  </section>
+  <!-- / SPEAKERS -->
+
+<% end %>
