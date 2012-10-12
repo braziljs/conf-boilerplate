@@ -13,7 +13,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 ## Como funciona?
 
-Nós usamos o [Jekyll](http://jekyllrb.com/), um static generator em Ruby, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio (mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado)).
+Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio (mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado)).
 
 Por padrão, definimos as seguintes seções:
 
@@ -80,25 +80,29 @@ Contém as tarefas que lhe auxiliam em todos os passos do projeto.
 
 ## Primeiros passos
 
-Instale o [Git](http://git-scm.com/downloads) e o [Ruby](http://www.ruby-lang.org/pt/downloads/), caso você não os tenha ainda.
+1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](https://github.com/bevry/community/wiki/Installing-Node), caso você não os tenha ainda.
 
-Uma vez tendo instalado essas dependências, abra o terminal e instale o [Jekyll](http://jekyllrb.com/) através do comando:
+2. Abra o terminal e instale o [DocPad](https://github.com/bevry/docpad) através do comando:
 
-	gem install jekyll
+		sudo npm install -fg docpad@6.7
 
-Agora clone o projeto:
+3. Agora clone o projeto:
 
-	git clone git@github.com:braziljs/conf-boilerplate.git
+		git clone git@github.com:braziljs/conf-boilerplate.git
 
-Depois vá para pasta do projeto:
+4. Depois vá para pasta do projeto:
 
-	cd conf-boilerplate
+		cd conf-boilerplate
+	
+5. Instale as dependências:
 
-E finalmente rode:
+		npm install .
 
-	jekyll --server --auto
+6. E finalmente rode:
 
-Agora você irá ver o site rodando em `localhost:4000` :D
+		docpad run
+
+Agora você irá ver o site rodando em `localhost:9778` :D
 
 ## Customização
 
