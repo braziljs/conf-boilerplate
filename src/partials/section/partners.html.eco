@@ -12,7 +12,7 @@
     <% end %>
 
       <li class="partner-item">
-        <a class="partner-logo partner-link partner-call" href="#"><img src="assets/img/your-logo.jpg" alt="your logo" class="photo" /></a>
+        <a class="partner-logo partner-link partner-call" href="#"><img src="img/your-logo.jpg" alt="your logo" class="photo" /></a>
       </li>
 
     </ul>

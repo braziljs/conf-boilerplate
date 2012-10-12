@@ -1,17 +1,22 @@
-{% if site.sections.sponsors %}
-<!-- SPONSORS -->
-<section class="sponsors" id="sponsors">
-  <h2 class="section-title">Sponsors</h2>
-  <ul class="sponsors-list">
-  {% for sponsor in site.sponsors %}
-    <li class="sponsor-item">
-      <a class="sponsor-logo sponsor-link" href="{{ sponsor.url }}"><img src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" class="photo" /></a>
-    </li>
-  {% endfor %}
-    <li class="sponsor-item">
-      <a class="sponsor-logo sponsor-link sponsor-call" href="#"><img src="assets/img/your-logo.jpg" alt="your logo" class="photo" /></a>
-    </li>
-  </ul>
-</section>
-<!-- / SPONSORS -->
-{% endif %}
+<% if @sections.sponsors == true: %>
+
+  <!-- SPONSORS -->
+  <section class="sponsors" id="sponsors">
+    <h2 class="section-title">Sponsors</h2>
+    <ul class="sponsors-list">
+
+    <% for sponsor in @sponsors: %>
+      <li class="sponsor-item">
+        <a class="sponsor-logo sponsor-link" href="<%= sponsor.url %>"><img src="<%= sponsor.logo %>" alt="<%= sponsor.name %>" class="photo" /></a>
+      </li>
+    <% end %>
+
+      <li class="sponsor-item">
+        <a class="sponsor-logo sponsor-link sponsor-call" href="#"><img src="img/your-logo.jpg" alt="your logo" class="photo" /></a>
+      </li>
+
+    </ul>
+  </section>
+  <!-- / SPONSORS -->
+
+<% end %>
