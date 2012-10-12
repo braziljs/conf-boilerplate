@@ -1,6 +1,6 @@
 # Conf Boilerplate
 
-*Atenção: Se você está utilizando a versão anterior em Jekyll (Ruby), por favor visite a branch [jekyll](https://github.com/braziljs/conf-boilerplate/tree/jekyll) ou então baixe o repositório via tag [0.1.0-alpha.zip](https://github.com/braziljs/conf-boilerplate/zipball/0.1.0-alpha). Essa branch `master` irá se limitar ao desenvolvimento da nova versão em DocPad (NodeJS)*.
+*Atenção: Essa é a versão `beta` feita com DocPad (NodeJS), se você está utilizando a versão `alpha` em Jekyll (Ruby), por favor visite a branch [jekyll](https://github.com/braziljs/conf-boilerplate/tree/jekyll) ou então baixe o repositório via tag [0.1.0-alpha.zip](https://github.com/braziljs/conf-boilerplate/zipball/0.1.0-alpha).*
 
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
@@ -34,49 +34,49 @@ A estrutura básica do projeto se dá na seguinte forma:
 
 <pre>
 .
-|-- _includes
-|-- _layouts
-|-- _site
-|-- assets
-|-- _config.yml
+|-- out/
+|-- src/
+|   |-- documents
+|   |-- files
+|   |-- layouts
+|   |-- partials
 |-- CNAME
-|-- index.html
-`-- Makefile
+|-- docpad.cson
+|-- package.json
+`-- publish.sh
 </pre>
 
-### [_includes](https://github.com/braziljs/conf-boilerplate/tree/master/_includes)
+### out/
 
-São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/index.html)).
+É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no nosso modelo, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
 
-### [_layouts](https://github.com/braziljs/conf-boilerplate/tree/master/_layouts)
+### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
-Contém o template padrão da aplicação.
+É o arquivo que importa todas as seções da aplicação.
 
-### _site
-
-É onde os arquivos gerados são armazenados, uma vez que o Jekyll tenha sido rodado. Porém, esse diretório se torna desnecessário no nosso modelo, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
-
-### [assets](https://github.com/braziljs/conf-boilerplate/tree/master/assets)
+### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
 
 Possui as imagens, arquivos CSS e JS.
 
-### [_config.yml](https://github.com/braziljs/conf-boilerplate/blob/master/_config.yml)
+### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
-Armazena de forma fácil a maior parte das configurações da aplicação.
+Contém o template padrão da aplicação.
+
+### [src/partials](https://github.com/braziljs/conf-boilerplate/tree/master/src/partials)
+
+São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
 
 ### [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME)
 
 Indica o domínio personalizado que deve ser usado (mais informações sobre como usar seu domínio próprio em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado)).
 
-### [index.html](https://github.com/braziljs/conf-boilerplate/blob/master/index.html)
+### [docpad.cson](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.cson)
 
-É o arquivo que importa todas as seções da aplicação.
+Armazena de forma fácil a maior parte das configurações da aplicação.
 
-### [Makefile](https://github.com/braziljs/conf-boilerplate/blob/master/Makefile)
+### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
 
-Contém as tarefas que lhe auxiliam em todos os passos do projeto.
-
-*Mais informações sobre a estrutura de arquivos do Jekyll, [clique aqui](https://github.com/mojombo/jekyll/wiki/Usage).*
+É o arquivo responsável pela publicação do site via Github Pages.
 
 ## Primeiros passos
 
@@ -108,7 +108,7 @@ Agora você irá ver o site rodando em `localhost:9778` :D
 
 O projeto já vem com um template visual pronto, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
 
-De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `_config.yml` e alterar o valor das variáveis.
+De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `docpad.cson` e alterar o valor das variáveis.
 
 ### Informações básicas sobre a conferência
 
@@ -116,13 +116,13 @@ Quer alterar o nome, data, endereço, cidade ou preço do evento? É só mudar.
 
 ```
 conf:
-  name: Conference name
-  description: Conference description
-  date: November 15
-  price: $100
-  address: Boulevard Kukulcan, 30, México
-  venue: Coco Bongo
-  city: Cancún
+	name: "Conference name"
+	description: "Conference description"
+	date: "November 15"
+	price: "$100"
+	address: "Boulevard Kukulcan, 30, México"
+	venue: "Coco Bongo"
+	city: "Cancún"
 ```
 
 ### Informações básicas sobre o site
@@ -130,12 +130,13 @@ conf:
 Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em frente!
 
 ```
-url: http://confboilerplate.com
-favicon: http://braziljs.org/favicon.ico
-google-analytics: UA-33656081-1
-images:
-  cover: http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg
-  facebook: http://braziljs.org/img/fb-share.jpg
+site:
+	url: "http://confboilerplate.com"
+	favicon: "http://braziljs.org/favicon.ico"
+	googleanalytics: "UA-33656081-1"
+	images:
+		cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
+		facebook: "http://braziljs.org/img/fb-share.jpg"
 ```  
 
 ### Seções ativas
@@ -148,13 +149,13 @@ E por aí vai.
 
 ```
 sections:
-  about: true
-  location: true
-  speakers: true
-  schedule: true
-  sponsors: true
-  partners: true
-  contact: false
+	about: true
+	location: true
+	speakers: true
+	schedule: true
+	sponsors: true
+	partners: true
+	contact: false
 ```
 
 ### Lista de Palestrantes
@@ -162,28 +163,30 @@ sections:
 Para incluir/alterar/excluir um palestrante também é igualmente simples, basta recorrer ao `schedule`.
 
 ```
-schedule:
-  - name: Chuck Norris
-    photo: http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg
-    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    company: Delta Command
-    twitter: littlechuck
-    presentation:
-      title: How to kill a elephant with one finger
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      time: 13h00
+schedule: [
+	name: "Chuck Norris"
+	photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+	bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+	company: "Delta Command"
+	twitter: "littlechuck"
+	presentation:
+		title: "How to kill a elephant with one finger"
+		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+		time: "13h00"
+]
 ```
 
-Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar no `_config.yml` e depois exibí-lo com `{{ speaker.seuNovoAtributo }}` no [speakers.html](https://github.com/braziljs/conf-boilerplate/blob/master/_includes/section/speakers.html).
+Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar no `docpad.cson` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
 ### Lista de outros itens da Agenda
 
 Para alterar os horários de check-in, almoço e coffee-break, é só recorrer as variáveis de `schedule`.
 
 ```
-schedule:
-  - name: Check-in / Breakfast
-    time: 9h00
+schedule: [
+	name: "Check-in / Breakfast"
+	time: "9h00"
+]
 ```
 
 Mas se você quiser adicionar mais um coffee-break ou qualquer outro tipo de item na agenda do evento, é só acrescentar mais um item nessa lista.
@@ -193,10 +196,11 @@ Mas se você quiser adicionar mais um coffee-break ou qualquer outro tipo de ite
 Para adicionar qualquer patrocinador ou apoio no evento, é só recorrer as variáveis `sponsors` e `partners`.
 
 ```
-sponsors:
-  - name: Eventick
-    logo: http://frontinbh.com.br/assets/imagens/apoiadores/eventick.png
-    url: http://eventick.com.br
+partners: [
+	name: "BrazilJS"
+	logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
+	url: "http://braziljs.org"
+]
 ```
 
 ## Deploy
