@@ -1,6 +1,10 @@
 # Conf Boilerplate
 
+---
+
 *Atenção: Essa é a versão `beta` feita com DocPad (NodeJS), se você está utilizando a versão `alpha` em Jekyll (Ruby), por favor visite a branch [jekyll](https://github.com/braziljs/conf-boilerplate/tree/jekyll) ou então baixe o repositório via tag [0.1.0-alpha.zip](https://github.com/braziljs/conf-boilerplate/zipball/0.1.0-alpha).*
+
+---
 
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
@@ -14,7 +18,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 ## Como funciona?
 
-Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio (mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado)).
+Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado))*.
 
 Por padrão, definimos as seguintes seções:
 
@@ -27,7 +31,7 @@ Por padrão, definimos as seguintes seções:
 
 *OBS 1: Não há integração com nenhum sistema de inscrição e/ou pagamento. Por conta disso, indicamos o [Eventick](http://eventick.com.br/).*
 
-*OBS 2: Por enquanto ainda não conseguimos desenvolver uma solução altamente automatizada e customizável para formulários de contato (acompanhe/ajude na discussão em [#4](https://github.com/braziljs/conf-boilerplate/issues/4)). Por conta disso, indicamos o [Wufoo](http://wufoo.com/).*
+*OBS 2: Por enquanto ainda não conseguimos desenvolver uma solução altamente automatizada e customizável para formulários de contato. Por conta disso, indicamos o [Wufoo](http://wufoo.com/).*
 
 ## Estrutura
 
@@ -49,11 +53,11 @@ A estrutura básica do projeto se dá na seguinte forma:
 
 ### out/
 
-É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no nosso modelo, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
+É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
 
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
-É o arquivo que importa todas as seções da aplicação.
+Contém o arquivo responsável por importar todas as seções da aplicação.
 
 ### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
 
@@ -69,19 +73,23 @@ São blocos de código utilizados para gerar a página principal do site ([index
 
 ### [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME)
 
-Indica o domínio personalizado que deve ser usado (mais informações sobre como usar seu domínio próprio em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado)).
+Indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado))*.
 
 ### [docpad.cson](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.cson)
 
 Armazena de forma fácil a maior parte das configurações da aplicação.
 
+### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
+
+Lista as dependências de módulos do NodeJS.
+
 ### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
 
-É o arquivo responsável pela publicação do site via Github Pages.
+Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
 
 ## Primeiros passos
 
-1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](https://github.com/bevry/community/wiki/Installing-Node), caso você não os tenha ainda.
+1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
 
 2. Abra o terminal e instale o [DocPad](https://github.com/bevry/docpad) através do comando:
 
@@ -212,7 +220,7 @@ Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto util
 
 Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
 
-OBS: Lembre-se de remover o arquivo `CNAME`, caso você queira hospedar no Github.
+OBS: Lembre-se de remover o arquivo `CNAME`, caso você queira utilizar a URL pré-definida pelo Github.
 
 ### Domínio personalizado
 
