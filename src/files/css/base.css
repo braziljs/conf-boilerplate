@@ -7,7 +7,6 @@
   position:relative;
 }
 .content {padding: 50px 0;}
-
 .content section {padding-top: 50px;}
 
 /* =============================================================================
@@ -35,7 +34,12 @@ p {
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
-nav {padding:15px 0;}
+nav {
+  padding:15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
 .nav-item {
   display: inline-block;
   margin-right:15px;
@@ -124,9 +128,7 @@ nav {padding:15px 0;}
 /* =============================================================================
    SCHEDULE
    ========================================================================== */
-.schedule-tbl {
-  padding:20px;
-}
+.schedule-tbl {padding:20px;}
 .schedule-tbl table {
   border-collapse: collapse;
   font-size:1em;
@@ -151,9 +153,7 @@ nav {padding:15px 0;}
   float:left;
   margin-right:20px;
 }
-.schedule-tbl .schedule-time {
-  text-align:center;
-}
+.schedule-tbl .schedule-time {text-align:center;}
 .schedule-slot {
   width: 250px;
   font-size:16px;
@@ -198,9 +198,7 @@ nav {padding:15px 0;}
   float:left;
   margin-right:25px;
 }
-.control-group-email {
-  margin-right:0;
-}
+.control-group-email {margin-right:0;}
 .form-contato input[type=text], .form-contato input[type=email], .form-contato textarea{
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -213,9 +211,131 @@ nav {padding:15px 0;}
   font-size:14px;
 }
 .form-contato textarea {height:300px;}
-.form-contato .btn {
-  float:right;
+.form-contato .btn {float:right;}
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width : 1024px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .about {margin: 0;}
 }
 
+@media only screen and (min-width:320px) and (max-width : 800px) {
 
+  /* schedule */
+  .schedule-tbl {padding:1px;}
+  .schedule-tbl td, .schedule-tbl th {padding:10px;}
+  .schedule-tbl th {
+    padding: 10px;
+    font-size:1.8em;
+  }
+  .schedule-tbl .speaker-photo {
+    width: 40px;
+    height: 40px;
+    margin-right:5px;
+  }
+  .schedule-tbl .schedule-slot {
+    width: 120px;
+  }
+  .schedule-tbl td.schedule-slot {
+    font-size:14px;
+    line-height:1.2em;
+  }
+  .schedule-tbl .schedule-time {
+    width:60px;
+    padding:10px 0 10px 5px;
+    text-align:left;
+  }
+  .schedule-tbl td.schedule-description {font-size:12px;}
 
+  /* partners */
+  .sponsor-item, .partner-item {margin: 0 5px 10px 0;}
+  .sponsor-link, .partner-link {
+    width: 95px;
+    height:95px;
+    line-height: 95px;
+  }
+
+  /* contact */
+  .control-group-name, .control-group-email {
+    clear:both;
+    width:100%;
+    float:none;
+    margin-right:0;
+  }
+  .form-contato .btn {margin-bottom:50px;}
+}
+
+@media only screen and (max-width : 480px) {
+  /* nav */
+  nav {display: none;}
+  .header {padding:20px 0;}
+  .logo-name {font-size: 4em;}
+  .tagline {
+    margin-bottom:15px;
+    font-size: 1.4em;
+  }
+  .call-action-area .price {
+    font-size:2em;
+    margin: 0 0 15px;
+    display: block;
+  }
+  .call-action-area .call-action-link, .btn {top:0;}
+
+  h2, h3, h4 {font-size: 3em;}
+  h3 {font-size: 2em;}
+  h4 {font-size:1.8em;}
+  p {font-size:1.4em;}
+
+  /* content */
+  .content {padding: 0;}
+  .content section {padding-top: 50px;}
+
+  /* speakers */
+  .speakers-item {
+    min-height:70px;
+    padding-left: 70px;
+  }
+  .speaker-photo {
+    width: 50px;
+    height: 50px;
+  }
+  .speech-title {
+    padding-top:0;
+    font-size:16px;
+    margin-bottom:.3em;
+  }
+  .speech-time {
+    font-size:16px;
+    padding: 0;
+  }
+  .speakers-bio {display: none;}
+} 
+
+@media only screen and (max-width : 321px) {
+  .logo-name {
+    font-size: 4em;
+    margin-bottom:.4em;
+  }
+  .schedule-tbl .schedule-description {display: none;}
+  .schedule-tbl .schedule-slot {width: auto;}
+
+  /* partners */
+  .sponsor-item, .partner-item {margin: 0 12px 15px 0;}
+  .sponsor-link, .partner-link {
+    width: 115px;
+    height:115px;
+    line-height: 115px;
+  }
+} 
