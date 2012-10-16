@@ -18,7 +18,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 ## Como funciona?
 
-Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado))*.
+Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#dom%C3%ADnio-personalizado))*.
 
 Por padrão, definimos as seguintes seções:
 
@@ -45,7 +45,6 @@ A estrutura básica do projeto se dá na seguinte forma:
 |   |-- files
 |   |-- layouts
 |   |-- partials
-|-- CNAME
 |-- docpad.cson
 |-- package.json
 `-- publish.sh
@@ -61,7 +60,7 @@ Contém o arquivo responsável por importar todas as seções da aplicação.
 
 ### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
 
-Possui as imagens, arquivos CSS e JS.
+Possui as imagens, arquivos CSS, JS e o [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#dom%C3%ADnio-personalizado))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
@@ -70,10 +69,6 @@ Contém o template padrão da aplicação.
 ### [src/partials](https://github.com/braziljs/conf-boilerplate/tree/master/src/partials)
 
 São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
-
-### [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME)
-
-Indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](https://github.com/braziljs/conf-boilerplate#dom%C3%ADnio-personalizado))*.
 
 ### [docpad.cson](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.cson)
 
@@ -221,13 +216,13 @@ Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto util
 
 Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
 
-OBS: Lembre-se de remover o arquivo `CNAME`, caso você queira utilizar a URL pré-definida pelo Github.
+OBS: Lembre-se de remover o arquivo `CNAME` que está na pasta `src/files` do seu projeto, caso você queira utilizar a URL pré-definida pelo Github.
 
 ### Domínio personalizado
 
 Caso você não queira utilizar o domínio do Github, é possível usar seu próprio com alguns passos.
 
-1. Altere o arquivo `CNAME` na raíz do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/CNAME).
+1. Altere o arquivo `CNAME` que está na pasta `src/files` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
 2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
 ### Como fazer sem Deploy utilizar Github Pages
