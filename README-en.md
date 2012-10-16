@@ -16,7 +16,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 ## How it works?
 
-We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain *(mais informações sobre isso em [Deploy](#dom%C3%ADnio-personalizado))*
+We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#dom%C3%ADnio-personalizado))*
 
 By default, we have the following sections:
 
@@ -178,7 +178,7 @@ schedule: [
 ]
 ```
 
-Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.cson` and then show it with `<%= speaker.seuNovoAtributo %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.cson` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
 ### List of another items on Agenda
 
