@@ -76,41 +76,41 @@ List NodeJS modules dependencies.
 
 Shell Script responsible for publishing the site via via [Github Pages](http://pages.github.com).
 
-## Primeiros passos
+## Getting Started
 
-1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
+1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
-2. Abra o terminal e instale o [DocPad](https://github.com/bevry/docpad) através do comando:
+2. Open your terminal and install [DocPad](https://github.com/bevry/docpad) through this command:
 
     sudo npm install -fg docpad@6.7
 
-3. Agora clone o projeto:
+3. Now clone it:
 
     git clone git@github.com:braziljs/conf-boilerplate.git
 
-4. Depois vá para pasta do projeto:
+4. Then go to the project's folder:
 
     cd conf-boilerplate
 
-5. Instale as dependências:
+5. Install all dependencies:
 
     sudo npm install .
 
-6. E finalmente rode:
+6. And finally run:
 
     docpad run
 
-Agora você irá ver o site rodando em `localhost:9778` :D
+Now you can see the website running in `localhost:9778` :D
 
-## Customização
+## Customization
 
-O projeto já vem com um template visual pronto, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
+The project already comes with a visual template, feel free to use it, but we recommend you create your own in order to put your own identity in the event.
 
-De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `docpad.cson` e alterar o valor das variáveis.
+Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.cson` and change the value of variables.
 
-### Informações básicas sobre a conferência
+### Basic information about the conference
 
-Quer alterar o nome, data, endereço, cidade ou preço do evento? É só mudar.
+Do you want to change the name, date, address, city or price of the conference? Go ahead.
 
 ```
 conf:
@@ -123,9 +123,9 @@ conf:
   city: "Cancún"
 ```
 
-### Informações básicas sobre o site
+### Basic information about the website
 
-Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em frente!
+Do you want to change the cover image, Google Analytics code or favicon? Go ahead!
 
 ```
 site:
@@ -137,13 +137,13 @@ site:
     facebook: "http://braziljs.org/img/fb-share.jpg"
 ```
 
-### Seções ativas
+### Active sections
 
-Ainda não definiu a programação completa do evento? Não tem problema, basta alterar a variável `schedule` para `false`.
+Still don't get a full schedule of the event? No problem, just set `schedule` variable to `false`.
 
-Ainda não sabe quem irá palestrar? Tudo bem, basta alterar a variável `speakers` para `false`.
+Still don't get who is going to speak? Ok, just set `speakers` variable to `false`.
 
-E por aí vai.
+And so on.
 
 ```
 sections:
@@ -156,9 +156,9 @@ sections:
   contact: false
 ```
 
-### Lista de Palestrantes
+### Speakers List
 
-Para incluir/alterar/excluir um palestrante também é igualmente simples, basta recorrer ao `schedule`.
+To add/change/exclude a speaker is equally simple, just see `schedule` variable.
 
 ```
 schedule: [
@@ -174,11 +174,11 @@ schedule: [
 ]
 ```
 
-Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar no `docpad.cson` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.cson` and then show it with `<%= speaker.seuNovoAtributo %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
-### Lista de outros itens da Agenda
+### List of another items on Agenda
 
-Para alterar os horários de check-in, almoço e coffee-break, é só recorrer as variáveis de `schedule`.
+To change the time of check-in, lunch and coffee-break, just see `schedule` variable.
 
 ```
 schedule: [
@@ -187,11 +187,11 @@ schedule: [
 ]
 ```
 
-Mas se você quiser adicionar mais um coffee-break ou qualquer outro tipo de item na agenda do evento, é só acrescentar mais um item nessa lista.
+But if you want to add another coffee-creak or any kind of item on agenda, just add the item on the list.
 
-### Lista de Patrocinadores/Apoio
+### List of Sponsors/Partners
 
-Para adicionar qualquer patrocinador ou apoio no evento, é só recorrer as variáveis `sponsors` e `partners`.
+To add any sponsor or partner, just use `sponsors` and `partners` variables.
 
 ```
 partners: [
