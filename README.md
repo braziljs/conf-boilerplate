@@ -105,7 +105,7 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 	
 5. Instale as dependências:
 
-		npm install .
+		sudo npm install .
 
 6. E finalmente rode:
 
@@ -216,6 +216,7 @@ partners: [
 
 Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [Github Pages](http://pages.github.com) que ainda é gratuito.
 
+* Dê permissão de execução para o script publish.sh - `chmod +x publish.sh`
 * Rode `sh publish.sh` na raíz do projeto.
 
 Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
