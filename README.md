@@ -1,11 +1,5 @@
 # Conf Boilerplate
 
----
-
-*Atenção: Essa é a versão `beta` feita com DocPad (NodeJS), se você está utilizando a versão `alpha` em Jekyll (Ruby), por favor visite a branch [jekyll](https://github.com/braziljs/conf-boilerplate/tree/jekyll) ou então baixe o repositório via tag [0.1.0-alpha.zip](https://github.com/braziljs/conf-boilerplate/zipball/0.1.0-alpha).*
-
----
-
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
 * [Como funciona?](#como-funciona)
@@ -97,7 +91,7 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 4. Depois vá para pasta do projeto:
 
 		cd conf-boilerplate
-	
+
 5. Instale as dependências:
 
 		sudo npm install .
@@ -141,7 +135,7 @@ site:
 	images:
 		cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
 		facebook: "http://braziljs.org/img/fb-share.jpg"
-```  
+```
 
 ### Seções ativas
 
