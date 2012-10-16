@@ -1,5 +1,9 @@
 # Conf Boilerplate
 
+*[Clique aqui para ler a versão em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README.md)*
+
+---
+
 An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
 * [Como funciona?](#como-funciona)
