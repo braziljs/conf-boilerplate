@@ -203,93 +203,40 @@ partners: [
 
 ## Deploy
 
-Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [Github Pages](http://pages.github.com) que ainda é gratuito.
+We don't like to centralize the power of deploy in one person, so we'll use [Github Pages](http://pages.github.com) that is free.
 
-* Dê permissão de execução para o script publish.sh - `chmod +x publish.sh`
-* Rode `sh publish.sh` na raíz do projeto.
+* Give permission to run the publish.sh script - `chmod +x publish.sh`
+* Run `sh publish.sh` on the root of the project.
 
-Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
+Wait a few minutes until Github send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
 
-OBS: Lembre-se de remover o arquivo `CNAME` que está na pasta `src/files` do seu projeto, caso você queira utilizar a URL pré-definida pelo Github.
+P.S.: Remember to remove `CNAME` file that is located on `src/files` folder, if you want to use the predefined Github url.
 
-### Domínio personalizado
+### Custom domain
 
-Caso você não queira utilizar o domínio do Github, é possível usar seu próprio com alguns passos.
+If you don't want to use Github domain, you can use your own with a few steps.
 
-1. Altere o arquivo `CNAME` que está na pasta `src/files` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
-2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+1. Change the `CNAME` file that is located on `src/files` folder and fill with your domain: `yourevent.com`. [See the example](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
+2. Change the DNS of your domain [following Github instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-### Como fazer sem Deploy utilizar Github Pages
+### How to Deploy without Github Pages
 
-Se você prefere utilizar seu próprio servidor para hospedar o site:
+If you want to use your own server to host the website:
 
-* Rode `docpad generate` na raíz do projeto.
+* Run `docpad generate` on the root of the project.
 
-Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
+This command will generate a folder called `out` that contains just static files, then just upload them to your server.
 
 ## Showcase
 
-Confira os eventos que usaram esse projeto como pontapé inicial:
+See the conferences that already used this project as a kickstart:
 
 * [FrontInterior](http://frontinterior.com.br)
 
-## Quem está por trás disso?
-
-Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
-
-**Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
-
-Agradecimento especial a todos os membros da comunidade pelos feedbacks e contribuições.
-
-<!-- ---
-
-# Conf Boilerplate
-
-
-
-## How it works?
-
-We use [Jekyll](http://jekyllrb.com/), a static generator in Ruby, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain.
-
-## Getting started
-
-[Install Ruby](http://www.ruby-lang.org/en/downloads/) (>= 1.9.2), if you don't have it yet.
-
-Now, the best way to install [Jekyll](http://jekyllrb.com/) is via [RubyGems](http://rubygems.org/):
-
-  gem install jekyll
-
-Also install Packr:
-
-  gem install packr
-
-Once Jekyll is installed, you just need to clone the project:
-
-  git clone git@github.com:braziljs/conf-boilerplate.git
-
-Then go to the project's folder:
-
-  cd conf-boilerplate
-
-And finally run:
-
-  jekyll --server --auto
-
-Now you can see the website running in `localhost:4000` :D
-
-## Deploy
-
-If you are using any plugin:
-
-* Run `./publish.sh` on the root folder.
-
-If you're not, just send your files to `gh-pages` branch:
-
-  git push origin gh-pages
-
 ## Who is behind of it?
 
-We're a group of developers who have been through hard times organizing conferences around Brazil.
+We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.
 
-**Project Lead**: [Zeno Rocha](http://github.com/zenorocha) -->
+**Project Lead**: [Zeno Rocha](http://github.com/zenorocha)
 
+Special thanks to all community members for feedbacks and contributions.
