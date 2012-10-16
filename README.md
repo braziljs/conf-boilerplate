@@ -174,7 +174,7 @@ schedule: [
 ]
 ```
 
-Quer listar mais algum atributo do palestrante que não está ali, tudo bem é só adicionar no `docpad.cson` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Quer listar mais algum atributo do palestrante que não está ali? Tudo bem, é só adicionar no `docpad.cson` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
 ### Lista de outros itens da Agenda
 
@@ -240,56 +240,3 @@ Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades orga
 **Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
 
 Agradecimento especial a todos os membros da comunidade pelos feedbacks e contribuições.
-
-<!-- ---
-
-# Conf Boilerplate
-
-An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
-
-## How it works?
-
-We use [Jekyll](http://jekyllrb.com/), a static generator in Ruby, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain.
-
-## Getting started
-
-[Install Ruby](http://www.ruby-lang.org/en/downloads/) (>= 1.9.2), if you don't have it yet.
-
-Now, the best way to install [Jekyll](http://jekyllrb.com/) is via [RubyGems](http://rubygems.org/):
-
-	gem install jekyll
-
-Also install Packr:
-
-	gem install packr
-
-Once Jekyll is installed, you just need to clone the project:
-
-	git clone git@github.com:braziljs/conf-boilerplate.git
-
-Then go to the project's folder:
-
-	cd conf-boilerplate
-
-And finally run:
-
-	jekyll --server --auto
-
-Now you can see the website running in `localhost:4000` :D
-
-## Deploy
-
-If you are using any plugin:
-
-* Run `./publish.sh` on the root folder.
-
-If you're not, just send your files to `gh-pages` branch:
-
-	git push origin gh-pages
-
-## Who is behind of it?
-
-We're a group of developers who have been through hard times organizing conferences around Brazil.
-
-**Project Lead**: [Zeno Rocha](http://github.com/zenorocha) -->
-
