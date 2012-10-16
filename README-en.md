@@ -6,13 +6,13 @@
 
 An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
-* [Como funciona?](#como-funciona)
-* [Estrutura](#estrutura)
-* [Primeiros passos](#primeiros-passos)
-* [Customização](#customiza%C3%A7%C3%A3o)
+* [How it works?](#how-it-works)
+* [Structure](#structure)
+* [Getting Started](#getting-started)
+* [Customization](#customization)
 * [Deploy](#deploy)
 * [Showcase](#showcase)
-* [Quem está por trás disso?](#quem-est%C3%A1-por-tr%C3%A1s-disso)
+* [Who is behind of it?](#who-is-behind-of-it)
 
 ## How it works?
 
