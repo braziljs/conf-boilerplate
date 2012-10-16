@@ -27,9 +27,9 @@ By default, we have the following sections:
 
 *P.S. 2: We haven't developed a highly automated and customizable solution for contact forms yet. For this reason, we recommend [Wufoo](http://wufoo.com/).*
 
-## Estrutura
+## Structure
 
-A estrutura básica do projeto se dá na seguinte forma:
+The basic structure of the project is given in the following way:
 
 <pre>
 .
@@ -46,35 +46,35 @@ A estrutura básica do projeto se dá na seguinte forma:
 
 ### out/
 
-É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
+This is where the generated files are stored, once DocPad has been runned. However, this directory is unnecessary in versioning, so it is ignored ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
 
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
-Contém o arquivo responsável por importar todas as seções da aplicação.
+Contains the file responsible for importing all sections of the application.
 
 ### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
 
-Possui as imagens, arquivos CSS, JS e o [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#dom%C3%ADnio-personalizado))*.
+Has images, CSS, JS and [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) that indicates the custom domain that should be used *(more information on how to use your own domain on [Deploy](#dom%C3%ADnio-personalizado))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
-Contém o template padrão da aplicação.
+Contains the default template of the application.
 
 ### [src/partials](https://github.com/braziljs/conf-boilerplate/tree/master/src/partials)
 
-São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
+Are blocks of code used to generate the site's main page ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
 
 ### [docpad.cson](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.cson)
 
-Armazena de forma fácil a maior parte das configurações da aplicação.
+Stores most settings of the application.
 
 ### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
-Lista as dependências de módulos do NodeJS.
+List NodeJS modules dependencies.
 
 ### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
 
-Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
+Shell Script responsible for publishing the site via via [Github Pages](http://pages.github.com).
 
 ## Primeiros passos
 
