@@ -1,4 +1,4 @@
-*[Clique aqui para ler a versão em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README.md)*
+*[Clique aqui para ler a versão em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README-pt.md)*
 
 ---
 
