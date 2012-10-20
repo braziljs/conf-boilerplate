@@ -1,4 +1,4 @@
-*[Click here to read the English version](https://github.com/braziljs/conf-boilerplate/blob/master/README-en.md)*
+*[Clique aqui para ler a versão em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README.md)*
 
 ---
 
@@ -6,36 +6,36 @@
 
 ---
 
-Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
+An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
-* [Como funciona?](#como-funciona)
-* [Estrutura](#estrutura)
-* [Primeiros passos](#primeiros-passos)
-* [Customização](#customiza%C3%A7%C3%A3o)
+* [How it works?](#how-it-works)
+* [Structure](#structure)
+* [Getting Started](#getting-started)
+* [Customization](#customization)
 * [Deploy](#deploy)
 * [Showcase](#showcase)
-* [Quem está por trás disso?](#quem-est%C3%A1-por-tr%C3%A1s-disso)
+* [Who is behind of it?](#who-is-behind-of-it)
 
-## Como funciona?
+## How it works?
 
-Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#dom%C3%ADnio-personalizado))*.
+We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#dom%C3%ADnio-personalizado))*
 
-Por padrão, definimos as seguintes seções:
+By default, we have the following sections:
 
-* *About* - Para que você possa descrever o objetivo do seu evento.
-* *Location* - Para que você possa exibir a localização do seu evento através do Google Maps.
-* *Speakers* - Para que você possa listar informações sobre os palestrantes.
-* *Schedule* - Para que você possa mostrar a agenda do evento.
-* *Sponsors* - Para que você possa fazer propaganda dos seus patrocinadores.
-* *Partners* - Para que você possa fazer propaganda dos seus apoiadores.
+* *About* - to describe what's the main goal of your event.
+* *Location* - to show where it's going to happen through Google Maps.
+* *Speakers* - to list information about speakers.
+* *Schedule* - to show the agenda.
+* *Sponsors* - to show the brand of your sponsors.
+* *Partners* - to show the brand of your partners.
 
-*OBS 1: Não há integração com nenhum sistema de inscrição e/ou pagamento. Por conta disso, indicamos o [Eventick](http://eventick.com.br/).*
+*P.S. 1: There is no integration with any registration and/or payment system. For this reason, we recommend [Eventick](http://eventick.com.br/).*
 
-*OBS 2: Por enquanto ainda não conseguimos desenvolver uma solução altamente automatizada e customizável para formulários de contato. Por conta disso, indicamos o [Wufoo](http://wufoo.com/).*
+*P.S. 2: We haven't developed a highly automated and customizable solution for contact forms yet. For this reason, we recommend [Wufoo](http://wufoo.com/).*
 
-## Estrutura
+## Structure
 
-A estrutura básica do projeto se dá na seguinte forma:
+The basic structure of the project is given in the following way:
 
 <pre>
 .
@@ -52,197 +52,197 @@ A estrutura básica do projeto se dá na seguinte forma:
 
 ### out/
 
-É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
+This is where the generated files are stored, once DocPad has been runned. However, this directory is unnecessary in versioning, so it is ignored ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
 
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
-Contém o arquivo responsável por importar todas as seções da aplicação.
+Contains the file responsible for importing all sections of the application.
 
 ### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
 
-Possui as imagens, arquivos CSS, JS e o [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#dom%C3%ADnio-personalizado))*.
+Has images, CSS, JS and [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) that indicates the custom domain that should be used *(more information on how to use your own domain on [Deploy](#dom%C3%ADnio-personalizado))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
-Contém o template padrão da aplicação.
+Contains the default template of the application.
 
 ### [src/partials](https://github.com/braziljs/conf-boilerplate/tree/master/src/partials)
 
-São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
+Are blocks of code used to generate the site's main page ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
 
 ### [docpad.cson](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.cson)
 
-Armazena de forma fácil a maior parte das configurações da aplicação.
+Stores most settings of the application.
 
 ### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
-Lista as dependências de módulos do NodeJS.
+List NodeJS modules dependencies.
 
 ### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
 
-Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
+Shell Script responsible for publishing the site via via [Github Pages](http://pages.github.com).
 
-## Primeiros passos
+## Getting Started
 
-1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
+1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
-2. Abra o terminal e instale o [DocPad](https://github.com/bevry/docpad) através do comando:
+2. Open your terminal and install [DocPad](https://github.com/bevry/docpad) through this command:
 
 		sudo npm install -fg docpad@6.7
 
-3. Agora clone o projeto:
+3. Now clone it:
 
 		git clone git@github.com:braziljs/conf-boilerplate.git
 
-4. Depois vá para pasta do projeto:
+4. Then go to the project's folder:
 
 		cd conf-boilerplate
 
-5. Instale as dependências:
+5. Install all dependencies:
 
 		sudo npm install .
 
-6. E finalmente rode:
+6. And finally run:
 
 		docpad run
 
-Agora você irá ver o site rodando em `localhost:9778` :D
+Now you can see the website running in `localhost:9778` :D
 
-## Customização
+## Customization
 
-O projeto já vem com um template visual pronto, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
+The project already comes with a visual template, feel free to use it, but we recommend you create your own in order to put your own identity in the event.
 
-De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `docpad.cson` e alterar o valor das variáveis.
+Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.cson` and change the value of variables.
 
-### Informações básicas sobre a conferência
+### Basic information about the conference
 
-Quer alterar o nome, data, endereço, cidade ou preço do evento? É só mudar.
+Do you want to change the name, date, address, city or price of the conference? Go ahead.
 
 ```
 conf:
-	name: "Conference name"
-	description: "Conference description"
-	date: "November 15"
-	price: "$100"
-	address: "Boulevard Kukulcan, 30, México"
-	venue: "Coco Bongo"
-	city: "Cancún"
+  name: "Conference name"
+  description: "Conference description"
+  date: "November 15"
+  price: "$100"
+  address: "Boulevard Kukulcan, 30, México"
+  venue: "Coco Bongo"
+  city: "Cancún"
 ```
 
-### Informações básicas sobre o site
+### Basic information about the website
 
-Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em frente!
+Do you want to change the cover image, Google Analytics code or favicon? Go ahead!
 
 ```
 site:
-	url: "http://confboilerplate.com"
-	favicon: "http://braziljs.org/favicon.ico"
-	googleanalytics: "UA-33656081-1"
-	images:
-		cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
-		facebook: "http://braziljs.org/img/fb-share.jpg"
+  url: "http://confboilerplate.com"
+  favicon: "http://braziljs.org/favicon.ico"
+  googleanalytics: "UA-33656081-1"
+  images:
+    cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
+    facebook: "http://braziljs.org/img/fb-share.jpg"
 ```
 
-### Seções ativas
+### Active sections
 
-Ainda não definiu a programação completa do evento? Não tem problema, basta alterar a variável `schedule` para `false`.
+Still don't get a full schedule of the event? No problem, just set `schedule` variable to `false`.
 
-Ainda não sabe quem irá palestrar? Tudo bem, basta alterar a variável `speakers` para `false`.
+Still don't get who is going to speak? Ok, just set `speakers` variable to `false`.
 
-E por aí vai.
+And so on.
 
 ```
 sections:
-	about: true
-	location: true
-	speakers: true
-	schedule: true
-	sponsors: true
-	partners: true
-	contact: false
+  about: true
+  location: true
+  speakers: true
+  schedule: true
+  sponsors: true
+  partners: true
+  contact: false
 ```
 
-### Lista de Palestrantes
+### Speakers List
 
-Para incluir/alterar/excluir um palestrante também é igualmente simples, basta recorrer ao `schedule`.
-
-```
-schedule: [
-	name: "Chuck Norris"
-	photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-	bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-	company: "Delta Command"
-	twitter: "littlechuck"
-	presentation:
-		title: "How to kill a elephant with one finger"
-		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-		time: "13h00"
-]
-```
-
-Quer listar mais algum atributo do palestrante que não está ali? Tudo bem, é só adicionar no `docpad.cson` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
-
-### Lista de outros itens da Agenda
-
-Para alterar os horários de check-in, almoço e coffee-break, é só recorrer as variáveis de `schedule`.
+To add/change/exclude a speaker is equally simple, just see `schedule` variable.
 
 ```
 schedule: [
-	name: "Check-in / Breakfast"
-	time: "9h00"
+  name: "Chuck Norris"
+  photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+  company: "Delta Command"
+  twitter: "littlechuck"
+  presentation:
+    title: "How to kill a elephant with one finger"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+    time: "13h00"
 ]
 ```
 
-Mas se você quiser adicionar mais um coffee-break ou qualquer outro tipo de item na agenda do evento, é só acrescentar mais um item nessa lista.
+Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.cson` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
-### Lista de Patrocinadores/Apoio
+### List of another items on Agenda
 
-Para adicionar qualquer patrocinador ou apoio no evento, é só recorrer as variáveis `sponsors` e `partners`.
+To change the time of check-in, lunch and coffee-break, just see `schedule` variable.
+
+```
+schedule: [
+  name: "Check-in / Breakfast"
+  time: "9h00"
+]
+```
+
+But if you want to add another coffee-creak or any kind of item on agenda, just add the item on the list.
+
+### List of Sponsors/Partners
+
+To add any sponsor or partner, just use `sponsors` and `partners` variables.
 
 ```
 partners: [
-	name: "BrazilJS"
-	logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
-	url: "http://braziljs.org"
+  name: "BrazilJS"
+  logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
+  url: "http://braziljs.org"
 ]
 ```
 
 ## Deploy
 
-Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [Github Pages](http://pages.github.com) que ainda é gratuito.
+We don't like to centralize the power of deploy in one person, so we'll use [Github Pages](http://pages.github.com) that is free.
 
-* Dê permissão de execução para o script publish.sh - `chmod +x publish.sh`
-* Rode `sh publish.sh` na raíz do projeto.
+* Give permission to run the publish.sh script - `chmod +x publish.sh`
+* Run `sh publish.sh` on the root of the project.
 
-Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
+Wait a few minutes until Github send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
 
-OBS: Lembre-se de remover o arquivo `CNAME` que está na pasta `src/files` do seu projeto, caso você queira utilizar a URL pré-definida pelo Github.
+P.S.: Remember to remove `CNAME` file that is located on `src/files` folder, if you want to use the predefined Github url.
 
-### Domínio personalizado
+### Custom domain
 
-Caso você não queira utilizar o domínio do Github, é possível usar seu próprio com alguns passos.
+If you don't want to use Github domain, you can use your own with a few steps.
 
-1. Altere o arquivo `CNAME` que está na pasta `src/files` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
-2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+1. Change the `CNAME` file that is located on `src/files` folder and fill with your domain: `yourevent.com`. [See the example](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
+2. Change the DNS of your domain [following Github instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-### Como fazer sem Deploy utilizar Github Pages
+### How to Deploy without Github Pages
 
-Se você prefere utilizar seu próprio servidor para hospedar o site:
+If you want to use your own server to host the website:
 
-* Rode `docpad generate` na raíz do projeto.
+* Run `docpad generate` on the root of the project.
 
-Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
+This command will generate a folder called `out` that contains just static files, then just upload them to your server.
 
 ## Showcase
 
-Confira os eventos que usaram esse projeto como pontapé inicial:
+See the conferences that already used this project as a kickstart:
 
 * [FrontInterior](http://frontinterior.com.br)
 
-## Quem está por trás disso?
+## Who is behind of it?
 
-Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
+We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.
 
-**Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
+**Project Lead**: [Zeno Rocha](http://github.com/zenorocha)
 
-Agradecimento especial a todos os membros da comunidade pelos feedbacks e contribuições.
+Special thanks to all community members for feedbacks and contributions.
