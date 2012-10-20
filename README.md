@@ -1,6 +1,8 @@
-# Conf Boilerplate
-
 *[Click here to read the English version](https://github.com/braziljs/conf-boilerplate/blob/master/README-en.md)*
+
+---
+
+# Conf Boilerplate
 
 ---
 
