@@ -6,37 +6,31 @@
         <a href="#about" class="nav-link">About</a>
       </li>
     <% end %>
-
     <% if @sections.location: %>
       <li class="nav-item">
         <a href="#location" class="nav-link">Location</a>
       </li>
     <% end %>
-
     <% if @sections.speakers: %>
       <li class="nav-item">
         <a href="#speakers" class="nav-link">Speakers</a>
       </li>
     <% end %>
-
     <% if @sections.schedule: %>
       <li class="nav-item">
         <a href="#schedule" class="nav-link">Schedule</a>
       </li>
     <% end %>
-
     <% if @sections.sponsors: %>
       <li class="nav-item">
         <a href="#sponsors" class="nav-link">Sponsors</a>
       </li>
     <% end %>
-
     <% if @sections.partners: %>
       <li class="nav-item">
         <a href="#partners" class="nav-link">Partners</a>
       </li>
     <% end %>
-
     <% if @sections.contact: %>
       <li class="nav-item">
         <a href="#contact" class="nav-link">Contact</a>
