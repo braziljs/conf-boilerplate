@@ -86,23 +86,27 @@ Shell Script responsible for publishing the site via via [Github Pages](http://p
 
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
-2. Open your terminal and install [DocPad](https://github.com/bevry/docpad) through this command:
+2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
 
-		sudo npm install -fg docpad@6.7
+		sudo npm install -fg docpad@6.8
 
-3. Now clone it:
+3. Install [DocPad](https://github.com/bevry/docpad):
+
+    docpad install
+
+4. Now clone it:
 
 		git clone git@github.com:braziljs/conf-boilerplate.git
 
-4. Then go to the project's folder:
+5. Then go to the project's folder:
 
 		cd conf-boilerplate
 
-5. Install all dependencies:
+6. Install all dependencies:
 
 		sudo npm install .
 
-6. And finally run:
+7. And finally run:
 
 		docpad run
 
