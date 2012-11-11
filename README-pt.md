@@ -242,6 +242,7 @@ Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, dep
 Confira os eventos que usaram esse projeto como pontapé inicial:
 
 * [FrontInterior](http://frontinterior.com.br)
+* [Front in Maceió](http://frontinmaceio.com.br/)
 
 ## Quem está por trás disso?
 

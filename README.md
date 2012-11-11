@@ -242,6 +242,7 @@ This command will generate a folder called `out` that contains just static files
 See the conferences that already used this project as a kickstart:
 
 * [FrontInterior](http://frontinterior.com.br)
+* [Front in Maceió](http://frontinmaceio.com.br/)
 
 ## Who is behind of it?
 
