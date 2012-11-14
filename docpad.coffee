@@ -9,9 +9,10 @@ module.exports =
       description: "Conference description"
       date: "November 15"
       price: "$100"
-      address: "Boulevard Kukulcan, 30, México"
       venue: "Coco Bongo"
+      address: "Boulevard Kukulcan, 30"
       city: "Cancún"
+      state: "Quintana"
 
     # Site info
     site:
