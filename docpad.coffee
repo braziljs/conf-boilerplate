@@ -1,4 +1,6 @@
-{
+module.exports =
+
+  # These are variables will be accessible via our templates
   templateData:
 
     # Conference info
@@ -115,5 +117,3 @@
       logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
       url: "http://braziljs.org"
     ]
-
-}
