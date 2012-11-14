@@ -6,8 +6,10 @@
     <ul class="partners-list">
 
     <% for partner in @partners: %>
-      <li class="partner-item">
-        <a class="partner-logo partner-link" href="<%= partner.url %>"><img src="<%= partner.logo %>" alt="<%= partner.name %>" class="photo" /></a>
+      <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
+        <a href="<%= partner.url %>" class="partner-logo partner-link" itemprop="url">
+          <img src="<%= partner.logo %>" alt="<%= partner.name %>" class="photo" itemprop="image" />
+        </a>
       </li>
     <% end %>
 

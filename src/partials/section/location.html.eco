@@ -1,13 +1,17 @@
 <% if @sections.location == true: %>
 
   <!-- LOCATION -->
-  <section class="location" id="location">
+  <section class="location" id="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+
     <h2 class="section-title">Location</h2>
 
-    <% if @conf.address != '': %>
-      <p><%= @conf.address %></p>
-      <div id="map-canvas" class="location-area" data-address="<%= @conf.address %>"></div>
-    <% end %>
+    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <span itemprop="streetAddress"><%= @conf.address %>. </span>
+      <span itemprop="addressLocality"><%= @conf.city %></span>,
+      <span itemprop="addressRegion"> <%= @conf.state %></span>
+    </p>
+
+    <div id="map-canvas" class="location-area" data-address="<%= @conf.address %>"></div>
 
   </section>
   <!-- / LOCATION -->

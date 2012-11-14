@@ -3,7 +3,9 @@
 <!-- HEADER -->
 <header class="header" style="background-image: url(<%= @site.images.cover %>)">
   <div class="wrapper">
-    <h1 class="logo-name"><a class="logo-link" href="#" title="<%= @conf.name %>"><%= @conf.name %></a></h1>
+    <h1 class="logo-name">
+      <a class="logo-link" href="#" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
+    </h1>
     <h2 class="tagline"><%= @conf.date %>, <%= @conf.venue %>, <%= @conf.city %></h2>
     <div class="call-action-area">
       <span class="price">Only <%= @conf.price %></span>
