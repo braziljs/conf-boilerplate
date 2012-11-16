@@ -1,4 +1,4 @@
-*[Se você é brasileiro, clique aqui para ler a versão em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README-pt.md)*
+*[Se você é brasileiro, clique aqui para ler a versão em Português](blob/master/README-pt.md)*
 
 ---
 
@@ -88,33 +88,23 @@ Shell Script responsible for publishing the site via via [Github Pages](http://p
 
 2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
 
-```
-sudo npm install -fg docpad@6.8
-```
+		sudo npm install -fg docpad@6.8
 
 3. Now clone it:
 
-```
-git clone git@github.com:braziljs/conf-boilerplate.git
-```
+		git clone git@github.com:braziljs/conf-boilerplate.git
 
 4. Then go to the project's folder:
 
-```
-cd conf-boilerplate
-```
+		cd conf-boilerplate
 
 5. Install all dependencies:
 
-```
-docpad install
-```
+		docpad install
 
 6. And finally run:
 
-```
-docpad run
-```
+		docpad run
 
 Now you can see the website running in `localhost:9778` :D
 
