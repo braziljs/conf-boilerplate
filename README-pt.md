@@ -92,7 +92,7 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 
 3. Instale o [DocPad](https://github.com/bevry/docpad):
 
-    docpad install
+		docpad install
 
 4. Agora clone o projeto:
 
