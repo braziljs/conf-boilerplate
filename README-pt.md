@@ -104,7 +104,7 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 
 6. Instale as dependências:
 
-		sudo npm install .
+		docpad install
 
 7. E finalmente rode:
 
