@@ -18,6 +18,8 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 ## Como funciona?
 
+[![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
+
 Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#dom%C3%ADnio-personalizado))*.
 
 Por padrão, definimos as seguintes seções:
