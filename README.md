@@ -1,16 +1,16 @@
-*[Se você é brasileiro, clique aqui para ler a versão em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README-pt.md)*
+*[Leia a documentação em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README-pt.md)*
 
 ---
 
 # Conf Boilerplate
 
----
+![image](http://f.cl.ly/items/2i1m3z3i1a3Z0I1X472B/logo.jpg)
 
-An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
+An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it. 
 
 * [How it works?](#how-it-works)
-* [Structure](#structure)
 * [Getting Started](#getting-started)
+* [Structure](#structure)
 * [Customization](#customization)
 * [Deploy](#deploy)
 * [Showcase](#showcase)
@@ -34,6 +34,32 @@ By default, we have the following sections:
 *P.S. 1: There is no integration with any registration and/or payment system. For this reason, we recommend [Eventick](http://eventick.com.br/).*
 
 *P.S. 2: We haven't developed a highly automated and customizable solution for contact forms yet. For this reason, we recommend [Wufoo](http://wufoo.com/).*
+
+## Getting Started
+
+1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
+
+2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
+
+		sudo npm install -fg docpad@6.8
+
+3. Now clone it:
+
+		git clone git@github.com:braziljs/conf-boilerplate.git
+
+4. Then go to the project's folder:
+
+		cd conf-boilerplate
+
+5. Install all dependencies:
+
+		docpad install
+
+6. And finally run:
+
+		docpad run
+
+Now you can see the website running in `localhost:9778` :D
 
 ## Structure
 
@@ -83,32 +109,6 @@ List NodeJS modules dependencies.
 ### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
 
 Shell Script responsible for publishing the site via via [Github Pages](http://pages.github.com).
-
-## Getting Started
-
-1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
-
-2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
-
-		sudo npm install -fg docpad@6.8
-
-3. Now clone it:
-
-		git clone git@github.com:braziljs/conf-boilerplate.git
-
-4. Then go to the project's folder:
-
-		cd conf-boilerplate
-
-5. Install all dependencies:
-
-		docpad install
-
-6. And finally run:
-
-		docpad run
-
-Now you can see the website running in `localhost:9778` :D
 
 ## Customization
 
