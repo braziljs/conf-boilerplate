@@ -242,6 +242,8 @@ See the conferences that already used this project as a kickstart:
 * [FrontInterior](http://frontinterior.com.br)
 * [Front in Maceió](http://frontinmaceio.com.br/)
 
+Have you created a website using ConfBoilerplate? Let's us know =D
+
 ## Who is behind of it?
 
 We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.

@@ -242,6 +242,8 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [FrontInterior](http://frontinterior.com.br)
 * [Front in Maceió](http://frontinmaceio.com.br/)
 
+Criou um site usando o ConfBoilerplate? Nos avise =D
+
 ## Quem está por trás disso?
 
 Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
