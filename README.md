@@ -6,7 +6,7 @@
 
 ![image](http://f.cl.ly/items/2i1m3z3i1a3Z0I1X472B/logo.jpg)
 
-An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it. 
+An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
 * [How it works?](#how-it-works)
 * [Getting Started](#getting-started)
@@ -41,7 +41,7 @@ By default, we have the following sections:
 
 2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
 
-		sudo npm install -fg docpad@6.8
+		sudo npm install -fg docpad@6.11
 
 3. Now clone it:
 
