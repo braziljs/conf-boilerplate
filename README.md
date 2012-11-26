@@ -248,6 +248,9 @@ Have you created a website using ConfBoilerplate? Let's us know =D
 
 We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.
 
-**Project Lead**: [Zeno Rocha](http://github.com/zenorocha)
+**Project Leaders**:
+
+* [Zeno Rocha](http://github.com/zenorocha)
+* [Bernard De Luna](http://github.com/bernarddeluna)
 
 Special thanks to all community members for feedbacks and contributions.

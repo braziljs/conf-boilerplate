@@ -248,6 +248,9 @@ Criou um site usando o ConfBoilerplate? Nos avise =D
 
 Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
 
-**Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
+**Líderes de Projeto**:
+
+* [Zeno Rocha](http://github.com/zenorocha)
+* [Bernard De Luna](http://github.com/bernarddeluna)
 
 Agradecimento especial a todos os membros da comunidade pelos feedbacks e contribuições.
