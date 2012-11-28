@@ -9,7 +9,9 @@
     <% for speaker in @schedule: %>
       <% if speaker.presentation: %>
         <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-          <span class="speaker-photo"><img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image" /></span>
+          <% if speaker.photo: %>
+            <span class="speaker-photo"><img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image" /></span>
+          <% end %>
 
           <h3 class="speech-title">
             <% if speaker.presentation.time: %>
