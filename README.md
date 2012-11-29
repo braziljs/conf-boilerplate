@@ -15,6 +15,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Deploy](#deploy)
 * [Showcase](#showcase)
 * [Who is behind of it?](#who-is-behind-of-it)
+* [License](#license)
 
 ## How it works?
 
@@ -254,3 +255,7 @@ We're a group of developers who have been through hard times organizing conferen
 * [Bernard De Luna](http://github.com/bernarddeluna)
 
 Special thanks to all community members for feedbacks and contributions.
+
+## License
+
+[MIT License](http://braziljs.mit-license.org/)

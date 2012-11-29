@@ -15,6 +15,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 * [Deploy](#deploy)
 * [Showcase](#showcase)
 * [Quem está por trás disso?](#quem-est%C3%A1-por-tr%C3%A1s-disso)
+* [Licença](#licen%C3%A7a)
 
 ## Como funciona?
 
@@ -254,3 +255,7 @@ Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades orga
 * [Bernard De Luna](http://github.com/bernarddeluna)
 
 Agradecimento especial a todos os membros da comunidade pelos feedbacks e contribuições.
+
+## Licença
+
+[MIT License](http://braziljs.mit-license.org/)
