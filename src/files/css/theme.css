@@ -48,12 +48,16 @@ nav {background: #2b2b2b;}
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.4), inset 0 -2px 3px 0 #cc7f0a, inset 0 1px 0 0 #fff9b1;
   border-radius: 40px;
 }
-.github-link img {
-  position: absolute;
+
+.github-link {
+  position: fixed;
   top: 0;
   right: 0;
-  border: 0;
   z-index: 11;
+}
+
+.github-link img {
+  border: 0;
 }
 
 /* =============================================================================
