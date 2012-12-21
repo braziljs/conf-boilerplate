@@ -24,7 +24,7 @@ module.exports =
 
     # Color Theme
     ThemeColor:
-      state: false
+      state: true
       Link: "FFA500"
       LinkHover: "FF8C00"
       Default:
