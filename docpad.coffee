@@ -105,7 +105,7 @@ module.exports =
     ]
 
     # List of Sponsors
-    sponsors: [
+    sponsors: [ 
       name: "Eventick"
       logo: "http://f.cl.ly/items/1U3p0Z0e2w0I1i3z1X22/Image%202012.09.25%203:00:58%20PM.png"
       url: "http://eventick.com.br"
