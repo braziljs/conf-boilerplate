@@ -26,39 +26,6 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" type="text/css" href="css/theme.css">
-  <% if @ThemeColor.state == true: %>
-    <!-- COLOR THEMES -->
-    <style type="text/css">
-      .content a {
-        color: #<%= @ThemeColor.Link %>;
-      }
-      .content a:hover, .content a:focus {
-        color: #<%= @ThemeColor.LinkHover %>;
-      }
-      nav, .speech-time {
-        background: #<%= @ThemeColor.Default.background %>;
-        color: #<%= @ThemeColor.Default.color %>;
-      }
-      .nav-link {
-        color: #<%= @ThemeColor.Default.color %>;
-      }
-      .nav-link:hover {
-        color: #<%= @ThemeColor.Default.Hover %>;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        color: #<%= @ThemeColor.Default.titles %>;
-      }
-      .logo-link, .tagline, .call-action-area .price {
-        color: #<%= @ThemeColor.nameConf %>;
-      }
-      .call-action-area .price {
-        color: #<%= @ThemeColor.Price %>;
-      }
-      .speech-title {
-        color: #<%= @ThemeColor.Default.speechTitle %>;
-      }
-    </style>
-  <% end %>
   <!-- / STYLES -->
 
 </head>
