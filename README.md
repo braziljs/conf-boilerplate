@@ -8,6 +8,9 @@
 
 An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
+## Table of contents
+
+* [See live demo](http://confboilerplate.com)
 * [How it works?](#how-it-works)
 * [Getting Started](#getting-started)
 * [Structure](#structure)
