@@ -45,7 +45,7 @@ By default, we have the following sections:
 
 2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
 
-		sudo npm install -fg docpad@6.11
+		sudo npm install -fg docpad@6.20
 
 3. Now clone it:
 
