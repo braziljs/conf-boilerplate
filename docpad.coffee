@@ -22,6 +22,18 @@ module.exports =
         cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
         facebook: "http://braziljs.org/img/fb-share.jpg"
 
+    # Color Theme
+    ThemeColor:
+      state: false
+      Link: "FFA500"
+      LinkHover: "FF8C00"
+      Default:
+        background: "FF0000"
+        color: "FFF"
+        Hover: "333"
+        titles: "FF6347"
+        speechTitle: "333"
+
     # Active sections on the website
     sections:
       about: true
@@ -30,7 +42,7 @@ module.exports =
       schedule: true
       sponsors: true
       partners: true
-      contact: false
+      contact: true
 
     # The entire schedule
     schedule: [
