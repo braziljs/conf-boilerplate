@@ -151,21 +151,22 @@ site:
 
 ### Active sections
 
-Still don't get a full schedule of the event? No problem, just set `schedule` variable to `false`.
+Still don't get a full schedule of the event? No problem, just comment out `schedule` line (using `#`).
 
-Still don't get who is going to speak? Ok, just set `speakers` variable to `false`.
+Still don't get who is going to speak? Ok, just comment out `speakers` line (using `#`).
 
 And so on.
 
 ```
-sections:
-  about: true
-  location: true
-  speakers: true
-  schedule: true
-  sponsors: true
-  partners: true
-  contact: false
+sections: [
+  "about"
+  "location"
+  #"speakers"
+  #"schedule"
+  "sponsors"
+  "partners"
+  "contact"
+]
 ```
 
 ### Speakers List
