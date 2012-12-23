@@ -13,6 +13,11 @@ module.exports =
       address: "Boulevard Kukulcan, 30"
       city: "Cancún"
       state: "Quintana"
+      tweetButton:
+        text: ""
+        via: "braziljs"
+        related: "braziljs"
+        hashtag: "#hashtag"
 
     # Site info
     site:
