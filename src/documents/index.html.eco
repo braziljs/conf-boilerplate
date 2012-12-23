@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<%-@partial('section/about.html.eco', @)%>
-<%-@partial('section/location.html.eco', @)%>
-<%-@partial('section/speakers.html.eco', @)%>
-<%-@partial('section/schedule.html.eco', @)%>
-<%-@partial('section/sponsors.html.eco', @)%>
-<%-@partial('section/partners.html.eco', @)%>
-<%-@partial('section/contact.html.eco', @)%>
+<% for name, enabled of @sections : %>
+  <!-- <%= name.toUpperCase() %> -->
+  <section class="<%= name %>" id="<%= name %>">
+    <%- @partial("section/#{name}.html.eco", @) if enabled %>
+  </section>
+  <!-- / <%= name.toUpperCase() %> -->
+<% end %>

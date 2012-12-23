@@ -32,6 +32,16 @@ module.exports =
       partners: true
       contact: true
 
+    # Labels which you can translate to other languages
+    labels:
+      about: "About"
+      location: "Location"
+      speakers: "Speakers"
+      schedule: "Schedule"
+      sponsors: "Sponsors"
+      partners: "Partners"
+      contact: "Contact"
+
     # The entire schedule
     schedule: [
       name: "Check-in / Breakfast"
