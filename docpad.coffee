@@ -23,14 +23,27 @@ module.exports =
         facebook: "http://braziljs.org/img/fb-share.jpg"
 
     # Active sections on the website
-    sections:
-      about: true
-      location: true
-      speakers: true
-      schedule: true
-      sponsors: true
-      partners: true
-      contact: true
+    # to deactivate comment out with '#'
+    # you can also chenge order here and it will reflect on page
+    sections: [
+      'about'
+      'location'
+      'speakers'
+      'schedule'
+      'sponsors'
+      'partners'
+      #'contact'
+    ]
+
+    # Labels which you can translate to other languages
+    labels:
+      about: "About"
+      location: "Location"
+      speakers: "Speakers"
+      schedule: "Schedule"
+      sponsors: "Sponsors"
+      partners: "Partners"
+      contact: "Contact"
 
     # The entire schedule
     schedule: [

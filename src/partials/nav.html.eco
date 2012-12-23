@@ -1,39 +1,9 @@
 <!-- NAVIGATION -->
 <nav id="nav">
   <ul class="wrapper">
-    <% if @sections.about: %>
+    <% for section in @sections : %>
       <li class="nav-item">
-        <a href="#about" title="About" class="nav-link">About</a>
-      </li>
-    <% end %>
-    <% if @sections.location: %>
-      <li class="nav-item">
-        <a href="#location" title="Location" class="nav-link">Location</a>
-      </li>
-    <% end %>
-    <% if @sections.speakers: %>
-      <li class="nav-item">
-        <a href="#speakers" title="Speakers" class="nav-link">Speakers</a>
-      </li>
-    <% end %>
-    <% if @sections.schedule: %>
-      <li class="nav-item">
-        <a href="#schedule" title="Schedule" class="nav-link">Schedule</a>
-      </li>
-    <% end %>
-    <% if @sections.sponsors: %>
-      <li class="nav-item">
-        <a href="#sponsors" title="Sponsors" class="nav-link">Sponsors</a>
-      </li>
-    <% end %>
-    <% if @sections.partners: %>
-      <li class="nav-item">
-        <a href="#partners" title="Partners" class="nav-link">Partners</a>
-      </li>
-    <% end %>
-    <% if @sections.contact: %>
-      <li class="nav-item">
-        <a href="#contact" title="Contact" class="nav-link">Contact</a>
+        <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
       </li>
     <% end %>
   </ul>
