@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {color:#2b2b2b;}
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
+.nav-container {
+  float: left;
+}
 nav {background: #2b2b2b;}
 .nav-link {color:#e7e7e7;}
 .nav-link:active,
@@ -58,6 +61,12 @@ nav {background: #2b2b2b;}
 
 .github-link img {
   border: 0;
+}
+
+.share-buttons {
+  position: absolute;
+  right: 0;
+  top: -3px;
 }
 
 /* =============================================================================
