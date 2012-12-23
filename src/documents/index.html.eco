@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<% for name, enabled of @sections : %>
-  <!-- <%= name.toUpperCase() %> -->
-  <section class="<%= name %>" id="<%= name %>">
-    <%- @partial("section/#{name}.html.eco", @) if enabled %>
+<% for section in @sections : %>
+  <!-- <%= section.toUpperCase() %> -->
+
+  <section class="<%= section %>" id="<%= section %>">
+    <%- @partial("section/#{section}.html.eco", @) %>
   </section>
-  <!-- / <%= name.toUpperCase() %> -->
+
+  <!-- / <%= section.toUpperCase() %> -->
 <% end %>

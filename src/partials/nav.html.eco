@@ -1,12 +1,10 @@
 <!-- NAVIGATION -->
 <nav id="nav">
   <ul class="wrapper">
-    <% for name, enabled of @sections : %>
-      <% if enabled : %>
-        <li class="nav-item">
-          <a href="#<%= name %>" title="<%= @labels[name] %>" class="nav-link"><%= @labels[name] %></a>
-        </li>
-      <% end %>
+    <% for section in @sections : %>
+      <li class="nav-item">
+        <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
+      </li>
     <% end %>
   </ul>
 </nav>

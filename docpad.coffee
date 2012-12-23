@@ -22,15 +22,16 @@ module.exports =
         cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
         facebook: "http://braziljs.org/img/fb-share.jpg"
 
-    # Active sections on the website
-    sections:
-      about: true
-      location: true
-      speakers: true
-      schedule: true
-      sponsors: true
-      partners: true
-      contact: true
+    # Active sections on the website, to deactivate comment out with '#'
+    sections: [
+      'about'
+      'location'
+      'speakers'
+      'schedule'
+      'sponsors'
+      'partners'
+      #'contact'
+    ]
 
     # Labels which you can translate to other languages
     labels:
