@@ -140,13 +140,13 @@ nav {background: #2b2b2b;}
 /* =============================================================================
    CONTACT
    ========================================================================== */
-.form-contato input[type=text], .form-contato input[type=email], .form-contato textarea{
+.form input[type=text], .form input[type=email], .form textarea{
   color:#777;
   border:1px solid #e7e7e7;
   background:#fff;
   border-radius:4px;
 }
-.form-contato input[type=text]:focus, .form-contato input[type=email]:focus, .form-contato textarea:focus {border-color:#aaa;outline:0;}
+.form input[type=text]:focus, .form input[type=email]:focus, .form textarea:focus {border-color:#aaa;outline:0;}
 
 
 /* =============================================================================

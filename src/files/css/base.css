@@ -182,7 +182,7 @@ nav {
 /* =============================================================================
    CONTATO
    ========================================================================== */
-.form-contato label{
+.form label{
   font-size:16px;
   display: block;
   margin-bottom:.5em;
@@ -199,7 +199,7 @@ nav {
   margin-right:25px;
 }
 .control-group-email {margin-right:0;}
-.form-contato input[type=text], .form-contato input[type=email], .form-contato textarea{
+.form input[type=text], .form input[type=email], .form textarea{
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -210,8 +210,8 @@ nav {
   padding:10px;
   font-size:14px;
 }
-.form-contato textarea {height:300px;}
-.form-contato .btn {float:right;}
+.form textarea {height:300px;}
+.form .btn {float:right;}
 
 
 
@@ -274,7 +274,7 @@ nav {
     float:none;
     margin-right:0;
   }
-  .form-contato .btn {margin-bottom:50px;}
+  .form .btn {margin-bottom:50px;}
 }
 
 @media only screen and (max-width : 480px) {
@@ -321,7 +321,7 @@ nav {
     padding: 0;
   }
   .speakers-bio {display: none;}
-} 
+}
 
 @media only screen and (max-width : 321px) {
   .logo-name {
@@ -338,4 +338,4 @@ nav {
     height:115px;
     line-height: 115px;
   }
-} 
+}

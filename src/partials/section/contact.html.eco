@@ -1,17 +1,17 @@
 <h2 class="section-title"><%= @labels['contact'] %></h2>
-<p>Qualquer dúvida pode ser tirada pelo email <a href="mailto:contato@frontinrio.com.br" title="contato@frontinrio.com.br">contato@frontinrio.com.br</a>, pelo twitter <a href="http://twitter.com/frontinrio" title="@frontinrio">@frontinrio</a> e através do formulário abaixo.</p>
-<form method="post" action="contato.php" id="form-contato" class="form-contato">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ducimus neque amet corrupti ex temporibus similique.</p>
+<form method="post" action="contact.php" id="form" class="form">
   <div class="control-group control-group-name">
-    <label for="name">Qual o seu nome?</label>
-    <input type="text" name="name" id="name" placeholder="Qual o seu nome?" />
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Your name" />
   </div>
   <div class="control-group control-group-email">
-    <label for="email">Diga o seu email para contato</label>
-  <input type="email" name="email" id="email" placeholder="Diga o seu email para contato" />
+    <label for="email">E-mail</label>
+  <input type="email" name="email" id="email" placeholder="Your e-mail" />
   </div>
   <div class="control-group">
-    <label for="mensagem">Escreva sua mensagem</label>
-  <textarea name="" id="mensagem" cols="30" rows="10" placeholder=""></textarea>
+    <label for="message">Message</label>
+  <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
   </div>
-  <input class="btn btn-send" type="submit" value="Enviar" />
+  <input class="btn btn-send" type="submit" value="Send" />
 </form>
