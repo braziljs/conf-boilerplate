@@ -151,22 +151,43 @@ site:
 
 ### Seções ativas
 
-Ainda não definiu a programação completa do evento? Não tem problema, basta alterar a variável `schedule` para `false`.
+Ainda não definiu a programação completa do evento? Não tem problema, basta comentar a linha `schedule` (usando `#`).
 
-Ainda não sabe quem irá palestrar? Tudo bem, basta alterar a variável `speakers` para `false`.
+Ainda não sabe quem irá palestrar? Tudo bem, basta comentar a linha `speakers` (usando `#`).
 
 E por aí vai.
 
 ```
-sections:
-	about: true
-	location: true
-	speakers: true
-	schedule: true
-	sponsors: true
-	partners: true
-	contact: false
+sections: [
+  "about"
+  "location"
+  #"speakers"
+  #"schedule"
+  "sponsors"
+  "partners"
+  "contact"
+]
 ```
+
+Você ainda pode trocar a order em que eles aparecem na página e na navegação ao trocar a order das linhas também!
+
+### Labels (i18n)
+
+Se você quiser usar palavras diferentes do padrão ou diferentes línguas
+é só trocar o valor das labels correspondentes:
+
+```
+labels:
+  about: "Sobre"
+  location: "Localização"
+  speakers: "Palestrantes"
+  schedule: "Agenda"
+  sponsors: "Patrocinadores"
+  partners: "Parceiros"
+  contact: "Contato"
+```
+
+Você ainda pode usar esse objeto para definir outras labels que você gostaria de acessar nos seus templates.
 
 ### Lista de Palestrantes
 
