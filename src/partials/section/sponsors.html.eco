@@ -1,4 +1,4 @@
-<h2 class="section-title">Sponsors</h2>
+<h2 class="section-title"><%= @labels['sponsors'] %></h2>
 <ul class="sponsors-list">
 
 <% for sponsor in @sponsors: %>

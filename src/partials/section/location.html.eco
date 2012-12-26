@@ -1,4 +1,4 @@
-<h2 class="section-title">Location</h2>
+<h2 class="section-title"><%= @labels['location'] %></h2>
 
 <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
   <span itemprop="streetAddress"><%= @conf.address %>. </span>
