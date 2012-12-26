@@ -171,7 +171,7 @@ sections: [
 
 You can also change order in which they appear on page and in navigation by changing order of lines here!
 
-### Labels
+### Labels (i18n)
 
 If you want to use different words than default or different language
 just change labels for corresponding elements:
@@ -179,13 +179,13 @@ just change labels for corresponding elements:
 
 ```
 labels:
-  about: "About"
-  location: "Location"
-  speakers: "Speakers"
-  schedule: "Schedule"
-  sponsors: "Sponsors"
-  partners: "Partners"
-  contact: "Contact"
+  about: "Sobre"
+  location: "Localização"
+  speakers: "Palestrantes"
+  schedule: "Agenda"
+  sponsors: "Patrocinadores"
+  partners: "Parceiros"
+  contact: "Contato"
 ```
 
 You can also use this object to define other labels, which you would like to access in your templates.
