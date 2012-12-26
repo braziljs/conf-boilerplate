@@ -24,7 +24,7 @@ module.exports =
 
     # Active sections on the website
     # to deactivate comment out with '#'
-    # you can also chenge order here and it will reflect on page
+    # you can also change order here and it will reflect on page
     sections: [
       'about'
       'location'
