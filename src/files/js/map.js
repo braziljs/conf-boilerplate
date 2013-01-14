@@ -46,7 +46,9 @@ $(document).ready(function () {
                     icon: icon
                 });
             } else {
-                alert('Google Maps was not loaded: ', status);
+                if (console) {
+                    console.log('Google Maps was not loaded: ', status);
+                }
             }
         });
     });
