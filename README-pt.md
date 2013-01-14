@@ -252,7 +252,7 @@ Caso você não queira utilizar o domínio do Github, é possível usar seu pró
 1. Altere o arquivo `CNAME` que está na pasta `src/files` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
 2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-### Como fazer sem Deploy utilizar Github Pages
+### Como fazer Deploy sem utilizar Github Pages
 
 Se você prefere utilizar seu próprio servidor para hospedar o site:
 
