@@ -13,8 +13,6 @@
 
 				event.preventDefault();
 
-			console.log(linkTarget);
-
 			// Get distance of top
 				offSetTop = $(linkTarget).offset().top;
 
@@ -29,7 +27,6 @@
 			var that = this;
 
 			$(function () {
-				console.log('asa');
 				that.animateScroll();
 			});
 		}
