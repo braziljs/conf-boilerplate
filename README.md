@@ -57,7 +57,7 @@ By default, we have the following sections:
 
 5. Install all dependencies:
 
-		docpad install
+		sudo docpad install
 
 6. And finally run:
 
