@@ -57,7 +57,7 @@ Por padrão, definimos as seguintes seções:
 
 5. Instale as dependências:
 
-		docpad install
+		sudo docpad install
 
 6. E finalmente rode:
 
