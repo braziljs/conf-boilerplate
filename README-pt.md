@@ -17,6 +17,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 * [Customização](#customiza%C3%A7%C3%A3o)
 * [Deploy](#deploy)
 * [Showcase](#showcase)
+* [Contribuindo](#contribuindo)
 * [Quem está por trás disso?](#quem-est%C3%A1-por-tr%C3%A1s-disso)
 * [Licença](#licen%C3%A7a)
 
@@ -269,6 +270,13 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
+
+## Contribuindo
+
+Se quiser enviar um pull request, por favor faça-o na branch `dev`.
+
+* `master` contém a versão estável disso.
+* `dev` contém as funcionalidades que estão em desenvolvimento.
 
 ## Quem está por trás disso?
 

@@ -17,6 +17,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Customization](#customization)
 * [Deploy](#deploy)
 * [Showcase](#showcase)
+* [Contributing](#contributing)
 * [Who is behind of it?](#who-is-behind-of-it)
 * [License](#license)
 
@@ -270,6 +271,13 @@ See the conferences that already used this project as a kickstart:
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
+
+## Contributing
+
+If you want to submit a pull request, please do it in `dev` branch.
+
+* `master` contains the stable version of it.
+* `dev` contains features that are being developed.
 
 ## Who is behind of it?
 
