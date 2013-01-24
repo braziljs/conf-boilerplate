@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Padrão</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/demo.css" media="all">
+</head>
+<body>
+  <div class="global">
+    <header class="header">
+      <div class="wrapper">
+
+        <h1>
+          <a href="#" class="logo" title="Logo - nome da empresa"><img src="<%= @site.images.logo %>" alt="Nome da empresa"></a>
+        </h1>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#" title="link-01">About</a></li>
+            <li><a href="#" title="link-02">Speaker</a></li>
+            <li><a href="#" title="link-03">Contact</a></li>
+          </ul>
+        </nav><!-- /nav -->
+
+      </div><!-- /wrapper -->
+    </header><!-- /header -->
+
+    <section class="content home">
+
+      <div class="call" style="background-image: url(<%= @site.images.cover %>)">
+        <div class="wrapper">
+          <h2>30 de Julho de 2013</h2>
+          <h3>Maior evento de Front-end do Brasil</h3>
+          <a class="btn main" title="cadasre-se" data-toggle="modal" data-target="#sign-up">Cadastre-se</a>
+        </div><!-- /wrapper -->
+      </div><!-- /call -->
+
+      <div class="about division">
+        <div class="row wrapper">
+          <%- @partial("section/about.html.eco", @) %>
+        </div>
+      </div>
+
+
+      <div class="speakers division">
+          <div class="row wrapper">
+              <h3>Speaker</h3>
+
+              <% for speaker in @schedule: %>
+                <% if speaker.presentation: %>
+
+                  <div class="col6">
+                    <div class="col1 img-speaker">
+                      <img src="/img/mask.png" class="speaker-mask" alt="">
+                      <img src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image" class="speaker-img">
+                      <div class="social">
+                      <% if speaker.twitter: %>
+                        <a target="_blank" href="https://twitter.com/<%= speaker.twitter %>" class="twitter">
+                          <img src="http://openvisconf.com/img/twitter-icon.png" alt="Twitter Icon">
+                        </a>
+                      <% end %>
+
+                      <% if speaker.github: %>
+                        <a target="_blank" href="https://github.com/<%= speaker.github %>" class="github">
+                          <img src="http://openvisconf.com/img/github-icon.png" alt="Github Icon">
+                        </a>
+                      <% end %>
+
+                      <% if speaker.personal: %>
+                        <a target="_blank" href="http://<%= speaker.personal %>" class="personal">
+                          <img src="http://openvisconf.com/img/personal-icon.png" alt="Personal Website Icon">
+                        </a>
+                      <% end %>
+                      </div><!-- /Social -->
+                    </div><!-- img-speaker -->
+
+                    <div class="col5 desc-speaker">
+                      <h2><span><%= speaker.name %> /</span> <%= speaker.presentation.title %></h2>
+                      <p><%= speaker.bio %></p>
+                    </div>
+                  </div><!-- /col6 speaker list -->
+
+                <% end %>
+              <% end %>
+
+              <!-- <div class="col6">
+                <div class="col1 img-speaker">
+                  <img src="http://openvisconf.com/img/jesse-kriss.png" alt="Speaker">
+                  <div class="social">
+                      <a target="_blank" href="https://twitter.com/jkriss" class="twitter"><img src="http://openvisconf.com/img/twitter-icon.png" alt="Twitter Icon"></a>
+                      <a target="_blank" href="https://github.com/jkriss" class="github"><img src="http://openvisconf.com/img/github-icon.png" alt="Github Icon"></a>
+                      <a target="_blank" href="http://jklabs.net" class="personal"><img src="http://openvisconf.com/img/personal-icon.png" alt="Personal Website Icon"></a>
+                    </div>
+                </div>
+                <div class="col5 desc-speaker">
+                  <h2><span>Jesse Kriss /</span> Successes and Failures of Visualization in the Obama Campaign</h2>
+                  <p>Visualization is both praised and derided for being "flashy." If you're designing and developing tools for a presidential campaign, though, flashiness is worth next to nothing. In the end, everything comes down to this: were your tools adopted, and did they help win an election? </p>
+
+                  <p>Jesse will present a number of case studies from Dashboard (the Obama campaign's online field office) and the custom tools designed to coordinate and track voter protection efforts. </p>
+                </div>
+              </div>
+
+              <div class="col6">
+                <div class="col1 img-speaker">
+                  <img src="http://openvisconf.com/img/jesse-kriss.png" alt="Speaker">
+                  <div class="social">
+                      <a target="_blank" href="https://twitter.com/jkriss" class="twitter"><img src="http://openvisconf.com/img/twitter-icon.png" alt="Twitter Icon"></a>
+                      <a target="_blank" href="https://github.com/jkriss" class="github"><img src="http://openvisconf.com/img/github-icon.png" alt="Github Icon"></a>
+                      <a target="_blank" href="http://jklabs.net" class="personal"><img src="http://openvisconf.com/img/personal-icon.png" alt="Personal Website Icon"></a>
+                    </div>
+                </div>
+                <div class="col5 desc-speaker">
+                  <h2><span>Jesse Kriss /</span> Successes and Failures of Visualization in the Obama Campaign</h2>
+                  <p>Visualization is both praised and derided for being "flashy." If you're designing and developing tools for a presidential campaign, though, flashiness is worth next to nothing. In the end, everything comes down to this: were your tools adopted, and did they help win an election? </p>
+                </div>
+              </div> -->
+          </div>
+      </div>
+
+
+    </section><!-- content -->
+
+
+    <footer class="footer">
+      <div class="wrapper">
+        <p>© CR Vasco da Gama 2012 – <a href="#" title="Termos de uso">Termos de Uso</a></p>
+      <p>Atendimento: <a href="mailto:name@email.com" title="Entre em contato">name@email.com</a> | 0800 254256</p>
+
+        <p class="fright">Desenvolvido por alguém</p>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
+</html>

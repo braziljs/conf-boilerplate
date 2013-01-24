@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: demo
 ---
 
 <% for section in @sections : %>

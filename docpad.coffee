@@ -3,6 +3,10 @@ module.exports =
   # These are variables will be accessible via our templates
   templateData:
 
+    #Template
+    template:
+      demo: true
+
     # Conference info
     conf:
       name: "Conference name"
@@ -19,8 +23,9 @@ module.exports =
       url: "http://confboilerplate.com"
       googleanalytics: "UA-33656081-1"
       images:
-        cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
+        cover: "http://openvisconf.com/img/header-bg.jpg"
         facebook: "http://braziljs.org/img/fb-share.jpg"
+        logo: "http://frontinbh.com.br/assets/imagens/logo.png"
 
     # Active sections on the website
     # to deactivate comment out with '#'
@@ -50,21 +55,25 @@ module.exports =
       name: "Check-in / Breakfast"
       time: "9h00"
     ,
-      name: "Linus Torvalds"
-      photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+      name: "Giovanni Keppelen"
+      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/giovanni.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Linux Foundation"
-      twitter: "linus"
+      twitter: "keppelen"
+      github: "keppelen"
+      personal: "bygiovanni.com.br"
       presentation:
         title: "Digging into a Linux Kernel"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "10h00"
     ,
-      name: "Bill Gates"
-      photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+      name: "Zeno Rocha"
+      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/zeno.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Microsoft"
-      twitter: "billy95"
+      twitter: "zenorocha"
+      github: "zenorocha"
+      personal: "zenorocha.com"
       presentation:
         title: "Introducing Windows 12"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
@@ -73,21 +82,25 @@ module.exports =
       name: "Lunch"
       time: "12h00"
     ,
-      name: "Chuck Norris"
-      photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+      name: "Bernard de Luna"
+      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/bernard.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Delta Command"
-      twitter: "littlechuck"
+      twitter: "bernarddeluna",
+      github: ""
+      personal: "bernarddeluna.com"
       presentation:
         title: "How to kill a elephant with one finger"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "13h00"
     ,
-      name: "Steve Jobs"
-      photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+      name: "Davidson Felipe"
+      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/davidson.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
-      twitter: "stevie"
+      twitter: ""
+      github: "davidsonfellipe"
+      personal: "fellipe.com"
       presentation:
         title: "Presenting iPad"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
@@ -96,21 +109,25 @@ module.exports =
       name: "Coffee-break"
       time: "15h00"
     ,
-      name: "Mark Zuckerberg"
-      photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+      name: "Fellipe Moura"
+      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/felipe.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Facebook"
-      twitter: "zuck"
+      twitter: ""
+      github: "felipenmoura"
+      personal: "felipenmoura.org/pt"
       presentation:
         title: "Revealing Facebook Secrets"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "16h00"
     ,
-      name: "Steve Wozniak"
-      photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+      name: "Jaydson Gomes"
+      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/jaydson.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
-      twitter: "woz"
+      twitter: ""
+      github: "jaydson"
+      personal: "jaydson.org"
       presentation:
         title: "Why do I prefer Android over iPhone"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
