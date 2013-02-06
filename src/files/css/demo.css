@@ -302,7 +302,8 @@ input.error {
 }
 
 .row .desc-speaker {
-  width: 730px;
+  width: 720px;
+  margin-right: 0;
 }
 
 .desc-speaker h2 {
@@ -342,5 +343,80 @@ input.error {
 
 .speaker-img {
   width: 188px;
-  height: 220px;
+  height: 200px;
 }
+
+.list-speaker {
+  margin-bottom: 75px;
+  position: relative;
+}
+
+.talk-btn, .bio-btn {
+  min-width: 120px;
+  float: left;
+  text-align: center;
+  color: #FFF !important;
+  background: #c6c6c6;
+}
+
+.talk-btn.current, .bio-btn.current {
+  display: none;
+}
+
+#tabs {
+  position: absolute;
+  right: -165px;
+  top: 75px;
+}
+
+.footer {
+  background: #c6c6c6;
+  padding: 25px 0;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+
+
+/* =============================================================================
+   CONTATO
+   ========================================================================== */
+.form label{
+  font-size:16px;
+  display: block;
+  margin-bottom:.5em;
+}
+.control-group {
+  height:auto;
+  clear:both;
+  margin-bottom:20px;
+}
+.control-group-name, .control-group-email {
+  clear:none;
+  width:467px;
+  float:left;
+  margin-right:25px;
+}
+.control-group-email {margin-right:0;}
+.form input[type=text], .form input[type=email], .form textarea{
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width:100%;
+  min-height:15px;
+  padding:10px;
+  font-size:14px;
+}
+.form textarea {height:300px;}
+.form .btn {float:right;}
+
+.form input[type=text], .form input[type=email], .form textarea{
+  color:#777;
+  border:1px solid #e7e7e7;
+  background:#fff;
+  border-radius:4px;
+}
+.form input[type=text]:focus, .form input[type=email]:focus, .form textarea:focus {border-color:#aaa;outline:0;}

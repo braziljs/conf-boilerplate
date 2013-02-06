@@ -1,0 +1,9 @@
+<h2 class="section-title"><%= @labels['about'] %></h2>
+<p>O Front In BH chega à sua terceira edição com um passado de
+  grande sucesso. A idéia de um evento regional serviu de inspiração
+  para outros eventos que hoje seguem o mesmo formato do Front In
+  BH.
+  </p>
+
+  <p>As primeiras edições aconteceram em Belo Horizonte, ambas com 8
+  palestrantes renomados no desenvolvimento Front end.</p>

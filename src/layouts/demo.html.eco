@@ -2,38 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Front In BH 2013</title>
+  <title><%= @conf.name %></title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/demo.css" media="all">
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var width = screen.width,
-          height = screen.height;
-
-      $(".cover").css( 'height', height - 120 );
-      $(".header").css( 'height', height - 100 )
-    })
-  </script>
 </head>
 <body>
   <div class="global">
 
     <div class="header">
-      <img src="/img/background.png" alt="" class="cover">
+      <img src="<%= @site.images.cover %>" alt="<%= @conf.name %>" class="cover">
       <div class="wrapper">
           <h1>
             <a href="#" class="logo" title="Logo - nome da empresa">
-              <img src="<%= @site.images.logo %>" alt="Nome da empresa">
+              <img src="<%= @site.images.logo %>" alt="<%= @conf.name %>">
             </a>
           </h1>
-          <h3>Maior evento de Front-end do Brasil</h3>
+          <h3><%= @conf.description %></h3>
           <article class="infos-header">
             <span>
-              <em>13 Julho 2013 - BH, MG</em>
-              <a class="btn main" title="cadasre-se">Cadastre-se</a>
+              <em>
+                <%= @conf.date %> - <%= @conf.city %> - <%= @conf.state %> / <%= @conf.price %>
+              </em>
+              <a class="btn main" title="cadasre-se" href="<%= @conf.eventick %>" target="_blank">Cadastre-se</a>
             </span>
             <span>
               <em>Patrocine Front In BH</em>
@@ -47,7 +38,7 @@
 
       <div class="about division">
         <div class="row wrapper">
-          <%- @partial("section/about.html.eco", @) %>
+          <%- @partial("section/about-front-in.html.eco", @) %>
         </div>
       </div>
 
@@ -59,9 +50,9 @@
               <% for speaker in @schedule: %>
                 <% if speaker.presentation: %>
 
-                  <div class="col6">
+                  <div class="col6 list-speaker">
                     <div class="col1 img-speaker">
-                      <img src="/img/mask.png" class="speaker-mask" alt="">
+                      <img src="img/mask.png" class="speaker-mask" alt="">
                       <img src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image" class="speaker-img">
                       <div class="social">
                       <% if speaker.twitter: %>
@@ -86,27 +77,64 @@
 
                     <div class="col5 desc-speaker">
                       <h2><span><%= speaker.name %> /</span> <%= speaker.presentation.title %></h2>
-                      <p><%= speaker.bio %></p>
+                      <div id="content">
+                      <p id="talk" class="talk-description">
+                          <%= speaker.presentation.description %>
+                      </p>
+                      <p id="bio" class="bio hide" >
+                        <%= speaker.bio %>
+                      </p>
                     </div>
+                    </div>
+
+                    <div id="tabs" class="nav">
+                      <a href="#talk" class="btn talk-btn current">talk</a>
+                      <a href="#bio" class="btn bio-btn">bio</a>
+                    </div>
+
                   </div><!-- /col6 speaker list -->
 
                 <% end %>
               <% end %>
           </div>
       </div>
+
+      <div class="sponsors division">
+        <div class="row wrapper">
+          <!--<%- @partial("section/sponsors.html.eco", @) %> -->
+        </div>
+      </div>
+
+      <div class="contact division">
+        <div class="row wrapper">
+          <%- @partial("section/contact-front-in.html.eco", @) %>
+        </div>
+      </div>
+
     </section><!-- content -->
 
 
     <footer class="footer">
       <div class="wrapper">
-        <p>© CR Vasco da Gama 2012 – <a href="#" title="Termos de uso">Termos de Uso</a></p>
-      <p>Atendimento: <a href="mailto:name@email.com" title="Entre em contato">name@email.com</a> | 0800 254256</p>
-
-        <p class="fright">Desenvolvido por alguém</p>
+        <p>© Front In BH 2013 – Desenvolvido por <a href="http://bygiovanni.com.br" title="Giovanni Keppelen">Keppelen e <a href="http://confboilerplate.com/" title="Conf Boilerplate">gerado com conf boilerplate</a></p>
       </div>
     </footer>
   </div>
 
 
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/tabs.js"></script>
+  <script>
+  $(function() {
+      $(".list-speaker").organicTabs();
+    });
+    $(document).ready(function(){
+      var width = screen.width,
+          height = screen.height;
+
+      $(".cover").css( 'height', height - 120 ).css(  'width', width );
+      $(".header").css( 'height', height - 100 );
+    })
+  </script>
 </body>
 </html>

@@ -9,23 +9,24 @@ module.exports =
 
     # Conference info
     conf:
-      name: "Conference name"
-      description: "Conference description"
-      date: "November 15"
-      price: "$100"
-      venue: "Coco Bongo"
-      address: "Boulevard Kukulcan, 30"
-      city: "Cancún"
-      state: "Quintana"
+      name: "Front In BH 2013"
+      description: "Maior evento de Front-end do Brasil"
+      date: "13 Julho"
+      price: "R$ 50,00"
+      venue: "UNI-BH Teatro Ney Soares"
+      address: "UNI-BH, Rua Diamantina, lagoinha, Belo Horizonte, Minas Gerais"
+      city: "Belo Horizonte"
+      state: "MG"
+      eventick: "http://eventick.com.br/FrontInBH2013"
 
     # Site info
     site:
       url: "http://confboilerplate.com"
       googleanalytics: "UA-33656081-1"
       images:
-        cover: "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash4/428889_453686791321643_916899653_n.jpg"
+        cover: "img/background.png"
         facebook: "http://braziljs.org/img/fb-share.jpg"
-        logo: "http://frontinbh.com.br/assets/imagens/logo.png"
+        logo: "img/logo.png"
 
     # Active sections on the website
     # to deactivate comment out with '#'
@@ -57,81 +58,15 @@ module.exports =
     ,
       name: "Giovanni Keppelen"
       photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/giovanni.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Linux Foundation"
+      bio: "Co-funder da BrazilJS Foundation, idealizador e organizador do Front In BH,  Rio.JS. Já foi Frontend Engineer no Peixe Urbano, hoje é Cordenador Frontend na Mobicare. Graduando em Produção Multimídia pela UNI-BH."
+      company: "Mobicare"
       twitter: "keppelen"
       github: "keppelen"
       personal: "bygiovanni.com.br"
       presentation:
-        title: "Digging into a Linux Kernel"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Comunidades e seu poder sobre mundo Open source ou não"
+        description: "O grande poder das comunidades, como isso pode influenciar em sua carreira profissional e particular, e o retorno e felicidade que pode se ter em sua vida."
         time: "10h00"
-    ,
-      name: "Zeno Rocha"
-      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/zeno.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Microsoft"
-      twitter: "zenorocha"
-      github: "zenorocha"
-      personal: "zenorocha.com"
-      presentation:
-        title: "Introducing Windows 12"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "11h00"
-    ,
-      name: "Lunch"
-      time: "12h00"
-    ,
-      name: "Bernard de Luna"
-      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/bernard.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Delta Command"
-      twitter: "bernarddeluna",
-      github: ""
-      personal: "bernarddeluna.com"
-      presentation:
-        title: "How to kill a elephant with one finger"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "13h00"
-    ,
-      name: "Davidson Felipe"
-      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/davidson.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      twitter: ""
-      github: "davidsonfellipe"
-      personal: "fellipe.com"
-      presentation:
-        title: "Presenting iPad"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "14h00"
-    ,
-      name: "Coffee-break"
-      time: "15h00"
-    ,
-      name: "Fellipe Moura"
-      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/felipe.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Facebook"
-      twitter: ""
-      github: "felipenmoura"
-      personal: "felipenmoura.org/pt"
-      presentation:
-        title: "Revealing Facebook Secrets"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "16h00"
-    ,
-      name: "Jaydson Gomes"
-      photo: "https://raw.github.com/braziljs/foundation/master/img/avatar/jaydson.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      twitter: ""
-      github: "jaydson"
-      personal: "jaydson.org"
-      presentation:
-        title: "Why do I prefer Android over iPhone"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "17h00"
     ]
 
     # List of Sponsors
@@ -139,6 +74,10 @@ module.exports =
       name: "Eventick"
       logo: "http://f.cl.ly/items/1U3p0Z0e2w0I1i3z1X22/Image%202012.09.25%203:00:58%20PM.png"
       url: "http://eventick.com.br"
+    ,
+      name: "BrazilJS"
+      logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
+      url: "http://braziljs.org"
     ]
 
     # List of Partners

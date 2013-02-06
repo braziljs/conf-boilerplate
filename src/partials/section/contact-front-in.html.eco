@@ -1,0 +1,16 @@
+<h2 class="section-title"><%= @labels['contact'] %></h2>
+<form method="post" action="/" id="form" class="form">
+  <div class="control-group control-group-name">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Your name">
+  </div>
+  <div class="control-group control-group-email">
+    <label for="email">E-mail</label>
+  <input type="email" name="email" id="email" placeholder="Your e-mail">
+  </div>
+  <div class="control-group">
+    <label for="message">Message</label>
+  <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+  </div>
+  <input class="btn" type="submit" value="Send">
+</form>
