@@ -2,40 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Template Padrão</title>
+  <title>Front In BH 2013</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/demo.css" media="all">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var width = screen.width,
+          height = screen.height;
+
+      $(".cover").css( 'height', height - 120 );
+      $(".header").css( 'height', height - 100 )
+    })
+  </script>
 </head>
 <body>
   <div class="global">
-    <header class="header">
+
+    <div class="header">
+      <img src="/img/background.png" alt="" class="cover">
       <div class="wrapper">
-
-        <h1>
-          <a href="#" class="logo" title="Logo - nome da empresa"><img src="<%= @site.images.logo %>" alt="Nome da empresa"></a>
-        </h1>
-
-        <nav class="nav">
-          <ul>
-            <li><a href="#" title="link-01">About</a></li>
-            <li><a href="#" title="link-02">Speaker</a></li>
-            <li><a href="#" title="link-03">Contact</a></li>
-          </ul>
-        </nav><!-- /nav -->
-
-      </div><!-- /wrapper -->
-    </header><!-- /header -->
+          <h1>
+            <a href="#" class="logo" title="Logo - nome da empresa">
+              <img src="<%= @site.images.logo %>" alt="Nome da empresa">
+            </a>
+          </h1>
+          <h3>Maior evento de Front-end do Brasil</h3>
+          <article class="infos-header">
+            <span>
+              <em>13 Julho 2013 - BH, MG</em>
+              <a class="btn main" title="cadasre-se">Cadastre-se</a>
+            </span>
+            <span>
+              <em>Patrocine Front In BH</em>
+              <a class="btn main" title="cadasre-se">Midia Kit</a>
+            </span>
+          </article>
+        </div><!-- /wrapper -->
+    </div>
 
     <section class="content home">
-
-      <div class="call" style="background-image: url(<%= @site.images.cover %>)">
-        <div class="wrapper">
-          <h2>30 de Julho de 2013</h2>
-          <h3>Maior evento de Front-end do Brasil</h3>
-          <a class="btn main" title="cadasre-se" data-toggle="modal" data-target="#sign-up">Cadastre-se</a>
-        </div><!-- /wrapper -->
-      </div><!-- /call -->
 
       <div class="about division">
         <div class="row wrapper">
@@ -84,42 +92,8 @@
 
                 <% end %>
               <% end %>
-
-              <!-- <div class="col6">
-                <div class="col1 img-speaker">
-                  <img src="http://openvisconf.com/img/jesse-kriss.png" alt="Speaker">
-                  <div class="social">
-                      <a target="_blank" href="https://twitter.com/jkriss" class="twitter"><img src="http://openvisconf.com/img/twitter-icon.png" alt="Twitter Icon"></a>
-                      <a target="_blank" href="https://github.com/jkriss" class="github"><img src="http://openvisconf.com/img/github-icon.png" alt="Github Icon"></a>
-                      <a target="_blank" href="http://jklabs.net" class="personal"><img src="http://openvisconf.com/img/personal-icon.png" alt="Personal Website Icon"></a>
-                    </div>
-                </div>
-                <div class="col5 desc-speaker">
-                  <h2><span>Jesse Kriss /</span> Successes and Failures of Visualization in the Obama Campaign</h2>
-                  <p>Visualization is both praised and derided for being "flashy." If you're designing and developing tools for a presidential campaign, though, flashiness is worth next to nothing. In the end, everything comes down to this: were your tools adopted, and did they help win an election? </p>
-
-                  <p>Jesse will present a number of case studies from Dashboard (the Obama campaign's online field office) and the custom tools designed to coordinate and track voter protection efforts. </p>
-                </div>
-              </div>
-
-              <div class="col6">
-                <div class="col1 img-speaker">
-                  <img src="http://openvisconf.com/img/jesse-kriss.png" alt="Speaker">
-                  <div class="social">
-                      <a target="_blank" href="https://twitter.com/jkriss" class="twitter"><img src="http://openvisconf.com/img/twitter-icon.png" alt="Twitter Icon"></a>
-                      <a target="_blank" href="https://github.com/jkriss" class="github"><img src="http://openvisconf.com/img/github-icon.png" alt="Github Icon"></a>
-                      <a target="_blank" href="http://jklabs.net" class="personal"><img src="http://openvisconf.com/img/personal-icon.png" alt="Personal Website Icon"></a>
-                    </div>
-                </div>
-                <div class="col5 desc-speaker">
-                  <h2><span>Jesse Kriss /</span> Successes and Failures of Visualization in the Obama Campaign</h2>
-                  <p>Visualization is both praised and derided for being "flashy." If you're designing and developing tools for a presidential campaign, though, flashiness is worth next to nothing. In the end, everything comes down to this: were your tools adopted, and did they help win an election? </p>
-                </div>
-              </div> -->
           </div>
       </div>
-
-
     </section><!-- content -->
 
 

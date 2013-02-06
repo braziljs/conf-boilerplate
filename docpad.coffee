@@ -23,7 +23,7 @@ module.exports =
       url: "http://confboilerplate.com"
       googleanalytics: "UA-33656081-1"
       images:
-        cover: "http://openvisconf.com/img/header-bg.jpg"
+        cover: "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash4/428889_453686791321643_916899653_n.jpg"
         facebook: "http://braziljs.org/img/fb-share.jpg"
         logo: "http://frontinbh.com.br/assets/imagens/logo.png"
 
