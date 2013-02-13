@@ -7,8 +7,11 @@ docpad generate
 # Go to the gh-pages branch
 git checkout gh-pages
 
-# Copy files from folder out to root
-cp -f out/* .
+# Remove all files under version control
+git rm -rf .
+
+# Move files from folder out to root
+mv out/* .
 
 # Removing out folder
 rm -rf out
