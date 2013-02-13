@@ -3,7 +3,7 @@
 </a>
 
 <!-- HEADER -->
-<header class="header" style="background-image: url(<%= @site.images.cover %>)">
+<header class="header">
   <div class="wrapper">
     <h1 class="logo-name">
       <a class="logo-link" href="#" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>

@@ -16,7 +16,7 @@
   <meta property="og:url" content="<%= @site.url %>">
   <meta property="og:title" content="<%= @conf.name %>">
   <meta property="og:description" content="<%= @conf.description %>">
-  <meta property="og:image" content="<%= @site.images.facebook %>">
+  <meta property="og:image" content="<%= @site.url %>/<%= @site.theme %>/img/badge.jpg">
   <!-- / FACEBOOK -->
 
   <link rel="shortcut icon" href="<%= @site.theme %>/img/favicon.ico" type="image/x-icon">
