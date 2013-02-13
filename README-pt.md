@@ -142,12 +142,9 @@ Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em fr
 
 ```
 site:
+	theme: "yellow-swan"
 	url: "http://confboilerplate.com"
-	favicon: "http://braziljs.org/favicon.ico"
-	googleanalytics: "UA-33656081-1"
-	images:
-		cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
-		facebook: "http://braziljs.org/img/fb-share.jpg"
+	googleanalytics: "UA-33656081-1"	
 ```
 
 ### Seções ativas
