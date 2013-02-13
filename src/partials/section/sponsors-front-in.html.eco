@@ -1,0 +1,16 @@
+<h2 class="section-title"><%= @labels['sponsors'] %></h2>
+<ul class="sponsors-list">
+
+<% for sponsor in @sponsors: %>
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="<%= sponsor.url %>" class="sponsor-logo sponsor-link" itemprop="url">
+      <img src="<%= sponsor.logo %>" alt="<%= sponsor.name %>" class="photo" itemprop="image">
+    </a>
+  </li>
+<% end %>
+  <!--<li class="sponsor-item">
+    <a class="sponsor-logo sponsor-link sponsor-call" href="#">
+    	<img src="img/your-logo.jpg" alt="your logo" class="photo">
+    </a>
+  </li>-->
+</ul>

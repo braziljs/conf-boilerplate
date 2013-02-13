@@ -24,7 +24,7 @@ module.exports =
       url: "http://confboilerplate.com"
       googleanalytics: "UA-33656081-1"
       images:
-        cover: "img/background.png"
+        cover: "http://www.wfotografias.com.br/wp-content/gallery/beaga/destaque_bh-6-of-14.jpg"
         facebook: "http://braziljs.org/img/fb-share.jpg"
         logo: "img/logo.png"
 
@@ -43,13 +43,13 @@ module.exports =
 
     # Labels which you can translate to other languages
     labels:
-      about: "About"
-      location: "Location"
-      speakers: "Speakers"
-      schedule: "Schedule"
-      sponsors: "Sponsors"
+      about: "Sobre"
+      location: "Localização"
+      speakers: "Palestrantes"
+      schedule: "Patrocinadores"
+      sponsors: "Apoio"
       partners: "Partners"
-      contact: "Contact"
+      contact: "Contato"
 
     # The entire schedule
     schedule: [
@@ -72,12 +72,8 @@ module.exports =
     # List of Sponsors
     sponsors: [
       name: "Eventick"
-      logo: "http://f.cl.ly/items/1U3p0Z0e2w0I1i3z1X22/Image%202012.09.25%203:00:58%20PM.png"
+      logo: "http://eventick.com.br/assets/eventick-logo-header.png"
       url: "http://eventick.com.br"
-    ,
-      name: "BrazilJS"
-      logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
-      url: "http://braziljs.org"
     ]
 
     # List of Partners

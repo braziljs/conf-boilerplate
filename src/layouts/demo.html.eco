@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title><%= @conf.name %></title>
+  <title><%= @conf.name %> | <%= @conf.description %></title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/demo.css" media="all">
@@ -15,20 +15,16 @@
       <div class="wrapper">
           <h1>
             <a href="#" class="logo" title="Logo - nome da empresa">
-              <img src="<%= @site.images.logo %>" alt="<%= @conf.name %>">
+              <img src="<%= @site.images.logo %>" alt="<%= @conf.name %>" width="780">
             </a>
           </h1>
           <h3><%= @conf.description %></h3>
           <article class="infos-header">
             <span>
               <em>
-                <%= @conf.date %> - <%= @conf.city %> - <%= @conf.state %> / <%= @conf.price %>
+                <%= @conf.date %> - <%= @conf.venue %> / <%= @conf.city %> - <%= @conf.state %>
               </em>
-              <a class="btn main" title="cadasre-se" href="<%= @conf.eventick %>" target="_blank">Cadastre-se</a>
-            </span>
-            <span>
-              <em>Patrocine Front In BH</em>
-              <a class="btn main" title="cadasre-se">Midia Kit</a>
+              <a class="" title="cadasre-se" href="<%= @conf.eventick %>" target="_blank"><img src="img/purchase.png" alt=""></a>
             </span>
           </article>
         </div><!-- /wrapper -->
@@ -45,7 +41,7 @@
 
       <div class="speakers division">
           <div class="row wrapper">
-              <h3>Speaker</h3>
+              <h3><%= @labels['speakers'] %></h3>
 
               <% for speaker in @schedule: %>
                 <% if speaker.presentation: %>
@@ -88,8 +84,8 @@
                     </div>
 
                     <div id="tabs" class="nav">
-                      <a href="#talk" class="btn talk-btn current">talk</a>
-                      <a href="#bio" class="btn bio-btn">bio</a>
+                      <a href="#talk" class="btn talk-btn current">Palestra</a>
+                      <a href="#bio" class="btn bio-btn">Biografia</a>
                     </div>
 
                   </div><!-- /col6 speaker list -->
@@ -101,7 +97,7 @@
 
       <div class="sponsors division">
         <div class="row wrapper">
-          <!--<%- @partial("section/sponsors.html.eco", @) %> -->
+          <%- @partial("section/sponsors-front-in.html.eco", @) %>
         </div>
       </div>
 
@@ -116,7 +112,7 @@
 
     <footer class="footer">
       <div class="wrapper">
-        <p>© Front In BH 2013 – Desenvolvido por <a href="http://bygiovanni.com.br" title="Giovanni Keppelen">Keppelen e <a href="http://confboilerplate.com/" title="Conf Boilerplate">gerado com conf boilerplate</a></p>
+        <p>© Front In BH 2013 – Desenvolvido por <a href="http://bygiovanni.com.br" title="Giovanni Keppelen">Keppelen </a> e <a href="http://confboilerplate.com/" title="Conf Boilerplate">gerado com conf boilerplate</a></p>
       </div>
     </footer>
   </div>
