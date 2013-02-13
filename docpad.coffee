@@ -5,7 +5,7 @@ module.exports =
 
     #Template
     template:
-      demo: true
+      FrontIn: true
 
     # Conference info
     conf:

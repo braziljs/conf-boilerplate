@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= @conf.name %> | <%= @conf.description %></title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/frontin.css" media="all">
+</head>
+<body>
+  <div class="global">
+
+    <div class="header">
+      <img src="<%= @site.images.cover %>" alt="<%= @conf.name %>" class="cover">
+      <div class="wrapper">
+          <h1>
+            <a href="#" class="logo" title="Logo - nome da empresa">
+              <img src="<%= @site.images.logo %>" alt="<%= @conf.name %>" width="780">
+            </a>
+          </h1>
+          <h3><%= @conf.description %></h3>
+          <article class="infos-header">
+            <span>
+              <em>
+                <%= @conf.date %> - <%= @conf.venue %> / <%= @conf.city %> - <%= @conf.state %>
+              </em>
+              <a class="" title="cadasre-se" href="<%= @conf.eventick %>" target="_blank"><img src="img/purchase.png" alt=""></a>
+            </span>
+          </article>
+        </div><!-- /wrapper -->
+    </div>
+
+    <section class="content home">
+
+      <div class="about division">
+        <div class="row wrapper">
+          <%- @partial("section/about-front-in.html.eco", @) %>
+        </div>
+      </div>
+
+
+      <div class="speakers division">
+          <div class="row wrapper">
+              <h3><%= @labels['speakers'] %></h3>
+
+              <% for speaker in @schedule: %>
+                <% if speaker.presentation: %>
+
+                  <div class="col6 list-speaker">
+                    <div class="col1 img-speaker">
+                      <img src="img/mask.png" class="speaker-mask" alt="">
+                      <img src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image" class="speaker-img">
+                      <div class="social">
+                      <% if speaker.twitter: %>
+                        <a target="_blank" href="https://twitter.com/<%= speaker.twitter %>" class="twitter">
+                          <img src="http://openvisconf.com/img/twitter-icon.png" alt="Twitter Icon">
+                        </a>
+                      <% end %>
+
+                      <% if speaker.github: %>
+                        <a target="_blank" href="https://github.com/<%= speaker.github %>" class="github">
+                          <img src="http://openvisconf.com/img/github-icon.png" alt="Github Icon">
+                        </a>
+                      <% end %>
+
+                      <% if speaker.personal: %>
+                        <a target="_blank" href="http://<%= speaker.personal %>" class="personal">
+                          <img src="http://openvisconf.com/img/personal-icon.png" alt="Personal Website Icon">
+                        </a>
+                      <% end %>
+                      </div><!-- /Social -->
+                    </div><!-- img-speaker -->
+
+                    <div class="col5 desc-speaker">
+                      <h2><span><%= speaker.name %> /</span> <%= speaker.presentation.title %></h2>
+                      <div id="content">
+                      <p id="talk" class="talk-description">
+                          <%= speaker.presentation.description %>
+                      </p>
+                      <p id="bio" class="bio hide" >
+                        <%= speaker.bio %>
+                      </p>
+                    </div>
+                    </div>
+
+                    <div id="tabs" class="nav">
+                      <a href="#talk" class="btn talk-btn current">Palestra</a>
+                      <a href="#bio" class="btn bio-btn">Biografia</a>
+                    </div>
+
+                  </div><!-- /col6 speaker list -->
+
+                <% end %>
+              <% end %>
+          </div>
+      </div>
+
+      <div class="sponsors division">
+        <div class="row wrapper">
+          <%- @partial("section/sponsors-front-in.html.eco", @) %>
+        </div>
+      </div>
+
+      <div class="contact division">
+        <div class="row wrapper">
+          <%- @partial("section/contact-front-in.html.eco", @) %>
+        </div>
+      </div>
+
+    </section><!-- content -->
+
+
+    <footer class="footer">
+      <div class="wrapper">
+        <p>© Front In BH 2013 – Desenvolvido por <a href="http://bygiovanni.com.br" title="Giovanni Keppelen">Keppelen </a> e <a href="http://confboilerplate.com/" title="Conf Boilerplate">gerado com conf boilerplate</a></p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/tabs.js"></script>
+  <script>
+  $(function() {
+      $(".list-speaker").organicTabs();
+    });
+    $(document).ready(function(){
+      var width = screen.width,
+          height = screen.height;
+
+      $(".cover").css( 'height', height - 120 ).css(  'width', width );
+      $(".header").css( 'height', height - 100 );
+    })
+  </script>
+</body>
+</html>
