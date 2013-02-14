@@ -74,6 +74,14 @@ module.exports =
       name: "Eventick"
       logo: "http://eventick.com.br/assets/eventick-logo-header.png"
       url: "http://eventick.com.br"
+    ,
+      name: "Globo.com"
+      logo: "img/globo.png"
+      url: "http://globo.com"
+    ,
+      name: "BrazilJS"
+      logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
+      url: "http://braziljs.org"
     ]
 
     # List of Partners
