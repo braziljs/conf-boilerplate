@@ -265,6 +265,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [FrontInterior](http://frontinterior.com.br)
 * [Front in Maceió](http://frontinmaceio.com.br/)
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
+* [Rio.JS](http://riojs.org/)
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 

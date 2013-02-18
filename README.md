@@ -266,6 +266,7 @@ See the conferences that already used this project as a kickstart:
 * [FrontInterior](http://frontinterior.com.br)
 * [Front in Maceió](http://frontinmaceio.com.br/)
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
+* [Rio.JS](http://riojs.org/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
