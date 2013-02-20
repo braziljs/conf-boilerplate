@@ -263,9 +263,12 @@ Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, dep
 Confira os eventos que usaram esse projeto como pontapé inicial:
 
 * [FrontInterior](http://frontinterior.com.br)
-* [Front in Maceió](http://frontinmaceio.com.br/)
+* [Front in Maceió](http://frontinmaceio.com.br/) ([source code](https://github.com/braziljs/front-in-maceio))
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
-* [Rio.JS](http://riojs.org/)
+* [Rio.JS](http://riojs.org/) ([source code](https://github.com/braziljs/riojs-website))
+* [yoLab](http://yodojo.github.com/yoLab/) ([source code](https://github.com/yodojo/yoLab))
+* [Payphone Hackday](http://payphonehackday.com/) ([source code](https://github.com/octanebaby/conf-boilerplate))
+* [OuiShare Fest](http://ouisharefest.com/) ([source code](https://github.com/OuiShare/ouisharefest))
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 
