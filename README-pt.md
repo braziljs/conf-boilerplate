@@ -272,6 +272,10 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 
+## Forks
+
+* [Versão em Ruby do ConfBoilerplate usando Jekyll por Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
+
 ## Contribuindo
 
 Se quiser enviar um pull request, por favor faça-o na branch `dev`.

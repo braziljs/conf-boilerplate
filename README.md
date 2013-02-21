@@ -273,6 +273,10 @@ See the conferences that already used this project as a kickstart:
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
+## Forks
+
+* [Ruby version of ConfBoilerplate using Jekyll by Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
+
 ## Contributing
 
 If you want to submit a pull request, please do it in `dev` branch.
