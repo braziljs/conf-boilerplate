@@ -270,12 +270,13 @@ See the conferences that already used this project as a kickstart:
 * [yoLab](http://yodojo.github.com/yoLab/) ([source code](https://github.com/yodojo/yoLab))
 * [Payphone Hackday](http://payphonehackday.com/) ([source code](https://github.com/octanebaby/conf-boilerplate))
 * [OuiShare Fest](http://ouisharefest.com/) ([source code](https://github.com/OuiShare/ouisharefest))
+* [RSJS](http://rsjs.org/) ([source code](https://github.com/braziljs/rsjs))
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
 ## Forks
 
-* [Ruby version of ConfBoilerplate using Jekyll by Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
+* [Ruby version of ConfBoilerplate made with Jekyll by Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
 
 ## Contributing
 
