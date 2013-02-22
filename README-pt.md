@@ -269,6 +269,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [yoLab](http://yodojo.github.com/yoLab/) ([source code](https://github.com/yodojo/yoLab))
 * [Payphone Hackday](http://payphonehackday.com/) ([source code](https://github.com/octanebaby/conf-boilerplate))
 * [OuiShare Fest](http://ouisharefest.com/) ([source code](https://github.com/OuiShare/ouisharefest))
+* [RSJS](http://rsjs.org/) ([source](https://github.com/braziljs/rsjs))
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 
