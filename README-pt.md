@@ -144,7 +144,7 @@ Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em fr
 site:
 	theme: "yellow-swan"
 	url: "http://confboilerplate.com"
-	googleanalytics: "UA-33656081-1"	
+	googleanalytics: "UA-33656081-1"
 ```
 
 ### Seções ativas
