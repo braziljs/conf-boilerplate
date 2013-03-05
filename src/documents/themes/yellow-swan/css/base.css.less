@@ -1,3 +1,5 @@
+@import "_mixins.less";
+
 /* =============================================================================
    MAIN LAYOUT
    ========================================================================== */
@@ -78,11 +80,7 @@ nav {
   line-height:1em;
   vertical-align: center;
   letter-spacing: -.02em;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  .transition(all 0.3s ease-out);
 }
 .call-action-area .call-action-link:hover, .call-action-area .call-action-link:focus, .btn:hover, .btn:focus {top:0;}
 
@@ -200,10 +198,7 @@ nav {
 }
 .control-group-email {margin-right:0;}
 .form input[type=text], .form input[type=email], .form textarea{
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  .box-sizing(border-box);
   display: block;
   width:100%;
   min-height:15px;
@@ -223,10 +218,7 @@ nav {
   .wrapper {
     width: 100%;
     padding: 0 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+    .box-sizing(border-box);
   }
   .about {margin: 0;}
 }
