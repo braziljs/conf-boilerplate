@@ -14,18 +14,18 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 * [Como funciona?](#como-funciona)
 * [Primeiros passos](#primeiros-passos)
 * [Estrutura](#estrutura)
-* [Customização](#customiza%C3%A7%C3%A3o)
+* [Customização](#customizao)
 * [Deploy](#deploy)
 * [Showcase](#showcase)
 * [Contribuindo](#contribuindo)
-* [Quem está por trás disso?](#quem-est%C3%A1-por-tr%C3%A1s-disso)
-* [Licença](#licen%C3%A7a)
+* [Quem está por trás disso?](#quem-est-por-trs-disso)
+* [Licença](#licena)
 
 ## Como funciona?
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
-Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#dom%C3%ADnio-personalizado))*.
+Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#domnio-personalizado))*.
 
 Por padrão, definimos as seguintes seções:
 
@@ -93,7 +93,7 @@ Contém o arquivo responsável por importar todas as seções da aplicação. Al
 
 ### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
 
-Possui o arquivo [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#dom%C3%ADnio-personalizado))*.
+Possui o arquivo [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#domnio-personalizado))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
