@@ -75,7 +75,6 @@ A estrutura básica do projeto se dá na seguinte forma:
 |-- out/
 |-- src/
 |   |-- documents
-|   |-- files
 |   |-- layouts
 |   |-- partials
 |-- docpad.coffee
@@ -89,11 +88,7 @@ A estrutura básica do projeto se dá na seguinte forma:
 
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
-Contém o arquivo responsável por importar todas as seções da aplicação.
-
-### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
-
-Possui as imagens, arquivos CSS, JS e o [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#dom%C3%ADnio-personalizado))*.
+Contém o arquivo responsável por importar todas as seções da aplicação. Além disso contém o tema com todos seus arquivos como imagens, arquivos CSS, JS e o [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#dom%C3%ADnio-personalizado))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
@@ -247,7 +242,7 @@ OBS: Lembre-se de remover o arquivo `CNAME` que está na pasta `src/files` do se
 
 Caso você não queira utilizar o domínio do Github, é possível usar seu próprio com alguns passos.
 
-1. Altere o arquivo `CNAME` que está na pasta `src/files` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
+1. Altere o arquivo `CNAME` que está na pasta `src/documents` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/CNAME).
 2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
 ### Como fazer Deploy sem utilizar Github Pages

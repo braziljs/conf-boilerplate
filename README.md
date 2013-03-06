@@ -25,7 +25,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
-We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#dom%C3%ADnio-personalizado))*
+We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*
 
 By default, we have the following sections:
 
@@ -75,7 +75,6 @@ The basic structure of the project is given in the following way:
 |-- out/
 |-- src/
 |   |-- documents
-|   |-- files
 |   |-- layouts
 |   |-- partials
 |-- docpad.coffee
@@ -89,11 +88,7 @@ This is where the generated files are stored, once DocPad has been runned. Howev
 
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
-Contains the file responsible for importing all sections of the application.
-
-### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
-
-Has images, CSS, JS and [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) that indicates the custom domain that should be used *(more information on how to use your own domain on [Deploy](#dom%C3%ADnio-personalizado))*.
+Contains the file responsible for importing all sections of the application. Also all themes assets like images, CSS, JS and [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/CNAME) that indicates the custom domain that should be used *(more information on how to use your own domain on [Deploy](#custom-domain))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
@@ -248,7 +243,7 @@ P.S.: Remember to remove `CNAME` file that is located on `src/files` folder, if 
 
 If you don't want to use Github domain, you can use your own with a few steps.
 
-1. Change the `CNAME` file that is located on `src/files` folder and fill with your domain: `yourevent.com`. [See the example](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
+1. Change the `CNAME` file that is located on `src/documents` folder and fill with your domain: `yourevent.com`. [See the example](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/CNAME).
 2. Change the DNS of your domain [following Github instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
 ### How to Deploy without Github Pages
