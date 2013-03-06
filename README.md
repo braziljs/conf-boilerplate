@@ -88,7 +88,11 @@ This is where the generated files are stored, once DocPad has been runned. Howev
 
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
-Contains the file responsible for importing all sections of the application. Also all themes assets like images, CSS, JS and [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/CNAME) that indicates the custom domain that should be used *(more information on how to use your own domain on [Deploy](#custom-domain))*.
+Contains the file responsible for importing all sections of the application. Also all theme's assets like images, CSS and JS.
+
+### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
+
+Contains a file called [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) that indicates the custom domain that should be used *(more information on how to use your own domain on [Deploy](#custom-domain))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
