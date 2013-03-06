@@ -131,11 +131,4 @@ module.exports =
 
     # Theme path
     getTheme: ->
-      "#{@site.url}/themes/#{@site.theme}"
-
-  # Local environment
-  environments:
-    development:
-      templateData:
-        site:
-          url: 'http://localhost:9778'
+      "themes/#{@site.theme}"
