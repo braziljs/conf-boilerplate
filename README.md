@@ -235,10 +235,11 @@ partners: [
 
 ## Deploy
 
-We don't like to centralize the power of deploy in one person, so we'll use [Github Pages](http://pages.github.com) that is free.
+We don't like to centralize the power of deploy in one person, so we'll use [Github Pages](http://pages.github.com) that is free. You just need to run:
 
-* Give permission to run the publish.sh script - `chmod +x publish.sh`
-* Run `sh publish.sh` on the root of the project.
+```
+docpad deploy-ghpages
+```
 
 Wait a few minutes until Github send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
 
