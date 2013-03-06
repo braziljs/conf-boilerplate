@@ -128,3 +128,14 @@ module.exports =
       logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
       url: "http://braziljs.org"
     ]
+
+    # Theme path
+    getTheme: ->
+      "#{@site.url}/themes/#{@site.theme}"
+
+  # Local environment
+  environments:
+    development:
+      templateData:
+        site:
+          url: 'http://localhost:9778'
