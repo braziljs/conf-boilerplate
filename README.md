@@ -75,6 +75,7 @@ The basic structure of the project is given in the following way:
 |-- out/
 |-- src/
 |   |-- documents
+|   |-- files
 |   |-- layouts
 |   |-- partials
 |-- docpad.coffee
@@ -247,7 +248,7 @@ P.S.: Remember to remove `CNAME` file that is located on `src/files` folder, if 
 
 If you don't want to use Github domain, you can use your own with a few steps.
 
-1. Change the `CNAME` file that is located on `src/documents` folder and fill with your domain: `yourevent.com`. [See the example](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/CNAME).
+1. Change the `CNAME` file that is located on `src/files` folder and fill with your domain: `yourevent.com`. [See the example](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
 2. Change the DNS of your domain [following Github instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
 ### How to Deploy without Github Pages
