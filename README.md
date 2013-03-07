@@ -272,6 +272,7 @@ See the conferences that already used this project as a kickstart:
 * [Payphone Hackday](http://payphonehackday.com/) ([source code](https://github.com/octanebaby/conf-boilerplate))
 * [OuiShare Fest](http://ouisharefest.com/) ([source code](https://github.com/OuiShare/ouisharefest))
 * [RSJS](http://rsjs.org/) ([source code](https://github.com/braziljs/rsjs))
+* [SampaJS](http://sampajs.com.br/) ([source code](https://github.com/SampaJS/conf-boilerplate))
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
