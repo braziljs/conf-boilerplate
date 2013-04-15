@@ -12,6 +12,7 @@
     "npm": "1.1.x"
   },
   "dependencies": {
+    "docpad" : "6.30.3",
     "docpad-plugin-eco": "2.0.2",
     "docpad-plugin-marked": "2.1.1",
     "docpad-plugin-partials": "2.6.1",
