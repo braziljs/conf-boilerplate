@@ -11,6 +11,9 @@
     "node": "0.9.x",
     "npm": "1.1.x"
   },
+  "scripts" : {
+    "install": "npm install -fg docpad@6.30.3"
+  },
   "dependencies": {
     "docpad" : "6.30.3",
     "docpad-plugin-eco": "2.0.2",
