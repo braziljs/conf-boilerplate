@@ -42,25 +42,17 @@ Por padrão, definimos as seguintes seções:
 
 ## Primeiros passos
 
-1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
+Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
 
-2. Abra o terminal e baixe o [DocPad](https://github.com/bevry/docpad) através do comando:
+1. Abra o terminal e clone o projeto:
 
-		sudo npm install -fg docpad@6.30
+		git clone git@github.com:braziljs/conf-boilerplate.git && cd conf-boilerplate
 
-3. Agora clone o projeto:
+2. Instale as dependências:
 
-		git clone git@github.com:braziljs/conf-boilerplate.git
+		[sudo] npm install
 
-4. Depois vá para pasta do projeto:
-
-		cd conf-boilerplate
-
-5. Instale as dependências:
-
-		[sudo] docpad install
-
-6. E finalmente rode:
+3. E finalmente rode:
 
 		docpad run
 
