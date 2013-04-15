@@ -273,6 +273,7 @@ See the conferences that already used this project as a kickstart:
 * [OuiShare Fest](http://ouisharefest.com/) ([source code](https://github.com/OuiShare/ouisharefest))
 * [RSJS](http://rsjs.org/) ([source code](https://github.com/braziljs/rsjs))
 * [SampaJS](http://sampajs.com.br/) ([source code](https://github.com/SampaJS/conf-boilerplate))
+* [MateHackers](http://hfday.matehackers.org/) ([source code](https://github.com/matehackers/evento))
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
