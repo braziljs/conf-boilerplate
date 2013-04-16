@@ -11,9 +11,6 @@
     "node": ">0.8.x",
     "npm": "1.1.x"
   },
-  "scripts" : {
-    "preinstall": "sudo npm install -fg docpad@6.30.x"
-  },
   "dependencies": {
     "docpad-plugin-eco": "2.0.2",
     "docpad-plugin-marked": "2.1.1",
