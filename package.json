@@ -12,7 +12,7 @@
     "npm": "1.1.x"
   },
   "scripts" : {
-    "install": "npm install -fg docpad@6.30.x"
+    "preinstall": "sudo npm install -fg docpad@6.30.x"
   },
   "dependencies": {
     "docpad-plugin-eco": "2.0.2",
