@@ -52,9 +52,11 @@ Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http
 
 		[sudo] npm install
 
+PS: Talvez você precise usar o `sudo`
+
 3. E finalmente rode:
 
-		docpad run
+		npm start
 
 Agora você irá ver o site rodando em `localhost:9778` :D
 
