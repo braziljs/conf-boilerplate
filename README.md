@@ -264,8 +264,6 @@ This command will generate a folder called `out` that contains just static files
 
 See the conferences that already used this project as a kickstart:
 
-* [Frot in BH](http://frontinbh.com.br) ([source code](https://github.com/braziljs/front-in-bh))
-* [Front in Rio](http://frontinrio.com.br) 
 * [FrontInterior](http://frontinterior.com.br)
 * [Front in Maceió](http://frontinmaceio.com.br/) ([source code](https://github.com/braziljs/front-in-maceio))
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
@@ -276,6 +274,8 @@ See the conferences that already used this project as a kickstart:
 * [RSJS](http://rsjs.org/) ([source code](https://github.com/braziljs/rsjs))
 * [SampaJS](http://sampajs.com.br/) ([source code](https://github.com/SampaJS/conf-boilerplate))
 * [MateHackers](http://hfday.matehackers.org/) ([source code](https://github.com/matehackers/evento))
+* [Front in BH](http://frontinbh.com.br/) ([source code](https://github.com/braziljs/front-in-bh))
+* [Front in Rio](http://frontinrio.com.br/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
