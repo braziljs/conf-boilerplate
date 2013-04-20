@@ -264,8 +264,8 @@ This command will generate a folder called `out` that contains just static files
 
 See the conferences that already used this project as a kickstart:
 
-* [Frot in BH](http://frontinbh.com.br)([source code](https://github.com/braziljs/front-in-bh))
-* [Front in Rio](http://frontinrio.com.br)([source code](https://github.com/braziljs/front-in-rio))
+* [Frot in BH](http://frontinbh.com.br) ([source code](https://github.com/braziljs/front-in-bh))
+* [Front in Rio](http://frontinrio.com.br) 
 * [FrontInterior](http://frontinterior.com.br)
 * [Front in Maceió](http://frontinmaceio.com.br/) ([source code](https://github.com/braziljs/front-in-maceio))
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
