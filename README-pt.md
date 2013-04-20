@@ -265,6 +265,8 @@ Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, dep
 
 Confira os eventos que usaram esse projeto como pontapé inicial:
 
+* [Frot in BH](http://frontinbh.com.br)([source code](https://github.com/braziljs/front-in-bh))
+* [Front in Rio](http://frontinrio.com.br)([source code](https://github.com/braziljs/front-in-rio))
 * [FrontInterior](http://frontinterior.com.br)
 * [Front in Maceió](http://frontinmaceio.com.br/) ([source code](https://github.com/braziljs/front-in-maceio))
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
