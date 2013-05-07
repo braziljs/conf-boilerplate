@@ -50,7 +50,7 @@ By default, we have the following sections:
 
 3. Now clone it:
 
-		git clone git@github.com:braziljs/conf-boilerplate.git
+		git clone git://github.com/braziljs/conf-boilerplate.git
 
 4. Then go to the project's folder:
 

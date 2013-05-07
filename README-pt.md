@@ -52,7 +52,7 @@ Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http
 
 3. Clone o repositório:
 
-		git clone git@github.com:braziljs/conf-boilerplate.git
+		git clone git://github.com/braziljs/conf-boilerplate.git
 
 4. Vá para pasta do projeto:
 
