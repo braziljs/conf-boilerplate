@@ -50,7 +50,7 @@ By default, we have the following sections:
 
 3. Now clone it:
 
-		git clone git@github.com:braziljs/conf-boilerplate.git
+		git clone git://github.com/braziljs/conf-boilerplate.git
 
 4. Then go to the project's folder:
 
@@ -78,7 +78,7 @@ The basic structure of the project is given in the following way:
 |   |-- files
 |   |-- layouts
 |   |-- partials
-|-- docpad.coffee
+|-- docpad.js
 |-- package.json
 `-- publish.sh
 </pre>
@@ -103,7 +103,7 @@ Contains the default template of the application.
 
 Are blocks of code used to generate the site's main page ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
 
-### [docpad.coffee](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.coffee)
+### [docpad.js](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.js)
 
 Stores most settings of the application.
 
@@ -119,7 +119,7 @@ Shell Script responsible for publishing the site via via [Github Pages](http://p
 
 The project already comes with a visual template, feel free to use it, but we recommend you create your own in order to put your own identity in the event.
 
-Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.coffee` and change the value of variables.
+Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.js` and change the value of variables.
 
 ### Basic information about the conference
 
@@ -206,7 +206,7 @@ schedule: [
 ]
 ```
 
-Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.coffee` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.js` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
 ### List of another items on Agenda
 
