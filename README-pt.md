@@ -80,7 +80,7 @@ A estrutura básica do projeto se dá na seguinte forma:
 |   |-- files
 |   |-- layouts
 |   |-- partials
-|-- docpad.coffee
+|-- docpad.js
 |-- package.json
 `-- publish.sh
 </pre>
@@ -105,7 +105,7 @@ Contém o template padrão da aplicação.
 
 São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
 
-### [docpad.coffee](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.coffee)
+### [docpad.js](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.js)
 
 Armazena de forma fácil a maior parte das configurações da aplicação.
 
@@ -121,7 +121,7 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 
 O projeto já vem com um template visual pronto, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
 
-De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `docpad.coffee` e alterar o valor das variáveis.
+De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `docpad.js` e alterar o valor das variáveis.
 
 ### Informações básicas sobre a conferência
 
@@ -207,7 +207,7 @@ schedule: [
 ]
 ```
 
-Quer listar mais algum atributo do palestrante que não está ali? Tudo bem, é só adicionar no `docpad.coffee` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Quer listar mais algum atributo do palestrante que não está ali? Tudo bem, é só adicionar no `docpad.js` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
 ### Lista de outros itens da Agenda
 
