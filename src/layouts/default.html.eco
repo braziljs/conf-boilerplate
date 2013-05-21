@@ -72,8 +72,9 @@
     <!-- CONTENT -->
     <div class="content" id="content">
       <div class="wrapper">
-        <%- @content %>
+        <%- @content %>ls
       </div>
+      <a href="#" class="scrollup">Scroll</a>
     </div>
     <!-- / CONTENT -->
 
