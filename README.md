@@ -276,6 +276,7 @@ See the conferences that already used this project as a kickstart:
 * [MateHackers](http://hfday.matehackers.org/) ([source code](https://github.com/matehackers/evento))
 * [Front in BH](http://frontinbh.com.br/) ([source code](https://github.com/braziljs/front-in-bh))
 * [Front in Rio](http://frontinrio.com.br/)
+* [Front in Bahia](http://frontinbahia.com.br/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 

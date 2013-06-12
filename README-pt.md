@@ -277,6 +277,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [MateHackers](http://hfday.matehackers.org/) ([source code](https://github.com/matehackers/evento))
 * [Front in BH](http://frontinbh.com.br/) ([source code](https://github.com/braziljs/front-in-bh))
 * [Front in Rio](http://frontinrio.com.br/)
+* [Front in Bahia](http://frontinbahia.com.br/)
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 
