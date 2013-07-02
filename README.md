@@ -18,7 +18,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Deploy](#deploy)
 * [Showcase](#showcase)
 * [Contributing](#contributing)
-* [Who is behind of it?](#who-is-behind-of-it)
+* [Who is behind it?](#who-is-behind-it)
 * [License](#license)
 
 ## How it works?
@@ -291,7 +291,7 @@ If you want to submit a pull request, please do it in `dev` branch.
 * `master` contains the stable version of it.
 * `dev` contains features that are being developed.
 
-## Who is behind of it?
+## Who is behind it?
 
 We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.
 
