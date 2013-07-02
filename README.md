@@ -18,7 +18,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Deploy](#deploy)
 * [Showcase](#showcase)
 * [Contributing](#contributing)
-* [Who is behind of it?](#who-is-behind-of-it)
+* [Who is behind it?](#who-is-behind-it)
 * [License](#license)
 
 ## How it works?
