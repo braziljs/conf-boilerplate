@@ -10,11 +10,19 @@ module.exports = {
       name: "Conference name",
       description: "Conference description",
       date: "November 15",
+      // If your event is free, just comment this line
       price: "$100",
       venue: "Coco Bongo",
       address: "Boulevard Kukulcan, 30",
       city: "Cancún",
       state: "Quintana"
+    },
+
+    // The Call To Action button at the header,
+    // If you don't want this, just remove the callToAction property.
+    callToAction: {
+        text: "Register now!",
+        link: "http://eventick.com.br"
     },
 
     // Site info

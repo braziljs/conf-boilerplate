@@ -13,7 +13,10 @@
       <% if @conf.price: %>
         <span class="price">Only <%= @conf.price %></span>
       <% end %>
-      <a href="http://eventick.com.br" class="call-action-link" title="Register now!">Register now!</a>
+
+      <% if @callToAction: %>
+        <a href="<%= @callToAction.link %>" class="call-action-link" title="<%= @callToAction.text %>"><%= @callToAction.text %></a>
+      <% end %>
     </div>
   </div>
 </header>
