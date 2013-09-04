@@ -10,7 +10,9 @@
     </h1>
     <h2 class="tagline"><%= @conf.date %>, <%= @conf.venue %>, <%= @conf.city %></h2>
     <div class="call-action-area">
-      <span class="price">Only <%= @conf.price %></span>
+      <% if @conf.price: %>
+        <span class="price">Only <%= @conf.price %></span>
+      <% end %>
       <a href="http://eventick.com.br" class="call-action-link" title="Register now!">Register now!</a>
     </div>
   </div>
