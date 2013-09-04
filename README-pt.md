@@ -62,6 +62,8 @@ Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http
 
 		docpad install
 
+**Nota:** No Windows use `docpad.cmd install`
+
 6. E finalmente rode:
 
 		docpad run
