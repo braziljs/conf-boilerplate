@@ -25,6 +25,11 @@ module.exports = {
         link: "http://eventick.com.br"
     },
 
+    // "Fork me on GitHub", if you don't want this, just remove the forkButton property
+    forkButton: {
+        repository: "https://github.com/felquis/conf-boilerplate"
+    },
+
     // Site info
     site: {
       theme: "yellow-swan",
