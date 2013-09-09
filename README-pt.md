@@ -25,7 +25,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
-Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#domnio-personalizado))*.
+Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [GitHub Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#domnio-personalizado))*.
 
 Por padrão, definimos as seguintes seções:
 
@@ -77,7 +77,6 @@ A estrutura básica do projeto se dá na seguinte forma:
 |-- out/
 |-- src/
 |   |-- documents
-|   |-- files
 |   |-- layouts
 |   |-- partials
 |-- docpad.js
@@ -92,10 +91,6 @@ A estrutura básica do projeto se dá na seguinte forma:
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
 Contém o arquivo responsável por importar todas as seções da aplicação. Além disso contém o tema com todos seus arquivos como imagens, arquivos CSS e JS.
-
-### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
-
-Possui o arquivo [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#domnio-personalizado))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
@@ -115,7 +110,7 @@ Lista as dependências de módulos do NodeJS.
 
 ### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
 
-Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
+Shell Script responsável pela publicação do site via [GitHub Pages](http://pages.github.com).
 
 ## Customização
 
@@ -236,24 +231,22 @@ partners: [
 
 ## Deploy
 
-Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [Github Pages](http://pages.github.com) que ainda é gratuito. Para realizar o deploy basta rodar:
+Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [GitHub Pages](http://pages.github.com) que ainda é gratuito. Para realizar o deploy basta rodar:
 
 ```
 docpad deploy-ghpages
 ```
 
-Espere alguns minutos até que o Github lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
-
-OBS: Lembre-se de remover o arquivo `CNAME` que está na pasta `src/files` do seu projeto, caso você queira utilizar a URL pré-definida pelo Github.
+Espere alguns minutos até que o GitHub lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
 
 ### Domínio personalizado
 
-Caso você não queira utilizar o domínio do Github, é possível usar seu próprio com alguns passos.
+Caso você não queira utilizar o domínio do GitHub, é possível usar seu próprio com alguns passos.
 
-1. Altere o arquivo `CNAME` que está na pasta `src/files` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`. [Veja o exemplo](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
-2. Altere o DNS do seu domínio seguindo as [instruções do Github](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+1. Crie um arquivo `CNAME` na pasta `src/files` do seu projeto e preencha com o nome do seu domínio: `seuevento.com`.
+2. Altere o DNS do seu domínio seguindo as [instruções do GitHub](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-### Como fazer Deploy sem utilizar Github Pages
+### Como fazer Deploy sem utilizar GitHub Pages
 
 Se você prefere utilizar seu próprio servidor para hospedar o site:
 

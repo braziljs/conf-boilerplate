@@ -25,7 +25,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
-We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [Github Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*
+We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [GitHub Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*
 
 By default, we have the following sections:
 
@@ -75,7 +75,6 @@ The basic structure of the project is given in the following way:
 |-- out/
 |-- src/
 |   |-- documents
-|   |-- files
 |   |-- layouts
 |   |-- partials
 |-- docpad.js
@@ -90,10 +89,6 @@ This is where the generated files are stored, once DocPad has been runned. Howev
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
 Contains the file responsible for importing all sections of the application. Also all theme's assets like images, CSS and JS.
-
-### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
-
-Contains a file called [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) that indicates the custom domain that should be used *(more information on how to use your own domain on [Deploy](#custom-domain))*.
 
 ### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
 
@@ -113,7 +108,7 @@ List NodeJS modules dependencies.
 
 ### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
 
-Shell Script responsible for publishing the site via via [Github Pages](http://pages.github.com).
+Shell Script responsible for publishing the site via via [GitHub Pages](http://pages.github.com).
 
 ## Customization
 
@@ -235,24 +230,22 @@ partners: [
 
 ## Deploy
 
-We don't like to centralize the power of deploy in one person, so we'll use [Github Pages](http://pages.github.com) that is free. You just need to run:
+We don't like to centralize the power of deploy in one person, so we'll use [GitHub Pages](http://pages.github.com) that is free. You just need to run:
 
 ```
 docpad deploy-ghpages
 ```
 
-Wait a few minutes until Github send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
-
-P.S.: Remember to remove `CNAME` file that is located on `src/files` folder, if you want to use the predefined Github url.
+Wait a few minutes until GitHub send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
 
 ### Custom domain
 
-If you don't want to use Github domain, you can use your own with a few steps.
+If you don't want to use GitHub domain, you can use your own with a few steps.
 
-1. Change the `CNAME` file that is located on `src/files` folder and fill with your domain: `yourevent.com`. [See the example](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME).
-2. Change the DNS of your domain [following Github instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
+1. Create a `CNAME` file under `src/files` folder and fill with your domain: `yourevent.com`.
+2. Change the DNS of your domain [following GitHub instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-### How to Deploy without Github Pages
+### How to Deploy without GitHub Pages
 
 If you want to use your own server to host the website:
 
