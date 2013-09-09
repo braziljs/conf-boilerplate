@@ -271,6 +271,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [Front in BH](http://frontinbh.com.br/) ([source code](https://github.com/braziljs/front-in-bh))
 * [Front in Rio](http://frontinrio.com.br/)
 * [Front in Bahia](http://frontinbahia.com.br/)
+* [Dev in Company BH](http://devincompanybh.github.io/setembro-2013/) ([source code](https://github.com/devincompanybh/setembro-2013/))
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 
