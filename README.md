@@ -10,7 +10,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 ## Table of contents
 
-* [See live demo](http://confboilerplate.com)
+* [See live demo](http://braziljs.github.io/conf-boilerplate/)
 * [How it works?](#how-it-works)
 * [Getting Started](#getting-started)
 * [Structure](#structure)
@@ -143,7 +143,7 @@ Do you want to change the cover image, Google Analytics code or favicon? Go ahea
 ```
 site:
   theme: "yellow-swan"
-  url: "http://confboilerplate.com"
+  url: "http://braziljs.github.io/conf-boilerplate/"
   googleanalytics: "UA-33656081-1"
 ```
 

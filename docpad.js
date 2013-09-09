@@ -20,7 +20,7 @@ module.exports = {
     // Site info
     site: {
       theme: "yellow-swan",
-      url: "http://confboilerplate.com",
+      url: "http://braziljs.github.io/conf-boilerplate/",
       googleanalytics: "UA-33656081-1"
     },
 

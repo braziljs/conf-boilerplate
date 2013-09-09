@@ -10,7 +10,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 ## Índice
 
-* [Veja o demo](http://confboilerplate.com)
+* [Veja o demo](http://braziljs.github.io/conf-boilerplate/)
 * [Como funciona?](#como-funciona)
 * [Primeiros passos](#primeiros-passos)
 * [Estrutura](#estrutura)
@@ -145,7 +145,7 @@ Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em fr
 ```
 site:
 	theme: "yellow-swan"
-	url: "http://confboilerplate.com"
+	url: "http://braziljs.github.io/conf-boilerplate/"
 	googleanalytics: "UA-33656081-1"
 ```
 
