@@ -64,7 +64,7 @@ By default, we have the following sections:
 
 		docpad run
 
-      *Sometimes `windows` tries to open the docpad.js file calling docpad command, in this case, use `docpad.cmd` instead docpad (See [issue](http://docpad.org/docs/troubleshoot#when-i-run-docpad-run-windows-asks-me-what-program-i-would-like-to-open-the-file-in))*
+      *Sometimes `windows` tries to open the docpad.js file calling docpad command, in this case, use `docpad.cmd` instead docpad (See [issue](http://docpad.org/docs/troubleshoot#when-i-run-docpad-run-windows-asks-me-what-program-i-would-like-to-open-the-file-in))* 
   
         5. docpad.cmd install
         6. docpad.cmd run
