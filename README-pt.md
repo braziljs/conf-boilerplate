@@ -66,7 +66,12 @@ Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http
 
 6. E finalmente rode:
 
-		docpad run
+	docpad run
+
+*Algumas vezes o `windows` tenta abrir o arquivo docpad.js utilizando o comando docpad, nesse caso, use o comando `docpad.cmd` no lugar de docpad (Veja [issue](http://docpad.org/docs/troubleshoot#when-i-run-docpad-run-windows-asks-me-what-program-i-would-like-to-open-the-file-in))* 
+	  
+	5. docpad.cmd install
+	6. docpad.cmd run
 
 Agora você irá ver o site rodando em `localhost:9778` :D
 
