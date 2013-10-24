@@ -60,6 +60,8 @@ By default, we have the following sections:
 
 		docpad install
 
+**Nota:** In Windows use `docpad.cmd install`
+
 6. And finally run:
 
 		docpad run
