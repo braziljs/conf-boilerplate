@@ -273,6 +273,7 @@ See the conferences that already used this project as a kickstart:
 * [Front in Rio](http://frontinrio.com.br/)
 * [Front in Bahia](http://frontinbahia.com.br/)
 * [Dev in Company BH](http://devincompanybh.github.io/setembro-2013/) ([source code](https://github.com/devincompanybh/setembro-2013/))
+* [TEDx Recife](http://tedxrecife.com.br/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
