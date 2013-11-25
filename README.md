@@ -275,6 +275,7 @@ See the conferences that already used this project as a kickstart:
 * [Dev in Company BH](http://devincompanybh.github.io/setembro-2013/) ([source code](https://github.com/devincompanybh/setembro-2013/))
 * [TEDx Recife](http://tedxrecife.com.br/)
 * [DevFest](http://www.devfest.com.br/2013/)
+* [Front in Floripa](http://frontinfloripa.com.br/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
