@@ -277,6 +277,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [TEDx Recife](http://tedxrecife.com.br/)
 * [DevFest](http://www.devfest.com.br/2013/)
 * [Front in Floripa](http://frontinfloripa.com.br/)
+* [Front in POA](http://frontinpoa.com.br/) ([source code](https://github.com/braziljs/front-in-poa))
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 

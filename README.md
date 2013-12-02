@@ -276,6 +276,7 @@ See the conferences that already used this project as a kickstart:
 * [TEDx Recife](http://tedxrecife.com.br/)
 * [DevFest](http://www.devfest.com.br/2013/)
 * [Front in Floripa](http://frontinfloripa.com.br/)
+* [Front in POA](http://frontinpoa.com.br/) ([source code](https://github.com/braziljs/front-in-poa))
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
