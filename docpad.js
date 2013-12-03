@@ -46,7 +46,7 @@ module.exports = {
       'speakers',
       'schedule',
       'sponsors',
-      'partners'
+      'plugins:partners'
       // 'contact'
     ],
 
