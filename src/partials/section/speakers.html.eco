@@ -1,25 +1,27 @@
-<h2 class="section-title"><%= @labels['speakers'] %></h2>
+<div class="wrapper">
+  <h2 class="section-title"><%= @labels['speakers'] %></h2>
 
-<ul class="speakers-list">
-<% for speaker in @schedule: %>
-  <% if speaker.presentation: %>
-    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-      <% if speaker.photo: %>
-        <span class="speaker-photo">
-          <img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image">
-        </span>
-      <% end %>
-
-      <h3 class="speech-title">
-        <% if speaker.presentation.time: %>
-          <span class="speech-time"><%= speaker.presentation.time %></span>
+  <ul class="speakers-list">
+  <% for speaker in @schedule: %>
+    <% if speaker.presentation: %>
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        <% if speaker.photo: %>
+          <span class="speaker-photo">
+            <img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image">
+          </span>
         <% end %>
-          <span> <%= speaker.presentation.title %></span>
-      </h3>
 
-      <h3 class="speakers-name"><%= speaker.name %> <% if speaker.link: %><a href="<%= speaker.link.href %>" title="<%= speaker.link.text %>"><%= speaker.link.text %></a><% end %></h3>
-      <p class="speakers-bio"><%= speaker.bio %></p>
-    </li>
+        <h3 class="speech-title">
+          <% if speaker.presentation.time: %>
+            <span class="speech-time"><%= speaker.presentation.time %></span>
+          <% end %>
+            <span> <%= speaker.presentation.title %></span>
+        </h3>
+
+        <h3 class="speakers-name"><%= speaker.name %> <% if speaker.link: %><a href="<%= speaker.link.href %>" title="<%= speaker.link.text %>"><%= speaker.link.text %></a><% end %></h3>
+        <p class="speakers-bio"><%= speaker.bio %></p>
+      </li>
+    <% end %>
   <% end %>
-<% end %>
-</ul>
+  </ul>
+</div>
