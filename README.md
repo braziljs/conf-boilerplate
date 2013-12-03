@@ -260,15 +260,10 @@ This command will generate a folder called `out` that contains just static files
 See the conferences that already used this project as a kickstart:
 
 * [FrontInterior](http://frontinterior.com.br)
-* [Front in Maceió](http://frontinmaceio.com.br/) ([source code](https://github.com/braziljs/front-in-maceio))
 * [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
-* [Rio.JS](http://riojs.org/) ([source code](https://github.com/braziljs/riojs-website))
 * [yoLab](http://yodojo.github.com/yoLab/) ([source code](https://github.com/yodojo/yoLab))
 * [Payphone Hackday](http://payphonehackday.com/) ([source code](https://github.com/octanebaby/conf-boilerplate))
-* [OuiShare Fest](http://ouisharefest.com/) ([source code](https://github.com/OuiShare/ouisharefest))
 * [RSJS](http://rsjs.org/) ([source code](https://github.com/braziljs/rsjs))
-* [SampaJS](http://sampajs.com.br/) ([source code](https://github.com/SampaJS/conf-boilerplate))
-* [MateHackers](http://hfday.matehackers.org/) ([source code](https://github.com/matehackers/evento))
 * [Front in BH](http://frontinbh.com.br/) ([source code](https://github.com/braziljs/front-in-bh))
 * [Front in Rio](http://frontinrio.com.br/)
 * [Front in Bahia](http://frontinbahia.com.br/)
