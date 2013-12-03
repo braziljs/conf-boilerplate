@@ -183,7 +183,13 @@ module.exports = {
 
     // return JSON
     getData: function (path) {
-      return require(path);
+      var pluginData = {};
+
+      try {
+        pluginData = require.resolve(path);
+      } catch( e ) {}
+
+      return pluginData;
     }
   }
 };
