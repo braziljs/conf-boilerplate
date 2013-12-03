@@ -57,7 +57,7 @@ module.exports = {
       speakers: "Speakers",
       schedule: "Schedule",
       sponsors: "Sponsors",
-      partners: "Partners",
+      'plugins:partners': "Partners",
       contact: "Contact"
     },
 
@@ -173,15 +173,6 @@ module.exports = {
         name: "Eventick",
         logo: "themes/yellow-swan/img/sponsor.png",
         url: "http://eventick.com.br"
-      }
-    ],
-
-    // List of Partners
-    partners: [
-      {
-        name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
       }
     ],
 
