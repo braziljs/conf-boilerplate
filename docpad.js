@@ -186,7 +186,7 @@ module.exports = {
       var pluginData = {};
 
       try {
-        pluginData = require.resolve(path);
+        pluginData = require(path);
       } catch( e ) {}
 
       return pluginData;
