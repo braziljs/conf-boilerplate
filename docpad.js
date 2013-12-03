@@ -188,6 +188,11 @@ module.exports = {
     // Theme path
     getTheme: function() {
       return "themes/" + this.site.theme;
+    },
+
+    // return JSON
+    getData: function (path) {
+      return require(path);
     }
   }
 };
