@@ -1,7 +1,7 @@
-<h2 class="section-title"><%= @labels['sponsors'] %></h2>
+<h2 class="section-title"><%= @labels['plugins:sponsors'] %></h2>
 <ul class="sponsors-list">
 
-<% for sponsor in @sponsors: %>
+<% for sponsor in @plugin['data']: %>
   <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
     <a href="<%= sponsor.url %>" class="sponsor-logo sponsor-link" itemprop="url">
       <img src="<%= sponsor.logo %>" alt="<%= sponsor.name %>" class="photo" itemprop="image">
@@ -10,7 +10,7 @@
 <% end %>
   <li class="sponsor-item">
     <a class="sponsor-logo sponsor-link sponsor-call" href="#">
-    	<img src="<%= @getTheme() %>/img/your-logo.jpg" alt="your logo" class="photo">
+        <img src="<%= @getTheme() %>/img/your-logo.jpg" alt="your logo" class="photo">
     </a>
   </li>
 </ul>

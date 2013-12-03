@@ -45,7 +45,7 @@ module.exports = {
       'plugins:location',
       'speakers',
       'schedule',
-      'sponsors',
+      'plugins:sponsors',
       'plugins:partners'
       // 'contact'
     ],
@@ -56,7 +56,7 @@ module.exports = {
       'plugins:location': "Location",
       speakers: "Speakers",
       schedule: "Schedule",
-      sponsors: "Sponsors",
+      'plugins:sponsors': "Sponsors",
       'plugins:partners': "Partners",
       contact: "Contact"
     },
@@ -164,15 +164,6 @@ module.exports = {
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
           time: "17h00"
         }
-      }
-    ],
-
-    // List of Sponsors
-    sponsors: [
-      {
-        name: "Eventick",
-        logo: "themes/yellow-swan/img/sponsor.png",
-        url: "http://eventick.com.br"
       }
     ],
 
