@@ -59,7 +59,7 @@ By default, we have the following sections:
 4. Install all dependencies:
 
     ```sh
-		$ npm install
+    $ npm install
     ```
 
 5. And finally run:
