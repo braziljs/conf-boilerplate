@@ -46,27 +46,28 @@ Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http
 
 1. Instale [Git](http://git-scm.com/downloads) e [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
 
-2. Abra seu terminal e instale o [DocPad](https://github.com/bevry/docpad) através do comando:
+2. Clone o repositório:
 
-		[sudo] npm install -fg docpad@6.30
+    ```sh
+    $ git clone git://github.com/braziljs/conf-boilerplate.git
 
-3. Clone o repositório:
+3. Vá para pasta do projeto:
 
-		git clone git://github.com/braziljs/conf-boilerplate.git
+    ```sh
+    $ cd conf-boilerplate
+    ```
 
-4. Vá para pasta do projeto:
+4. Instale todas as dependências:
 
-		cd conf-boilerplate
+    ```sh
+    $ npm install
+    ```
 
-5. Instale todas as dependências:
+5. E finalmente rode:
 
-		docpad install
-
-**Nota:** No Windows use `docpad.cmd install`
-
-6. E finalmente rode:
-
-		docpad run
+    ```sh
+    $ npm run-script watch
+    ```
 
 Agora você irá ver o site rodando em `localhost:9778` :D
 
@@ -74,7 +75,7 @@ Agora você irá ver o site rodando em `localhost:9778` :D
 
 A estrutura básica do projeto se dá na seguinte forma:
 
-<pre>
+```
 .
 |-- out/
 |-- src/
@@ -84,7 +85,7 @@ A estrutura básica do projeto se dá na seguinte forma:
 |-- docpad.js
 |-- package.json
 `-- publish.sh
-</pre>
+```
 
 ### out/
 
@@ -126,13 +127,13 @@ Quer alterar o nome, data, endereço, cidade ou preço do evento? É só mudar.
 
 ```
 conf:
-	name: "Conference name"
-	description: "Conference description"
-	date: "November 15"
-	price: "$100"
-	address: "Boulevard Kukulcan, 30, México"
-	venue: "Coco Bongo"
-	city: "Cancún"
+    name: "Conference name"
+    description: "Conference description"
+    date: "November 15"
+    price: "$100"
+    address: "Boulevard Kukulcan, 30, México"
+    venue: "Coco Bongo"
+    city: "Cancún"
 ```
 
 ### Informações básicas sobre o site
@@ -141,9 +142,9 @@ Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em fr
 
 ```
 site:
-	theme: "yellow-swan"
-	url: "http://braziljs.github.io/conf-boilerplate/"
-	googleanalytics: "UA-33656081-1"
+    theme: "yellow-swan"
+    url: "http://braziljs.github.io/conf-boilerplate/"
+    googleanalytics: "UA-33656081-1"
 ```
 
 ### Seções ativas
@@ -192,15 +193,15 @@ Para incluir/alterar/excluir um palestrante também é igualmente simples, basta
 
 ```
 schedule: [
-	name: "Chuck Norris"
-	photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-	bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-	company: "Delta Command"
-	twitter: "littlechuck"
-	presentation:
-		title: "How to kill a elephant with one finger"
-		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-		time: "13h00"
+    name: "Chuck Norris"
+    photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+    bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+    company: "Delta Command"
+    twitter: "littlechuck"
+    presentation:
+        title: "How to kill a elephant with one finger"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        time: "13h00"
 ]
 ```
 
@@ -212,8 +213,8 @@ Para alterar os horários de check-in, almoço e coffee-break, é só recorrer a
 
 ```
 schedule: [
-	name: "Check-in / Breakfast"
-	time: "9h00"
+    name: "Check-in / Breakfast"
+    time: "9h00"
 ]
 ```
 
@@ -225,9 +226,9 @@ Para adicionar qualquer patrocinador ou apoio no evento, é só recorrer as vari
 
 ```
 partners: [
-	name: "BrazilJS"
-	logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
-	url: "http://braziljs.org"
+    name: "BrazilJS"
+    logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
+    url: "http://braziljs.org"
 ]
 ```
 
@@ -235,8 +236,8 @@ partners: [
 
 Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [GitHub Pages](http://pages.github.com) que ainda é gratuito. Para realizar o deploy basta rodar:
 
-```
-docpad deploy-ghpages
+```sh
+$ npm run-script deploy
 ```
 
 Espere alguns minutos até que o GitHub lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
@@ -252,7 +253,7 @@ Caso você não queira utilizar o domínio do GitHub, é possível usar seu pró
 
 Se você prefere utilizar seu próprio servidor para hospedar o site:
 
-* Rode `docpad generate` na raíz do projeto.
+* Rode `npm run-script generate` na raíz do projeto.
 
 Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
 
@@ -300,4 +301,4 @@ Agradecimento especial a todos os membros da comunidade pelos feedbacks e contri
 
 ## Licença
 
-[MIT License](http://braziljs.mit-license.org/)
+[MIT License](http://braziljs.mit-license.org/) © BrazilJS Foundation

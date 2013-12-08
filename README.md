@@ -44,27 +44,29 @@ By default, we have the following sections:
 
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
-2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
+2. Now clone it:
 
-		[sudo] npm install -fg docpad@6.30
+    ```sh
+    $ git clone git://github.com/braziljs/conf-boilerplate.git
+    ```
 
-3. Now clone it:
+3. Then go to the project's folder:
 
-		git clone git://github.com/braziljs/conf-boilerplate.git
+    ```sh
+    $ cd conf-boilerplate
+    ```
 
-4. Then go to the project's folder:
+4. Install all dependencies:
 
-		cd conf-boilerplate
+    ```sh
+		$ npm install
+    ```
 
-5. Install all dependencies:
+5. And finally run:
 
-		docpad install
-
-**Nota:** In Windows use `docpad.cmd install`
-
-6. And finally run:
-
-		docpad run
+    ```sh
+    $ npm run-script watch
+    ```
 
 Now you can see the website running in `localhost:9778` :D
 
@@ -72,7 +74,7 @@ Now you can see the website running in `localhost:9778` :D
 
 The basic structure of the project is given in the following way:
 
-<pre>
+```
 .
 |-- out/
 |-- src/
@@ -82,7 +84,7 @@ The basic structure of the project is given in the following way:
 |-- docpad.js
 |-- package.json
 `-- publish.sh
-</pre>
+```
 
 ### out/
 
@@ -234,8 +236,8 @@ partners: [
 
 We don't like to centralize the power of deploy in one person, so we'll use [GitHub Pages](http://pages.github.com) that is free. You just need to run:
 
-```
-docpad deploy-ghpages
+```sh
+$ npm run-script deploy
 ```
 
 Wait a few minutes until GitHub send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
@@ -251,7 +253,7 @@ If you don't want to use GitHub domain, you can use your own with a few steps.
 
 If you want to use your own server to host the website:
 
-* Run `docpad generate` on the root of the project.
+* Run `npm run-script generate` on the root of the project.
 
 This command will generate a folder called `out` that contains just static files, then just upload them to your server.
 
@@ -299,4 +301,4 @@ Special thanks to all community members for feedbacks and contributions.
 
 ## License
 
-[MIT License](http://braziljs.mit-license.org/)
+[MIT License](http://braziljs.mit-license.org/) © BrazilJS Foundation

@@ -12,9 +12,12 @@
     "npm": "1.1.x"
   },
   "scripts": {
-    "test": "docpad generate"
+    "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --env static",
+    "generate": "node_modules/docpad/bin/docpad generate --env static",
+    "watch": "node_modules/docpad/bin/docpad run"
   },
   "dependencies": {
+    "docpad": "6.30.x",
     "docpad-plugin-eco": "2.0.2",
     "docpad-plugin-marked": "2.1.1",
     "docpad-plugin-partials": "2.6.1",
