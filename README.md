@@ -274,6 +274,7 @@ See the conferences that already used this project as a kickstart:
 * [DevFest](http://www.devfest.com.br/2013/)
 * [Front in Floripa](http://frontinfloripa.com.br/)
 * [Front in POA](http://frontinpoa.com.br/) ([source code](https://github.com/braziljs/front-in-poa))
+* [mloc.js](http://mloc-js.com/2014/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
