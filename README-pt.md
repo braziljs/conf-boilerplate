@@ -8,6 +8,8 @@
 
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
+> **Mantenedor:** [Jean Carlo Emer](https://github.com/jcemer)
+
 ## Índice
 
 * [Veja o demo](http://braziljs.github.io/conf-boilerplate/)

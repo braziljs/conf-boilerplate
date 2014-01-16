@@ -8,6 +8,8 @@
 
 An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
+> **Maintainer:** [Diogo Moretti](https://github.com/diogomoretti)
+
 ## Table of contents
 
 * [See live demo](http://braziljs.github.io/conf-boilerplate/)
