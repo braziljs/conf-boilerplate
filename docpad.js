@@ -7,21 +7,21 @@ module.exports = {
 
     // Conference info
     conf: {
-      name: "Conference name",
+      name: "Frontin Fortaleza",
       description: "Conference description",
-      date: "November 15",
+      date: "17 de Maio de 2014",
       // If your event is free, just comment this line
-      price: "$100",
-      venue: "Coco Bongo",
-      address: "Boulevard Kukulcan, 30",
-      city: "Cancún",
-      state: "Quintana"
+      price: "R$ 55,00",
+      venue: "Faculdade 7 de Setembro",
+      address: "Av. Alm. Maximiniano da Fonseca, 1395",
+      city: "Fortaleza",
+      state: "CE"
     },
 
     // The Call To Action button at the header,
     // If you don't want this, just remove the callToAction property.
     callToAction: {
-        text: "Register now!",
+        text: "Compre agora!",
         link: "http://eventick.com.br"
     },
 
@@ -52,13 +52,13 @@ module.exports = {
 
     // Labels which you can translate to other languages
     labels: {
-      about: "About",
-      location: "Location",
-      speakers: "Speakers",
-      schedule: "Schedule",
-      sponsors: "Sponsors",
-      partners: "Partners",
-      contact: "Contact"
+      about: "Sobre",
+      location: "Localização",
+      speakers: "Palestrantes",
+      schedule: "Programação",
+      sponsors: "Patrocinadores",
+      partners: "Apoio",
+      contact: "Contato"
     },
 
     // The entire schedule

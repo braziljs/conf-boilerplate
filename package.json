@@ -1,23 +1,23 @@
 {
-  "name": "ConfBoilerplate",
+  "name": "Front in Fortaleza",
   "version": "0.2.0",
-  "description": "A kickstart to create websites for conference/events.",
-  "homepage": "http://confboilerplate.com",
+  "description": "O melhor Frontin do Nordeste, com os melhores do Brasil.",
+  "homepage": "http://frontinfortaleza.com.br",
   "repository": {
     "type" : "git",
-    "url" : "http://github.com/braziljs/conf-boilerplate.git"
+    "url" : "http://github.com/faeliaso/front-in-fortaleza.git"
   },
   "engines": {
-    "node": ">0.8.x",
-    "npm": "1.1.x"
+    "node": ">0.10.x",
+    "npm": "1.3.x"
   },
   "scripts": {
-    "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --env static",
-    "generate": "node_modules/docpad/bin/docpad generate --env static",
-    "watch": "node_modules/docpad/bin/docpad run"
+    "deploy": "node ./node_modules/docpad/bin/docpad deploy-ghpages --env static",
+    "generate": "node ./node_modules/docpad/bin/docpad generate --env static",
+    "watch": "node ./node_modules/docpad/bin/docpad run"
   },
   "dependencies": {
-    "docpad": "6.30.x",
+    "docpad": "6.59.x",
     "docpad-plugin-eco": "2.0.2",
     "docpad-plugin-marked": "2.1.1",
     "docpad-plugin-partials": "2.6.1",
