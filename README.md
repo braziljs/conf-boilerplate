@@ -8,7 +8,7 @@
 
 An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
-> **Maintainer:** [Diogo Moretti](https://github.com/diogomoretti)
+> **Maintainer:** [Jean Carlo Emer](https://github.com/jcemer)
 
 ## Table of contents
 
@@ -297,7 +297,7 @@ If you want to submit a pull request, please do it in `dev` branch.
 
 We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.
 
-**Project Leaders**:
+**Created by**:
 
 * [Zeno Rocha](http://github.com/zenorocha)
 * [Bernard De Luna](http://github.com/bernarddeluna)

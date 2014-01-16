@@ -297,7 +297,7 @@ Se quiser enviar um pull request, por favor faça-o na branch `dev`.
 
 Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
 
-**Líderes de Projeto**:
+**Criado por**:
 
 * [Zeno Rocha](http://github.com/zenorocha)
 * [Bernard De Luna](http://github.com/bernarddeluna)
