@@ -1,17 +1,17 @@
 module.exports = {
 
-  prompts: false,
+  prompts: true,
 
   // These are variables will be accessible via our templates
   templateData: {
 
     // Conference info
     conf: {
-      name: "Frontin Fortaleza",
+      // name: "Frontin Fortaleza",
       description: "Conference description",
       date: "17 de Maio de 2014",
       // If your event is free, just comment this line
-      price: "R$ 55,00",
+      price: "R$ 50,00",
       venue: "Faculdade 7 de Setembro",
       address: "Av. Alm. Maximiniano da Fonseca, 1395",
       city: "Fortaleza",

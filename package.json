@@ -17,7 +17,7 @@
     "watch": "node ./node_modules/docpad/bin/docpad run"
   },
   "dependencies": {
-    "docpad": "6.59.x",
+    "docpad": "6.63.x",
     "docpad-plugin-eco": "2.0.2",
     "docpad-plugin-marked": "2.1.1",
     "docpad-plugin-partials": "2.6.1",

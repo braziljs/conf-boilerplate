@@ -8,8 +8,13 @@
 <header class="header">
   <div class="wrapper">
     <h1 class="logo-name">
-      <a class="logo-link" href="#" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
-    </h1>
+      <a class="logo-link" href="/" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
+    <h1>
+
+    <a href="/" class="logo" title="<%= @conf.name %>">
+        <img src="themes/yellow-swan/img/logofif.png" alt="<%= conf.name %>" width="266" height="266">
+    </a>
+
     <h2 class="tagline"><%= @conf.date %>, <%= @conf.venue %>, <%= @conf.city %></h2>
 
     <% if @conf.price || @callToAction: %>
