@@ -8,14 +8,14 @@ module.exports = {
     // Conference info
     conf: {
       // name: "Frontin Fortaleza",
-      description: "Conference description",
+      description: "O melhor Frontin do Nordeste, com os melhores do Brasil.",
       date: "17 de Maio de 2014",
       // If your event is free, just comment this line
       price: "R$ 50,00",
       venue: "Faculdade 7 de Setembro",
-      address: "Av. Alm. Maximiniano da Fonseca, 1395",
+      address: "Av. Alm. Maximiano da Fonseca, 1395 - Eng. Luciano Cavalcante - 60811-020",
       city: "Fortaleza",
-      state: "CE"
+      state: "Ceará"
     },
 
     // The Call To Action button at the header,
@@ -29,10 +29,9 @@ module.exports = {
     forkButton: {
         repository: "https://github.com/braziljs/conf-boilerplate"
     },
-
     // Site info
     site: {
-      theme: "yellow-swan",
+      theme: "fif",
       url: "http://braziljs.github.io/conf-boilerplate/",
       googleanalytics: "UA-33656081-1"
     },
@@ -69,7 +68,7 @@ module.exports = {
       },
       {
         name: "Linus Torvalds",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        photo: "themes/fif/img/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Linux Foundation",
         link: {
@@ -84,7 +83,7 @@ module.exports = {
       },
       {
         name: "Bill Gates",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        photo: "themes/fif/img/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Microsoft",
         link: {
@@ -103,7 +102,7 @@ module.exports = {
       },
       {
         name: "Chuck Norris",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        photo: "themes/fif/img/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Delta Command",
         link: {
@@ -118,7 +117,7 @@ module.exports = {
       },
       {
         name: "Steve Jobs",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        photo: "themes/fif/img/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Apple, Inc.",
         link: {
@@ -137,7 +136,7 @@ module.exports = {
       },
       {
         name: "Mark Zuckerberg",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        photo: "themes/fif/img/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Facebook",
         link: {
@@ -152,7 +151,7 @@ module.exports = {
       },
       {
         name: "Steve Wozniak",
-        photo: "themes/yellow-swan/img/speaker.jpg",
+        photo: "themes/fif/img/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Apple, Inc.",
         link: {
@@ -171,7 +170,7 @@ module.exports = {
     sponsors: [
       {
         name: "Eventick",
-        logo: "themes/yellow-swan/img/sponsor.png",
+        logo: "themes/fif/img/sponsor.png",
         url: "http://eventick.com.br"
       }
     ],
@@ -180,7 +179,7 @@ module.exports = {
     partners: [
       {
         name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
+        logo: "themes/fif/img/partner.png",
         url: "http://braziljs.org"
       }
     ],
