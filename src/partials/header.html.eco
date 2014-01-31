@@ -2,13 +2,9 @@
 <header class="header">
   <div class="wrapper">
 
-    <a href="/" class="logo" title="<%= @conf.description %>">
-        <img src="themes/fif/img/logo-fif.png" class="logo" alt="<%= @conf.description %>" />
+    <a href="/" class="logo" title="<%= @conf.name %>">
+        <img src="themes/fif/img/logo-fif.png" class="logo" alt="<%= @conf.name %>" />
     </a>
-
-    <h1 class="logo-name">
-      <a class="logo-link" href="/" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
-    <h1>
 
     <h2 class="tagline"><%= @conf.venue %></h2>
 

@@ -7,7 +7,7 @@ module.exports = {
 
     // Conference info
     conf: {
-      // name: "Frontin Fortaleza",
+      name: "Front in Fortaleza 2014",
       description: "O melhor Frontin do Nordeste, com os melhores do Brasil.",
       date: "17 de Maio de 2014",
       // If your event is free, just comment this line
@@ -41,7 +41,7 @@ module.exports = {
     // you can also change order here and it will reflect on page
     sections: [
       'about',
-      'location',
+      // 'location',
       'speakers',
       'schedule',
       'sponsors',
@@ -181,7 +181,22 @@ module.exports = {
         name: "BrazilJS",
         logo: "themes/fif/img/partner.png",
         url: "http://braziljs.org"
-      }
+      },
+      {
+        name: "BrazilJS",
+        logo: "themes/fif/img/partner.png",
+        url: "http://braziljs.org"
+      },
+      {
+        name: "BrazilJS",
+        logo: "themes/fif/img/partner.png",
+        url: "http://braziljs.org"
+      },
+      {
+        name: "BrazilJS",
+        logo: "themes/fif/img/partner.png",
+        url: "http://braziljs.org"
+      },
     ],
 
     // Theme path
