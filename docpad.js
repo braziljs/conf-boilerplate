@@ -41,7 +41,7 @@ module.exports = {
     // you can also change order here and it will reflect on page
     sections: [
       'about',
-      // 'location',
+      'location',
       'speakers',
       'schedule',
       'sponsors',
@@ -169,34 +169,29 @@ module.exports = {
     // List of Sponsors
     sponsors: [
       {
-        name: "Eventick",
-        logo: "themes/fif/img/sponsor.png",
-        url: "http://eventick.com.br"
+        name: "W3C",
+        logo: "themes/fif/img/w3c.png",
+        url: "http://www.w3c.br"
       }
     ],
 
     // List of Partners
     partners: [
       {
-        name: "BrazilJS",
-        logo: "themes/fif/img/partner.png",
-        url: "http://braziljs.org"
+        name: "Fa7",
+        logo: "themes/fif/img/fa7.png",
+        url: "fa7.edu.br"
       },
       {
-        name: "BrazilJS",
-        logo: "themes/fif/img/partner.png",
-        url: "http://braziljs.org"
+        name: "dizvulga",
+        logo: "themes/fif/img/dizvulga.png",
+        url: "http://dizvulga.com"
       },
       {
-        name: "BrazilJS",
-        logo: "themes/fif/img/partner.png",
-        url: "http://braziljs.org"
-      },
-      {
-        name: "BrazilJS",
-        logo: "themes/fif/img/partner.png",
-        url: "http://braziljs.org"
-      },
+        name: "Novatec",
+        logo: "themes/fif/img/novatec.png",
+        url: "novatec.com.br"
+      }
     ],
 
     // Theme path
