@@ -1,7 +1,7 @@
 var geocoder,
     map,
     google,
-    icon = 'themes/yellow-swan/img/marker-default.png';
+    icon = 'themes/fif/img/marker-default.png';
 
 function initialize() {
     'use strict';
