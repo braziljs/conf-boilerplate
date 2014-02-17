@@ -1,4 +1,2 @@
 <h2 class="section-title"><%= @labels['about'] %></h2>
-<p>A Primeira edição do <strong>Front in Fortaleza</strong> ocorrerá dia <strong>17 de Maio de 2014</strong> na <strong>Faculdade 7 de Setembro</strong>, tem como tema principal o desenvolvimento da camada mais próxima dos usuários e clientes de soluções web.</p>
-
-<p>Ou seja, tudo que ele vê e interage: FrontEnd e suas tecnologias (<i>HTML, CSS, JavaScript e afins</i>).</p>
+<p>A Primeira edição do <strong>Front in Fortaleza</strong> ocorrerá dia <strong>17 de Maio de 2014</strong> na <strong>Faculdade 7 de Setembro</strong>, tem como tema principal o desenvolvimento da camada mais próxima dos usuários e clientes de soluções web, ou seja, tudo que ele vê e interage: FrontEnd e suas tecnologias (<i>HTML, CSS, JavaScript e afins</i>).</p>

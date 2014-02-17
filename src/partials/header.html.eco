@@ -3,7 +3,7 @@
   <div class="wrapper">
 
     <a href="/" class="logo" title="<%= @conf.name %>">
-        <img src="themes/fif/img/logo-fif.png" class="logo" alt="<%= @conf.name %>" />
+        <img src="<%= @getTheme() %>/assets/images/logo-fif.png" class="logo" alt="<%= @conf.name %>" />
     </a>
 
     <h2 class="tagline"><%= @conf.venue %></h2>
