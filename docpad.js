@@ -32,8 +32,8 @@ module.exports = {
     // Site info
     site: {
       theme: "fif",
-      url: "http://braziljs.github.io/conf-boilerplate/",
-      googleanalytics: "UA-33656081-1"
+      url: "http://github.com/faeliaso/front-in-fortaleza",
+      googleanalytics: "UA-48138416-1"
     },
 
     // Active sections on the website
@@ -43,7 +43,7 @@ module.exports = {
       'about',
       'location',
       'speakers',
-      'schedule',
+      // 'schedule',
       'sponsors',
       'partners'
       // 'contact'
@@ -68,7 +68,7 @@ module.exports = {
       },
       {
         name: "Linus Torvalds",
-        photo: "themes/fif/img/speaker.jpg",
+        photo: "themes/fif/assets/images/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Linux Foundation",
         link: {
@@ -83,7 +83,7 @@ module.exports = {
       },
       {
         name: "Bill Gates",
-        photo: "themes/fif/img/speaker.jpg",
+        photo: "themes/fif/assets/images/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Microsoft",
         link: {
@@ -102,7 +102,7 @@ module.exports = {
       },
       {
         name: "Chuck Norris",
-        photo: "themes/fif/img/speaker.jpg",
+        photo: "themes/fif/assets/images/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Delta Command",
         link: {
@@ -117,7 +117,7 @@ module.exports = {
       },
       {
         name: "Steve Jobs",
-        photo: "themes/fif/img/speaker.jpg",
+        photo: "themes/fif/assets/images/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Apple, Inc.",
         link: {
@@ -136,7 +136,7 @@ module.exports = {
       },
       {
         name: "Mark Zuckerberg",
-        photo: "themes/fif/img/speaker.jpg",
+        photo: "themes/fif/assets/images/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Facebook",
         link: {
@@ -151,7 +151,7 @@ module.exports = {
       },
       {
         name: "Steve Wozniak",
-        photo: "themes/fif/img/speaker.jpg",
+        photo: "themes/fif/assets/images/speaker.jpg",
         bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
         company: "Apple, Inc.",
         link: {
@@ -170,7 +170,7 @@ module.exports = {
     sponsors: [
       {
         name: "W3C",
-        logo: "themes/fif/img/w3c.png",
+        logo: "themes/fif/assets/images/w3c.png",
         url: "http://www.w3c.br"
       }
     ],
@@ -179,17 +179,17 @@ module.exports = {
     partners: [
       {
         name: "Fa7",
-        logo: "themes/fif/img/fa7.png",
+        logo: "themes/fif/assets/images/fa7.png",
         url: "fa7.edu.br"
       },
       {
         name: "dizvulga",
-        logo: "themes/fif/img/dizvulga.png",
+        logo: "themes/fif/assets/images/dizvulga.png",
         url: "http://dizvulga.com"
       },
       {
         name: "Novatec",
-        logo: "themes/fif/img/novatec.png",
+        logo: "themes/fif/assets/images/novatec.png",
         url: "novatec.com.br"
       }
     ],
