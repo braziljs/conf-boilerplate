@@ -1,5 +1,5 @@
 <h2 class="section-title"><%= @labels['speakers'] %></h2>
-
+<p>Confira os nomes já confirmados que irão trazer e compartilhar conhecimento.</p>
 <ul class="speakers-list">
 <% for speaker in @schedule: %>
   <% if speaker.presentation: %>

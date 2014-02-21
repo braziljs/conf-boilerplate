@@ -1,13 +1,12 @@
 <h2 class="section-title"><%= @labels['schedule'] %></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<p>A ordem das palestras pode sofrer alterações sem aviso prévio.</p>
 <div class="schedule-tbl">
   <table>
     <thead>
       <tr>
-        <th class="schedule-time">Time</th>
-        <th class="schedule-slot">Slot</th>
-        <th class="schedule-description">Description</th>
+        <th class="schedule-time">Hora</th>
+        <th class="schedule-slot">Palestra</th>
+        <th class="schedule-description">Descrição</th>
       </tr>
     </thead>
     <tbody>
