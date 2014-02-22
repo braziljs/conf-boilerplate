@@ -12,6 +12,7 @@ function initialize() {
     center: latlng,
     scrollwheel: false,
     streetViewControl: true,
+    draggable: false,
     labels: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
