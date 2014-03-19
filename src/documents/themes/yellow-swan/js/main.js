@@ -1,38 +1,108 @@
-// 21 Dez 2012, 4:42
-;(function ($, window, document, undefined) {
-	'use strict';
-	({
-		animateScroll : function () {
-			$("#nav").find('.nav-link').on('click', function (event) {
+(function () {
+    'use strict';
 
-				var $this = $(this),
-					$htmlBody = $('html, body'),
-					linkTarget = $this.attr('href'),
-					offSetTop;
+    var conf = {};
 
-				// If not start with #, stop here!
-				if (linkTarget[0] !== '#') {
-					return false;
-				}
+    // Init functions, called on DOMContentLoaded event
+    conf.init = function () {
+        conf.map.init($('#map-canvas'));
+        conf.menu.init();
+    }
 
-				event.preventDefault();
+    /***
+        Google Maps implementation
+    ***/
+    conf.map = {
+        marker: 'themes/yellow-swan/img/marker-default.png'
+    }
 
-				// Get distance of top
-				offSetTop = $(linkTarget).offset().top;
+    // Google Maps configs
+    conf.map.init = function ($element) {
+        conf.map.element = $element;
 
-				// Animate the scroll
-				$htmlBody.stop().animate({scrollTop : offSetTop}, function () {
-					location.hash = linkTarget;
-				});
-			});
-		},
+        conf.map.geocoder = new google.maps.Geocoder();
 
-		init : function () {
-			var that = this;
+        conf.map.latlng = new google.maps.LatLng(0, 0),
+            conf.map.options = {
+                zoom: 16,
+                center: conf.map.latlng,
+                scrollwheel: false,
+                streetViewControl: true,
+                labels: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
 
-			$(function () {
-				that.animateScroll();
-			});
-		}
-	}).init();
-}(jQuery, window, document));
+        conf.map.canvas = new google.maps.Map(conf.map.element.get(0), conf.map.options);
+        conf.map.canvas.setCenter(conf.map.latlng);
+
+        conf.map.createMarker();
+    };
+
+    conf.map.createMarker = function () {
+        
+        conf.map.address = conf.map.element.attr('data-address');
+
+        conf.map.geocoder.geocode({ 'address': conf.map.address}, function (results, status) {
+
+            if (status === google.maps.GeocoderStatus.OK) {
+
+                conf.map.canvas.setCenter(results[0].geometry.location);
+
+                new google.maps.Marker({
+                    map: conf.map.canvas,
+                    position: results[0].geometry.location,
+                    icon: conf.map.marker
+                });
+            } else {
+                if (console) {
+                    console.log('Google Maps was not loaded: ', status);
+                }
+            }
+        });
+    };
+
+    /***
+        Create animated scroll for menu links
+    ***/
+    conf.menu = {
+        itemsSelector: '.nav-link',
+        animationSpeed: 400,
+    }
+
+    conf.menu.init = function () {
+        conf.menu.menuItems = $(conf.menu.itemsSelector);
+        conf.menu.document = $('html, body');
+
+        conf.menu.menuItems.on('click.animateScroll', function (event) {
+            event.preventDefault();
+
+            conf.menu.animateTo(event.target);
+        });
+    }
+
+    conf.menu.animateTo = function ($link) {
+
+        var $link = $($link),
+            href, offSetTop;
+
+        if (!conf.menu.isAValidLink($link)) {
+            return false;
+        }
+
+        href = $link.attr('href'),
+        offSetTop = $(href).offset().top;
+        
+        conf.menu.document.finish().animate({scrollTop : offSetTop}, conf.menu.animationSpeed, function () {
+            location.hash = href;
+        });
+    }
+
+    conf.menu.isAValidLink = function ($link) {
+        return !($link.attr('href')[0] !== '#');
+    }
+
+    $(function () {
+        // call all functions
+        conf.init();
+    });
+}());
