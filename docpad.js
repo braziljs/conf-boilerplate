@@ -42,22 +42,22 @@ module.exports = {
     // you can also change order here and it will reflect on page
     sections: [
       'about',
-      'location',
+      'plugins:location',
       'speakers',
       'schedule',
-      'sponsors',
-      'partners'
+      'plugins:sponsors',
+      'plugins:partners'
       // 'contact'
     ],
 
     // Labels which you can translate to other languages
     labels: {
       about: "About",
-      location: "Location",
+      'plugins:location': "Location",
       speakers: "Speakers",
       schedule: "Schedule",
-      sponsors: "Sponsors",
-      partners: "Partners",
+      'plugins:sponsors': "Sponsors",
+      'plugins:partners': "Partners",
       contact: "Contact"
     },
 
@@ -167,27 +167,20 @@ module.exports = {
       }
     ],
 
-    // List of Sponsors
-    sponsors: [
-      {
-        name: "Eventick",
-        logo: "themes/yellow-swan/img/sponsor.png",
-        url: "http://eventick.com.br"
-      }
-    ],
-
-    // List of Partners
-    partners: [
-      {
-        name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
-      }
-    ],
-
     // Theme path
     getTheme: function() {
       return "themes/" + this.site.theme;
+    },
+
+    // return JSON
+    getData: function (path) {
+      var pluginData = {};
+
+      try {
+        pluginData = require(path);
+      } catch( e ) {}
+
+      return pluginData;
     }
   }
 };

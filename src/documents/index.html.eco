@@ -2,12 +2,22 @@
 layout: default
 ---
 
-<% for section in @sections : %>
+<% for section in @sections: %>
   <!-- <%= section.toUpperCase() %> -->
 
-  <section class="<%= section %>" id="<%= section %>">
-    <%- @partial("section/#{section}.html.eco", @) %>
-  </section>
+    <% sectionProperty = section.split(':') %>
+
+    <div class="<%= sectionProperty.join('-') %>" id="<%= sectionProperty.join('-') %>">
+        <% # Call plugins %>
+        <% if sectionProperty[0] == 'plugins': %>
+            <% plugin = @getData("./src/partials/plugins/#{sectionProperty[1]}/data.js") %>
+
+            <%- @partial("plugins/#{sectionProperty[1]}/index.html.eco", { plugin: plugin} , @) %>
+        <% # Call native sections %>
+        <% else: %>
+            <%- @partial("section/#{sectionProperty[0]}.html.eco", @) %>
+        <% end %>
+    </div>
 
   <!-- / <%= section.toUpperCase() %> -->
 <% end %>

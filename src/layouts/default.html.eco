@@ -36,14 +36,16 @@
 
     <!-- CONTENT -->
     <div class="content" id="content">
-      <div class="wrapper">
+
         <%- @content %>
+
         <!-- FOOTER -->
-        <footer class="footer">
-          <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
-        </footer>
+        <div class="wrapper">
+          <footer class="footer">
+            <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
+          </footer>
+        </div>
         <!-- / FOOTER -->
-      </div>
     </div>
     <!-- / CONTENT -->
 
