@@ -188,6 +188,11 @@ module.exports = {
     // Theme path
     getTheme: function() {
       return "themes/" + this.site.theme;
+    },
+
+    // Site Path
+    getUrl: function() {
+    	return this.site.url;
     }
   }
 };
