@@ -68,7 +68,7 @@ Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http
 5. E finalmente rode:
 
     ```sh
-    $ npm run-script watch
+    $ npm run watch
     ```
 
 Agora você irá ver o site rodando em `localhost:9778` :D
@@ -239,7 +239,7 @@ partners: [
 Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto utilizaremos o recurso de [GitHub Pages](http://pages.github.com) que ainda é gratuito. Para realizar o deploy basta rodar:
 
 ```sh
-$ npm run-script deploy
+$ npm run deploy
 ```
 
 Espere alguns minutos até que o GitHub lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
@@ -255,7 +255,7 @@ Caso você não queira utilizar o domínio do GitHub, é possível usar seu pró
 
 Se você prefere utilizar seu próprio servidor para hospedar o site:
 
-* Rode `npm run-script generate` na raíz do projeto.
+* Rode `npm run generate` na raíz do projeto.
 
 Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
 

@@ -67,7 +67,7 @@ By default, we have the following sections:
 5. And finally run:
 
     ```sh
-    $ npm run-script watch
+    $ npm run watch
     ```
 
 Now you can see the website running in `localhost:9778` :D
@@ -239,7 +239,7 @@ partners: [
 We don't like to centralize the power of deploy in one person, so we'll use [GitHub Pages](http://pages.github.com) that is free. You just need to run:
 
 ```sh
-$ npm run-script deploy
+$ npm run deploy
 ```
 
 Wait a few minutes until GitHub send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
@@ -255,7 +255,7 @@ If you don't want to use GitHub domain, you can use your own with a few steps.
 
 If you want to use your own server to host the website:
 
-* Run `npm run-script generate` on the root of the project.
+* Run `npm run generate` on the root of the project.
 
 This command will generate a folder called `out` that contains just static files, then just upload them to your server.
 

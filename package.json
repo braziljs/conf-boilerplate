@@ -12,9 +12,9 @@
     "npm": "1.1.x"
   },
   "scripts": {
-    "deploy": "node_modules/docpad/bin/docpad deploy-ghpages --env static",
-    "generate": "node_modules/docpad/bin/docpad generate --env static",
-    "watch": "node_modules/docpad/bin/docpad run"
+    "deploy": "docpad deploy-ghpages --env static",
+    "generate": "docpad generate --env static",
+    "watch": "docpad run"
   },
   "dependencies": {
     "docpad": "6.30.x",
