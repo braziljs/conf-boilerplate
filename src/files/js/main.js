@@ -22,6 +22,7 @@
           location.hash = linkTarget;
         });
       });
+      
       $('.nav-link').click(function(){
         if($(this).attr('id')==='home'){
             $('body,html').animate({
