@@ -2,6 +2,11 @@
 <nav id="nav">
   <div class="wrapper">
     <ul class="nav-container">
+
+      <li class="nav-item">
+        <a href="#" id="home" title="Home" class="nav-link">Home</a>
+      </li>
+      
       <% if @sections.about: %>
         <li class="nav-item">
           <a href="#about" title="About" class="nav-link">About</a>
