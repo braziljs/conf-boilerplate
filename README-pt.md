@@ -274,6 +274,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [Dev in Company BH](http://devincompanybh.github.io/setembro-2013/) ([source code](https://github.com/devincompanybh/setembro-2013/))
 * [TEDx Recife](http://tedxrecife.com.br/)
 * [DevFest](http://www.devfest.com.br/2013/)
+* [DevFest Sul](http://www.devfestsul.com.br/)
 * [Front in Floripa](http://frontinfloripa.com.br/)
 * [Front in POA](http://frontinpoa.com.br/) ([source code](https://github.com/braziljs/front-in-poa))
 * [mloc.js](http://mloc-js.com/2014/)
