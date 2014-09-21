@@ -79,6 +79,14 @@
 
             conf.menu.animateTo(event.target);
         });
+
+        $('.schedule-hdr div').on('click', function () {
+          var hdr = $(this);
+          var tables = $('.schedule-tbl tbody');
+
+          hdr.addClass('active').siblings().removeClass('active');
+          tables.eq(hdr.index()).addClass('active').siblings().removeClass('active');
+        });
     };
 
     conf.menu.animateTo = function (link) {
