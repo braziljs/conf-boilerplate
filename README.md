@@ -242,7 +242,7 @@ We don't like to centralize the power of deploy in one person, so we'll use [Git
 $ npm run deploy
 ```
 
-Wait a few minutes until GitHub send you an email telling that everything went well. Then just access: `http://yourUser.github.com/yourFork`
+Wait a few minutes until GitHub send you an email telling that everything went well. Then just access: `http://yourUser.github.io/yourFork`
 
 ### Custom domain
 

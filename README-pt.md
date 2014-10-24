@@ -242,7 +242,7 @@ Nós não gostamos de centralizar o poder de deploy em uma pessoa, portanto util
 $ npm run deploy
 ```
 
-Espere alguns minutos até que o GitHub lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.com/seuFork`
+Espere alguns minutos até que o GitHub lhe envie um e-mail avisando que tudo ocorreu bem. Depois é só acessar: `http://seuUsuario.github.io/seuFork`
 
 ### Domínio personalizado
 
