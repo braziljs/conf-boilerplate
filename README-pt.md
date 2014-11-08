@@ -281,6 +281,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [Craft Conf](http://craft-conf.com/2014/) ([source code](https://github.com/ustream/craftconf))
 * [Stretch Conference](http://stretchcon.com/2013/)
 * [Meet.us()](http://meetus.github.io/) ([source code](https://github.com/meetus/meetus.github.io))
+* [MPI LAMEC 2014](http://mpilamec.com/)
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 
