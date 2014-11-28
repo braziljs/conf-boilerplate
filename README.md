@@ -281,6 +281,7 @@ See the conferences that already used this project as a kickstart:
 * [Craft Conf](http://craft-conf.com/2014/) ([source code](https://github.com/ustream/craftconf))
 * [Stretch Conference](http://stretchcon.com/2013/)
 * [Meet.us()](http://meetus.github.io/) ([source code](https://github.com/meetus/meetus.github.io))
+* [MPI LAMEC 2014](http://mpilamec.com/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
