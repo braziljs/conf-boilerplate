@@ -7,6 +7,9 @@
       </li>
     <% end %>
   </ul>
+    <% if @fbButtons: %>
+        <div class="fb-like" data-href="<%= @fbButtons.href %>" data-layout="<%= @fbButtons.layout %>" data-action="<%= @fbButtons.action %>" data-show-faces="<%= @fbButtons.showFaces %>" data-share="<%= @fbButtons.share %>"></div>
+    <% end %>
 </nav>
 
 <hr>
