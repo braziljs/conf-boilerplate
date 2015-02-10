@@ -282,6 +282,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [Stretch Conference](http://stretchcon.com/2013/)
 * [Meet.us()](http://meetus.github.io/) ([source code](https://github.com/meetus/meetus.github.io))
 * [MPI LAMEC 2014](http://mpilamec.com/)
+* [Front in Cuiabá](http://frontincuiaba.com.br/) ([source code](https://github.com/braziljs/front-in-cuiaba))
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 

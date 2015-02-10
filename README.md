@@ -282,6 +282,7 @@ See the conferences that already used this project as a kickstart:
 * [Stretch Conference](http://stretchcon.com/2013/)
 * [Meet.us()](http://meetus.github.io/) ([source code](https://github.com/meetus/meetus.github.io))
 * [MPI LAMEC 2014](http://mpilamec.com/)
+* [Front in Cuiabá](http://frontincuiaba.com.br/) ([source code](https://github.com/braziljs/front-in-cuiaba))
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
