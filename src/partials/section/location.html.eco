@@ -6,4 +6,4 @@
   <span itemprop="addressRegion"> <%= @conf.state %></span>
 </p>
 
-<div id="map-canvas" class="location-area" data-address="<%= @conf.address %>"></div>
+<div id="map-canvas" class="location-area" data-address="<%= @conf.address %>, <%= @conf.city %> - <%= @conf.state %>"></div>
