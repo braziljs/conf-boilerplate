@@ -1,25 +1,25 @@
-<h2 class="section-title">{{this.label}}</h2>
+<h2 class="section-title">{{label}}</h2>
 
 <ul class="speakers-list">
-<% for speaker in @schedule: %>
-  <% if speaker.presentation: %>
+{{#each schedule}}
+  {{#if presentation}}
     <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-      <% if speaker.photo: %>
+      {{#if photo}}
         <span class="speaker-photo">
-          <img class="photo" src="<%= speaker.photo %>" alt="<%= speaker.name %>" itemprop="image">
+          <img class="photo" src="{{ photo }}" alt="{{ name }}" itemprop="image">
         </span>
-      <% end %>
+      {{/if}}
 
       <h3 class="speech-title">
-        <% if speaker.presentation.time: %>
-          <span class="speech-time"><%= speaker.presentation.time %></span>
-        <% end %>
-          <span> <%= speaker.presentation.title %></span>
+        {{#if presentation.time}}
+          <span class="speech-time">{{ presentation.time }}</span>
+        {{/if}}
+        <span> {{ presentation.title }}</span>
       </h3>
 
-      <h3 class="speakers-name"><%= speaker.name %> <% if speaker.link: %><a href="<%= speaker.link.href %>" title="<%= speaker.link.text %>"><%= speaker.link.text %></a><% end %></h3>
-      <p class="speakers-bio"><%= speaker.bio %></p>
+      <h3 class="speakers-name">{{ name }} {{#if link}}<a href="{{ link.href }}" title="{{ link.text}}">{{ link.text}}</a>{{/if}}</h3>
+      <p class="speakers-bio">{{ bio }}</p>
     </li>
-  <% end %>
-<% end %>
+  {{/if}}
+{{/each}}
 </ul>

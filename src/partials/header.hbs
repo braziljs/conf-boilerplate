@@ -12,7 +12,7 @@
     </h1>
     <h2 class="tagline">{{ conf.date }}, {{ conf.venue }}, {{ conf.city }}</h2>
 
-    {{#specialIf conf.price || misc.callToAction}}
+    {{#specialIf conf.price "||" misc.callToAction}}
       <div class="call-action-area">
         {{#if conf.price}}
           <span class="price">Only {{ conf.price }}</span>

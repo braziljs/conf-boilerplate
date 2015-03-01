@@ -9,6 +9,10 @@ var Handlebars  = require('handlebars');
 
 console.log('Building ' + __dirname + '..');
 
+/**
+ * Conference Data.
+ */
+
 var templateData = {
   conf: "data/conf.json",
   site: "data/site.json",
@@ -18,6 +22,10 @@ var templateData = {
   sponsors: "data/sponsors.json",
   misc: "data/misc.json"
 }
+
+/**
+ * Build.
+ */
 
 Metalsmith(__dirname)
   .clean(true)
@@ -39,6 +47,7 @@ Metalsmith(__dirname)
 /**
  * Partials Registration.
  */
+
 var partialsDirs = [__dirname + '/src/partials', __dirname + '/src/partials/section'];
 partialsDirs.forEach(function (partialsDir) {
   var filenames = fs.readdirSync(partialsDir);
@@ -56,7 +65,7 @@ partialsDirs.forEach(function (partialsDir) {
 /**
  * Helpers.
  */
- 
+
 Handlebars.registerHelper('partial', function(name, ctx, options) {
   var template = Handlebars.compile(Handlebars.partials[name]);
   var newCtx = extend(ctx, options.data.root)
@@ -89,6 +98,7 @@ Handlebars.registerHelper('specialIf', function (v1, operator, v2, options) {
 /**
  * Functions.
  */
+
 function extend(obj1,obj2){
     var obj3 = {};
     for (var attrname in obj1) { obj3[attrname] = obj1[attrname]; }
