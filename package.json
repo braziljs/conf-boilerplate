@@ -13,17 +13,18 @@
     "npm": "1.1.x"
   },
   "scripts": {
-    "deploy": "",
-    "generate": "",
-    "watch": ""
+    "deploy": "node metalsmith.js deploy",
+    "generate": "node metalsmith.js generate",
+    "watch": "node metalsmith.js watch"
   },
   "dependencies": {
     "handlebars": "^3.0.0",
     "metalsmith": "^1.3.0",
-    "metalsmith-filemetadata": "0.0.4",
     "metalsmith-less": "^1.0.3",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-metaobject": "^0.1.0",
-    "metalsmith-templates": "^0.6.0"
+    "metalsmith-serve": "0.0.3",
+    "metalsmith-templates": "^0.6.0",
+    "metalsmith-watch": "^0.2.0"
   }
 }

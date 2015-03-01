@@ -1,9 +1,0 @@
-{
-  "callToAction": {
-    "text": "Register now!",
-    "link": "http://eventick.com.br"
-  },
-  "forkButton": {
-    "repository": "https://github.com/braziljs/conf-boilerplate"
-  }
-}

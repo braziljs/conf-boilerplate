@@ -12,7 +12,7 @@
     </h1>
     <h2 class="tagline">{{ conf.date }}, {{ conf.venue }}, {{ conf.city }}</h2>
 
-    {{#specialIf conf.price "||" callToAction}}
+    {{#or conf.price "||" callToAction}}
       <div class="call-action-area">
         {{#if conf.price}}
           <span class="price">Only {{ conf.price }}</span>
@@ -22,7 +22,7 @@
           <a href="{{ callToAction.link }}" class="call-action-link" title="{{ callToAction.text }}">{{ callToAction.text }}</a>
         {{/if}}
       </div>
-    {{/specialIf}}
+    {{/or}}
   </div>
 </header>
 <!--  / HEADER -->
