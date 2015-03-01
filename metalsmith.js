@@ -1,4 +1,5 @@
 var fs = require('fs');
+var path = require('path');
 
 var Metalsmith = require('metalsmith');
 var markdown = require('metalsmith-markdown');
@@ -8,6 +9,8 @@ var metaobject = require('metalsmith-metaobject');
 var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
 var Handlebars = require('handlebars');
+var ghpages = require('gh-pages');
+
 var task = process.argv[2];
 var msg;
 
@@ -223,6 +226,15 @@ if (task == "watch") {
 m.build(function(err) {
     if (err) throw err;
     if(!msg) msg = "Done!";
+
+    if (task == "deploy") {
+        ghpages.publish(path.join(__dirname, 'out'), {
+          branch: 'migration/docpad2metalsmith',
+          repo: 'https://github.com/obetomuniz/cb.git'
+        }, function() {
+            console.log("Deployed in Github Pages.");
+        });
+    }
     console.log(msg);
 });
 
