@@ -1,0 +1,16 @@
+<h2 class="section-title">{{this.label}}</h2>
+<ul class="sponsors-list">
+
+{{#each sponsors}}
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="{{ url }}" class="sponsor-logo sponsor--link" itemprop="url">
+      <img src="{{ logo }}" alt="{{ name }}" class="photo" itemprop="image">
+    </a>
+  </li>
+{{/each}}
+  <li class="sponsor-item">
+    <a class="sponsor-logo sponsor--link sponsor-call" href="#">
+    	<img src="themes/{{ site.theme }}/img/your-logo.jpg" alt="your logo" class="photo">
+    </a>
+  </li>
+</ul>
