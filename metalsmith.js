@@ -226,16 +226,19 @@ if (task == "watch") {
 m.build(function(err) {
     if (err) throw err;
     if(!msg) msg = "Done!";
+    console.log(msg);
 
     if (task == "deploy") {
-        ghpages.publish(path.join(__dirname, 'out'), {
-          branch: 'migration/docpad2metalsmith',
-          repo: 'https://github.com/obetomuniz/cb.git'
-        }, function() {
-            console.log("Deployed in Github Pages.");
+        ghpages.publish(path.join(__dirname, 'out'), 
+        {
+            clone: "dist"
+        },
+        function(err) {
+            if (err) throw err;
+            console.log("Deployed on Github Pages.");
         });
     }
-    console.log(msg);
+
 });
 
 
