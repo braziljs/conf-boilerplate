@@ -35,8 +35,11 @@ Metalsmith(__dirname)
     console.log('Done!');
   });
 
-var partialsDirs = [__dirname + '/src/partials', __dirname + '/src/partials/section'];
 
+/**
+ * Partials Registration.
+ */
+var partialsDirs = [__dirname + '/src/partials', __dirname + '/src/partials/section'];
 partialsDirs.forEach(function (partialsDir) {
   var filenames = fs.readdirSync(partialsDir);
   filenames.forEach(function (filename) {
@@ -50,13 +53,42 @@ partialsDirs.forEach(function (partialsDir) {
   });
 });
 
+/**
+ * Helpers.
+ */
+ 
 Handlebars.registerHelper('partial', function(name, ctx, options) {
   var template = Handlebars.compile(Handlebars.partials[name]);
   var newCtx = extend(ctx, options.data.root)
   return template(newCtx, options);
 });
 
+Handlebars.registerHelper('specialIf', function (v1, operator, v2, options) {
+    switch (operator) {
+        case '==':
+            return (v1 == v2) ? options.fn(this) : options.inverse(this);
+        case '===':
+            return (v1 === v2) ? options.fn(this) : options.inverse(this);
+        case '<':
+            return (v1 < v2) ? options.fn(this) : options.inverse(this);
+        case '<=':
+            return (v1 <= v2) ? options.fn(this) : options.inverse(this);
+        case '>':
+            return (v1 > v2) ? options.fn(this) : options.inverse(this);
+        case '>=':
+            return (v1 >= v2) ? options.fn(this) : options.inverse(this);
+        case '&&':
+            return (v1 && v2) ? options.fn(this) : options.inverse(this);
+        case '||':
+            return (v1 || v2) ? options.fn(this) : options.inverse(this);
+        default:
+            return options.inverse(this);
+    }
+});
 
+/**
+ * Functions.
+ */
 function extend(obj1,obj2){
     var obj3 = {};
     for (var attrname in obj1) { obj3[attrname] = obj1[attrname]; }
