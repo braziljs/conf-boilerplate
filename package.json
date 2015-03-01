@@ -26,6 +26,7 @@
     "metalsmith-metaobject": "^0.1.0",
     "metalsmith-serve": "0.0.3",
     "metalsmith-templates": "^0.6.0",
-    "metalsmith-watch": "^0.2.0"
+    "metalsmith-watch": "git://github.com/obetomuniz/metalsmith-watch.git#fix/rebuild"
   }
 }
+

@@ -205,6 +205,22 @@ m.source('src/documents');
 m.destination('out');
 
 // Plugins & Tasks
+m.use(function(){
+    // Partial Registration
+    var partialsDirs = [__dirname + '/src/partials', __dirname + '/src/partials/section'];
+    partialsDirs.forEach(function(partialsDir) {
+        var filenames = fs.readdirSync(partialsDir);
+        filenames.forEach(function(filename) {
+            var matches = /^([^.]+).hbs$/.exec(filename);
+            if (!matches) {
+                return;
+            }
+            var name = matches[1];
+            var template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
+            Handlebars.registerPartial(name, template);
+        });
+    });
+});
 m.use(markdown());
 m.use(metaobject(templateData));
 m.use(less());
@@ -214,50 +230,38 @@ m.use(templates({
 }));
 
 if (task == "watch") {
-  m.use(serve());
-  m.use(watch({
-    pattern: '**/*',
-    livereload: true
-  }));
-  msg = "Running..."
+    m.use(serve({
+        port: 9778,
+        verbose: true
+    }));
+    m.use(watch({
+        pattern: path.join(__dirname, 'src/**/**'),
+        livereload: true
+    }));
+    msg = "Running..."
 }
-
-// Build
-m.build(function(err) {
-    if (err) throw err;
-    if(!msg) msg = "Done!";
-    console.log(msg);
-
-    if (task == "deploy") {
-        ghpages.publish(path.join(__dirname, 'out'), 
-        {
-            clone: "dist"
-        },
-        function(err) {
-            if (err) throw err;
-            console.log("Deployed on Github Pages.");
-        });
-    }
-
-});
 
 
 /**
- * Partials Registration.
+ * Build & Deploy Task.
  */
 
-var partialsDirs = [__dirname + '/src/partials', __dirname + '/src/partials/section'];
-partialsDirs.forEach(function(partialsDir) {
-    var filenames = fs.readdirSync(partialsDir);
-    filenames.forEach(function(filename) {
-        var matches = /^([^.]+).hbs$/.exec(filename);
-        if (!matches) {
-            return;
-        }
-        var name = matches[1];
-        var template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
-        Handlebars.registerPartial(name, template);
-    });
+m.build(function(err) {
+
+    if (err) throw err;
+    if (!msg) msg = "Done!";
+    console.log(msg);
+
+    if (task == "deploy") {
+        ghpages.publish(path.join(__dirname, 'out'), {
+                clone: "dist"
+            },
+            function(err) {
+                if (err) throw err;
+                console.log("Deployed on Github Pages.");
+            });
+    }
+
 });
 
 /**
