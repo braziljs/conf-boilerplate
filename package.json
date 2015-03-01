@@ -23,7 +23,7 @@
     "metalsmith-filemetadata": "0.0.4",
     "metalsmith-less": "^1.0.3",
     "metalsmith-markdown": "^0.2.1",
-    "metalsmith-metadata": "0.0.1",
+    "metalsmith-metaobject": "^0.1.0",
     "metalsmith-templates": "^0.6.0"
   }
 }
