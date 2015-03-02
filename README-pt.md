@@ -116,7 +116,7 @@ Lista as dependências de módulos do NodeJS.
 
 O projeto já vem com um template visual pronto, use-o à vontade, mas nós recomendamos que você crie seu próprio, a fim de colocar sua própria cara no evento.
 
-De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `docpad.js` e alterar o valor das variáveis.
+De qualquer forma, nós preparamos algo altamente customizável para você, portanto para maioria das alterações do projeto basta ir até o `metalsmith.js` e alterar o valor das variáveis.
 
 ### Informações básicas sobre a conferência
 
