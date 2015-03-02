@@ -57,22 +57,28 @@ var templateData = {
     // to deactivate comment out with '//'
     // you can also change order here and it will reflect on page.
     // Labels which you can translate to other languages
-    "sections": [{
+    "sections": [
+        {
             "slug": "about",
             "label": "About"
-        }, {
+        },
+        {
             "slug": "location",
             "label": "Location"
-        }, {
+        }, 
+        {
             "slug": "speakers",
             "label": "Speakers"
-        }, {
+        }, 
+        {
             "slug": "schedule",
             "label": "Schedule"
-        }, {
+        }, 
+        {
             "slug": "sponsors",
             "label": "Sponsors"
-        }, {
+        }, 
+        {
             "slug": "partners",
             "label": "Partners"
         },
