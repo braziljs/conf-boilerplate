@@ -115,7 +115,7 @@ List NodeJS modules dependencies.
 
 The project already comes with a visual template, feel free to use it, but we recommend you create your own in order to put your own identity in the event.
 
-Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.js` and change the value of variables.
+Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `metalsmith.js` and change the value of variables.
 
 ### Basic information about the conference
 
@@ -204,7 +204,7 @@ schedule: [
 ]
 ```
 
-Do you want to list an attribute of the speaker that is not there? Okay just add it on `metalsmith.js` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.hbs](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.hbs).
+Do you want to list an attribute of the speaker that is not there? Okay just add it on `metalsmith.js` and then show it with `{{ yourNewAttribute }}` on [speakers.hbs](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.hbs).
 
 ### List of another items on Agenda
 
