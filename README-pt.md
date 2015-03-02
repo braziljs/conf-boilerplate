@@ -8,7 +8,7 @@
 
 Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
-> **Mantenedor:** [Jean Carlo Emer](https://github.com/jcemer)
+> **Mantenedor:** [Beto Muniz](https://github.com/obetomuniz)
 
 ## Índice
 
@@ -27,7 +27,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
-Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [GitHub Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#domnio-personalizado))*.
+Nós usamos o [Metalsmith](https://github.com/segmentio/metalsmith), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [GitHub Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#domnio-personalizado))*.
 
 Por padrão, definimos as seguintes seções:
 
@@ -84,14 +84,13 @@ A estrutura básica do projeto se dá na seguinte forma:
 |   |-- documents
 |   |-- layouts
 |   |-- partials
-|-- docpad.js
+|-- metalsmith.js
 |-- package.json
-`-- publish.sh
 ```
 
 ### out/
 
-É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
+É onde os arquivos gerados são armazenados, uma vez que o Metalsmith tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
 
 ### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
 
@@ -103,19 +102,15 @@ Contém o template padrão da aplicação.
 
 ### [src/partials](https://github.com/braziljs/conf-boilerplate/tree/master/src/partials)
 
-São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
+São blocos de código utilizados para gerar a página principal do site ([index.md](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.md)).
 
-### [docpad.js](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.js)
+### [metalsmith.js](https://github.com/braziljs/conf-boilerplate/blob/master/metalsmith.js)
 
 Armazena de forma fácil a maior parte das configurações da aplicação.
 
 ### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
 Lista as dependências de módulos do NodeJS.
-
-### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
-
-Shell Script responsável pela publicação do site via [GitHub Pages](http://pages.github.com).
 
 ## Customização
 
@@ -151,43 +146,46 @@ site:
 
 ### Seções ativas
 
-Ainda não definiu a programação completa do evento? Não tem problema, basta comentar a linha `schedule` (usando `#`).
+Ainda não definiu a programação completa do evento? Não tem problema, basta comentar a linha `schedule` (usando `//`).
 
-Ainda não sabe quem irá palestrar? Tudo bem, basta comentar a linha `speakers` (usando `#`).
+Ainda não sabe quem irá palestrar? Tudo bem, basta comentar a linha `speakers` (usando `//`).
 
 E por aí vai.
 
 ```
 sections: [
-  "about"
-  "location"
-  #"speakers"
-  #"schedule"
-  "sponsors"
-  "partners"
-  "contact"
+    {
+        "slug": "about",
+        "label": "About"
+    }, 
+    {
+        "slug": "location",
+        "label": "Location"
+    }, 
+    // {
+    //     "slug": "speakers",
+    //     "label": "Speakers"
+    // },
+    // {
+    //     "slug": "schedule",
+    //     "label": "Schedule"
+    // },
+    {
+        "slug": "sponsors",
+        "label": "Sponsors"
+    },
+    {
+        "slug": "partners",
+        "label": "Partners"
+    },
+    {
+      "slug": "contact",
+      "label": "Contact"
+    }
 ]
 ```
 
 Você ainda pode trocar a order em que eles aparecem na página e na navegação ao trocar a order das linhas também!
-
-### Labels (i18n)
-
-Se você quiser usar palavras diferentes do padrão ou diferentes línguas
-é só trocar o valor das labels correspondentes:
-
-```
-labels:
-  about: "Sobre"
-  location: "Localização"
-  speakers: "Palestrantes"
-  schedule: "Agenda"
-  sponsors: "Patrocinadores"
-  partners: "Parceiros"
-  contact: "Contato"
-```
-
-Você ainda pode usar esse objeto para definir outras labels que você gostaria de acessar nos seus templates.
 
 ### Lista de Palestrantes
 
@@ -207,7 +205,7 @@ schedule: [
 ]
 ```
 
-Quer listar mais algum atributo do palestrante que não está ali? Tudo bem, é só adicionar no `docpad.js` e depois exibí-lo com `<%= speaker.seuNovoAtributo %>` no [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Quer listar mais algum atributo do palestrante que não está ali? Tudo bem, é só adicionar no `metalsmith.js` e depois exibí-lo com `{{ seuNovoAtributo }}` no [speakers.hbs](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.hbs).
 
 ### Lista de outros itens da Agenda
 
