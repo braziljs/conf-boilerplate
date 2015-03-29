@@ -22,7 +22,11 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <img class="photo" src="<%= slot.photo %>" alt="<%= slot.name %>">
               </span>
             <% end %>
-            <%= slot.presentation.title %>
+            <% if slot.presentation.slide: %>
+                <a class="speaker-slide" href="<%= slot.presentation.slide %>"><%= slot.presentation.title %></a>
+            <% else: %>
+                <%= slot.presentation.title %>
+            <% end %>
               <span class="speakers-company"><%= slot.company %></span>
             </td>
             <td class="schedule-description"><%= slot.presentation.description %></td>
