@@ -94,7 +94,7 @@ module.exports = {
         presentation: {
           title: "Introducing Windows 10",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "11h00"
+          time: "11h00",
           slide: "http://news.microsoft.com/windows10story/#webcast"
         }
       },
