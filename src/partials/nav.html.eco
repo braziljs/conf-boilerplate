@@ -1,15 +1,17 @@
 <!-- NAVIGATION -->
 <nav id="nav">
-  <ul class="wrapper">
-    <% for section in @sections : %>
-      <li class="nav-item">
-        <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
-      </li>
-    <% end %>
-  </ul>
-    <% if @fbButtons: %>
-        <div class="fb-like" data-href="<%= @fbButtons.href %>" data-layout="<%= @fbButtons.layout %>" data-action="<%= @fbButtons.action %>" data-show-faces="<%= @fbButtons.showFaces %>" data-share="<%= @fbButtons.share %>"></div>
-    <% end %>
+  <div class="wrapper">
+    <ul>
+      <% for section in @sections : %>
+        <li class="nav-item">
+          <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
+        </li>
+      <% end %>
+    </ul>
+      <% if @fbButtons: %>
+          <div class="fb-like" data-href="<%= @fbButtons.href %>" data-layout="<%= @fbButtons.layout %>" data-action="<%= @fbButtons.action %>" data-show-faces="<%= @fbButtons.showFaces %>" data-share="<%= @fbButtons.share %>"></div>
+      <% end %>
+  </div>
 </nav>
 
 <hr>
