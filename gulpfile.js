@@ -7,5 +7,6 @@ gulp.task('default', function() {
             prefix: '@',
             basepath: 'src/includes'
         }))
+        .pipe(plugins.wrap({ src: 'src/layouts/default.html' }))
         .pipe(gulp.dest('dist'));
 });

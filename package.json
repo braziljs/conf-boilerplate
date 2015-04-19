@@ -1,24 +1,9 @@
 {
-  "name": "ConfBoilerplate",
-  "version": "0.2.0",
-  "description": "A kickstart to create websites for conference/events.",
-  "homepage": "http://confboilerplate.com",
-  "repository": {
-    "type" : "git",
-    "url" : "http://github.com/braziljs/conf-boilerplate.git"
-  },
-  "engines": {
-    "node": ">0.8.x",
-    "npm": "1.1.x"
-  },
-  "scripts": {
-    "deploy": "docpad deploy-ghpages --env static",
-    "generate": "docpad generate --env static",
-    "watch": "docpad run"
-  },
+  "private": true,
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-file-include": "^0.9.0",
-    "gulp-load-plugins": "^0.10.0"
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-wrap": "^0.11.0"
   }
 }
