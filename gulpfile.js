@@ -8,10 +8,10 @@ gulp.task('assets', function() {
 });
 
 gulp.task('build', function() {
-    gulp.src('src/content/**/*.html')
+    gulp.src('src/documents/**/*.html')
         .pipe(plugins.fileInclude({
             prefix: '@',
-            basepath: 'src/includes'
+            basepath: 'src/partials'
         }))
         .pipe(plugins.wrap(
             { src: 'src/layouts/default.html' },
@@ -33,7 +33,7 @@ gulp.task('server', function() {
 
 gulp.task('watch', function () {
     gulp.watch(['src/assets/**/*'], ['assets']);
-    gulp.watch(['src/content/**/*.html', 'src/layouts/**/*.html'], ['build']);
+    gulp.watch(['src/documents/**/*.html', 'src/layouts/**/*.html'], ['build']);
 });
 
 gulp.task('default', ['server', 'watch']);
