@@ -67,7 +67,7 @@ By default, we have the following sections:
 5. And finally run:
 
     ```sh
-    $ npm run watch
+    $ gulp
     ```
 
 Now you can see the website running in `localhost:9778` :D

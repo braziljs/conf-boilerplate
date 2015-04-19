@@ -19,3 +19,16 @@ gulp.task('build', function() {
         ))
         .pipe(gulp.dest('dist'));
 });
+
+gulp.task('server', function() {
+    plugins.connect.server({
+        root: 'dist'
+    });
+});
+
+gulp.task('watch', function () {
+    gulp.watch(['src/assets/**/*'], ['assets']);
+    gulp.watch(['src/content/**/*.html'], ['build']);
+});
+
+gulp.task('default', ['server', 'watch']);
