@@ -20,6 +20,11 @@ gulp.task('build', function() {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('deploy', function() {
+    return gulp.src('dist/**/*')
+        .pipe(plugins.ghPages());
+});
+
 gulp.task('server', function() {
     plugins.connect.server({
         root: 'dist'

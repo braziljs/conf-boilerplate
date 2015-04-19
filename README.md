@@ -239,7 +239,7 @@ partners: [
 We don't like to centralize the power of deploy in one person, so we'll use [GitHub Pages](http://pages.github.com) that is free. You just need to run:
 
 ```sh
-$ npm run deploy
+$ gulp deploy
 ```
 
 Wait a few minutes until GitHub send you an email telling that everything went well. Then just access: `http://yourUser.github.io/yourFork`
