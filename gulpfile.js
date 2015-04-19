@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var config = require('./config');
 var plugins = require('gulp-load-plugins')();
 
 gulp.task('default', function() {
@@ -7,6 +8,9 @@ gulp.task('default', function() {
             prefix: '@',
             basepath: 'src/includes'
         }))
-        .pipe(plugins.wrap({ src: 'src/layouts/default.html' }))
+        .pipe(plugins.wrap(
+            { src: 'src/layouts/default.html' },
+            { data: config }
+        ))
         .pipe(gulp.dest('dist'));
 });
