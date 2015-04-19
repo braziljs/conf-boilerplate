@@ -2,12 +2,12 @@ var gulp = require('gulp');
 var config = require('./config');
 var plugins = require('gulp-load-plugins')();
 
-gulp.task('default', function() {
 gulp.task('assets', function() {
     gulp.src('src/assets/**/*')
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('build', function() {
     gulp.src('src/content/**/*.html')
         .pipe(plugins.fileInclude({
             prefix: '@',

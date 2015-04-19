@@ -255,7 +255,7 @@ If you don't want to use GitHub domain, you can use your own with a few steps.
 
 If you want to use your own server to host the website:
 
-* Run `npm run generate` on the root of the project.
+* Run `gulp build` on the root of the project.
 
 This command will generate a folder called `dist` that contains just static files, then just upload them to your server.
 
