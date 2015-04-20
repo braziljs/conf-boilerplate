@@ -1,9 +1,9 @@
 <!-- NAVIGATION -->
 <nav id="nav">
   <ul class="wrapper">
-    {{#each sections}}
+    {{#each labels}}
       <li class="nav-item">
-        <a href="#{{ this }}" title="{{ labels[this] }}" class="nav-link">{{ labels[this] }}</a>
+        <a href="#{{ @key }}" title="{{ this }}" class="nav-link">{{ this }}</a>
       </li>
     {{/each}}
   </ul>
