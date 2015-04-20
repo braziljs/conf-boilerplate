@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "deploy": "docpad deploy-ghpages --env static",
-    "generate": "docpad generate --env static",
-    "watch": "docpad run"
+    "deploy": "node metalsmith deploy",
+    "generate": "node metalsmith generate",
+    "watch": "node metalsmith watch"
   },
   "dependencies": {
     "handlebars": "^3.0.2",
