@@ -1,4 +1,4 @@
-<h2 class="section-title"><%= @labels['schedule'] %></h2>
+<h2 class="section-title">{{ labels['schedule'] }}</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 <div class="schedule-tbl">
@@ -12,29 +12,29 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     </thead>
     <tbody>
 
-      <% for slot in @schedule: %>
-        <% if slot.presentation: %>
+      {{#each schedule}}
+        {{#if this.presentation}}
           <tr>
-            <td class="schedule-time"><%= slot.presentation.time %></td>
+            <td class="schedule-time">{{ this.presentation.time }}</td>
             <td class="schedule-slot">
-            <% if slot.photo: %>
+            {{#if this.photo }}
               <span class="speaker-photo">
-                <img class="photo" src="<%= slot.photo %>" alt="<%= slot.name %>">
+                <img class="photo" src="{{ this.photo }}" alt="{{ this.name }}">
               </span>
-            <% end %>
-            <%= slot.presentation.title %>
-              <span class="speakers-company"><%= slot.company %></span>
+            {{/if}}
+            {{ this.presentation.title }}
+              <span class="speakers-company">{{ this.company }}</span>
             </td>
-            <td class="schedule-description"><%= slot.presentation.description %></td>
+            <td class="schedule-description">{{ this.presentation.description }}</td>
           </tr>
-        <% else: %>
+        {{ else }}
           <tr class="schedule-other">
-            <td class="schedule-time"><%= slot.time %></td>
-            <td class="schedule-slot"><%= slot.name %></td>
+            <td class="schedule-time">{{ this.time }}</td>
+            <td class="schedule-slot">{{ this.name }}</td>
             <td class="schedule-description">-</td>
           </tr>
-        <% end %>
-      <% end %>
+        {{/if}}
+      {{/each}}
 
     </tbody>
   </table>

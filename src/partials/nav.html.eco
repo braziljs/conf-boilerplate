@@ -1,11 +1,11 @@
 <!-- NAVIGATION -->
 <nav id="nav">
   <ul class="wrapper">
-    <% for section in @sections : %>
+    {{#each sections}}
       <li class="nav-item">
-        <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
+        <a href="#{{ this }}" title="{{ labels[this] }}" class="nav-link">{{ labels[this] }}</a>
       </li>
-    <% end %>
+    {{/each}}
   </ul>
 </nav>
 
