@@ -1,41 +1,45 @@
-<h2 class="section-title">{{ labels['schedule'] }}</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-<div class="schedule-tbl">
-  <table>
-    <thead>
-      <tr>
-        <th class="schedule-time">Time</th>
-        <th class="schedule-slot">Slot</th>
-        <th class="schedule-description">Description</th>
-      </tr>
-    </thead>
-    <tbody>
+<!-- SCHEDULE -->
+<section class="schedule" id="schedule">
+  <h2 class="section-title">{{ labels.schedule }}</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+  <div class="schedule-tbl">
+    <table>
+      <thead>
+        <tr>
+          <th class="schedule-time">Time</th>
+          <th class="schedule-slot">Slot</th>
+          <th class="schedule-description">Description</th>
+        </tr>
+      </thead>
+      <tbody>
 
-      {{#each schedule}}
-        {{#if this.presentation}}
-          <tr>
-            <td class="schedule-time">{{ this.presentation.time }}</td>
-            <td class="schedule-slot">
-            {{#if this.photo }}
-              <span class="speaker-photo">
-                <img class="photo" src="{{ this.photo }}" alt="{{ this.name }}">
-              </span>
-            {{/if}}
-            {{ this.presentation.title }}
-              <span class="speakers-company">{{ this.company }}</span>
-            </td>
-            <td class="schedule-description">{{ this.presentation.description }}</td>
-          </tr>
-        {{ else }}
-          <tr class="schedule-other">
-            <td class="schedule-time">{{ this.time }}</td>
-            <td class="schedule-slot">{{ this.name }}</td>
-            <td class="schedule-description">-</td>
-          </tr>
-        {{/if}}
-      {{/each}}
+        {{#each schedule}}
+          {{#if this.presentation}}
+            <tr>
+              <td class="schedule-time">{{ this.presentation.time }}</td>
+              <td class="schedule-slot">
+              {{#if this.photo }}
+                <span class="speaker-photo">
+                  <img class="photo" src="{{ this.photo }}" alt="{{ this.name }}">
+                </span>
+              {{/if}}
+              {{ this.presentation.title }}
+                <span class="speakers-company">{{ this.company }}</span>
+              </td>
+              <td class="schedule-description">{{ this.presentation.description }}</td>
+            </tr>
+          {{ else }}
+            <tr class="schedule-other">
+              <td class="schedule-time">{{ this.time }}</td>
+              <td class="schedule-slot">{{ this.name }}</td>
+              <td class="schedule-description">-</td>
+            </tr>
+          {{/if}}
+        {{/each}}
 
-    </tbody>
-  </table>
-</div>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- / SCHEDULE -->
