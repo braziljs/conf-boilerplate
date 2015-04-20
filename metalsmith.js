@@ -39,6 +39,10 @@ metalsmith
   .use(templates({
     directory: 'src/layouts',
     engine: 'handlebars'
+  }))
+  .use(assets({
+    source: 'src/themes',
+    destination: 'themes'
   }));
 
 /* Watch
