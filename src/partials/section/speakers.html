@@ -1,25 +1,29 @@
-<h2 class="section-title">{{ labels['speakers'] }}</h2>
+<!-- SPEAKERS -->
+<section class="speakers" id="speakers">
+  <h2 class="section-title">{{ labels.speakers }}</h2>
 
-<ul class="speakers-list">
-{{#each schedule}}
-  {{#if this.presentation }}
-    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-      {{#if this.photo }}
-        <span class="speaker-photo">
-          <img class="photo" src="{{ this.photo }}" alt="{{ this.name }}" itemprop="image">
-        </span>
-      {{/if}}
-
-      <h3 class="speech-title">
-        {{#if this.presentation.time }}
-          <span class="speech-time">{{ this.presentation.time }}</span>
+  <ul class="speakers-list">
+  {{#each schedule}}
+    {{#if this.presentation }}
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        {{#if this.photo }}
+          <span class="speaker-photo">
+            <img class="photo" src="{{ this.photo }}" alt="{{ this.name }}" itemprop="image">
+          </span>
         {{/if}}
-          <span> {{ this.presentation.title }}</span>
-      </h3>
 
-      <h3 class="speakers-name">{{ this.name }} {{#if this.link }} title="{{ this.link.text }}">{{ this.link.text }}</a>{{/if}}</h3>
-      <p class="speakers-bio">{{ this.bio }}</p>
-    </li>
-  {{/if}}
-{{/each}}
-</ul>
+        <h3 class="speech-title">
+          {{#if this.presentation.time }}
+            <span class="speech-time">{{ this.presentation.time }}</span>
+          {{/if}}
+            <span> {{ this.presentation.title }}</span>
+        </h3>
+
+        <h3 class="speakers-name">{{ this.name }} {{#if this.link }} title="{{ this.link.text }}">{{ this.link.text }}</a>{{/if}}</h3>
+        <p class="speakers-bio">{{ this.bio }}</p>
+      </li>
+    {{/if}}
+  {{/each}}
+  </ul>
+</section>
+<!-- / SPEAKERS -->

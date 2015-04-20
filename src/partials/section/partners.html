@@ -1,16 +1,20 @@
-<h2 class="section-title">{{ labels['partners'] }}</h2>
-<ul class="partners-list">
+<!-- PARTNERS -->
+<section class="partners" id="partners">
+  <h2 class="section-title">{{ labels.partners }}</h2>
+  <ul class="partners-list">
 
-{{#each partners }}
-  <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
-    <a href="{{ this.url }}" class="partner-logo partner-link" itemprop="url">
-      <img src="{{ this.logo }}" alt="{{ this.name }}" class="photo" itemprop="image">
-    </a>
-  </li>
-{{/each}}
-  <li class="partner-item">
-    <a class="partner-logo partner-link partner-call" href="#">
-    	<img src="themes/{{ site.theme }}/img/your-logo.jpg" alt="your logo" class="photo">
-    </a>
-  </li>
-</ul>
+  {{#each partners }}
+    <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
+      <a href="{{ this.url }}" class="partner-logo partner-link" itemprop="url">
+        <img src="{{ this.logo }}" alt="{{ this.name }}" class="photo" itemprop="image">
+      </a>
+    </li>
+  {{/each}}
+    <li class="partner-item">
+      <a class="partner-logo partner-link partner-call" href="#">
+      	<img src="themes/{{ site.theme }}/img/your-logo.jpg" alt="your logo" class="photo">
+      </a>
+    </li>
+  </ul>
+</section>
+<!-- / PARTNERS -->
