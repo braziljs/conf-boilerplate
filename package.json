@@ -6,11 +6,11 @@
     "watch": "docpad run"
   },
   "dependencies": {
-    "docpad": "^6.78.1",
-    "docpad-plugin-eco": "^2.1.0",
-    "docpad-plugin-ghpages": "^2.4.4",
-    "docpad-plugin-less": "^2.4.1",
-    "docpad-plugin-marked": "^2.3.0",
-    "docpad-plugin-partials": "^2.9.2"
+    "handlebars": "^3.0.2",
+    "metalsmith": "^1.6.0",
+    "metalsmith-in-place": "^1.0.1",
+    "metalsmith-layouts": "^1.0.0",
+    "metalsmith-metaobject": "^0.1.0",
+    "metalsmith-partial": "^0.1.0"
   }
 }
