@@ -1,5 +1,3 @@
-var task = process.argv[2];
-
 var metalsmith = require('metalsmith')(__dirname);
 var assets     = require('metalsmith-assets');
 var layouts    = require('metalsmith-layouts');
@@ -9,13 +7,20 @@ var partial    = require('metalsmith-partial');
 var serve      = require('metalsmith-serve');
 var templates  = require('metalsmith-in-place');
 var watch      = require('metalsmith-watch');
-var conference = require('./conference');
+var conf       = require('./conference');
+var ghpages    = require('gh-pages');
+var task       = process.argv[2];
+
+/* Config
+   ========================================================================== */
+
+metalsmith.source('src/documents').destination('out').clean(true);
+
+/* Plugins
+   ========================================================================== */
 
 metalsmith
-  .clean(true)
-  .source('src/documents')
-  .destination('out')
-  .use(meta(conference))
+  .use(meta(conf))
   .use(layouts({
     directory: 'src/layouts',
     engine: 'handlebars',
@@ -34,10 +39,10 @@ metalsmith
   .use(templates({
     directory: 'src/layouts',
     engine: 'handlebars'
-  }))
-  .build(function(err) {
-    if (err) { throw err; }
-  });
+  }));
+
+/* Watch
+   ========================================================================== */
 
 if (task === 'watch') {
   metalsmith
@@ -49,3 +54,17 @@ if (task === 'watch') {
       pattern: 'src/**/*'
     }));
 }
+
+/* Deploy
+   ========================================================================== */
+
+metalsmith
+  .build(function(err) {
+    if (err) throw err;
+
+    if (task === 'deploy') {
+      ghpages.publish('out', function(err) {
+        if (err) throw err;
+      });
+    }
+  });
