@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<% for section in @sections : %>
-  <!-- <%= section.toUpperCase() %> -->
+{{#each sections}}
+  <!-- {{ this }} %> -->
 
-  <section class="<%= section %>" id="<%= section %>">
-    <%- @partial("section/#{section}.html.eco", @) %>
+  <section class="{{ this }}" id="{{ this }}">
+    {{> this }}
   </section>
 
-  <!-- / <%= section.toUpperCase() %> -->
+  <!-- / {{ this }} -->
 <% end %>

@@ -1,16 +1,16 @@
-<h2 class="section-title"><%= @labels['partners'] %></h2>
+<h2 class="section-title">{{ labels['partners'] }}</h2>
 <ul class="partners-list">
 
-<% for partner in @partners: %>
+{{#each partners }}
   <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
-    <a href="<%= partner.url %>" class="partner-logo partner-link" itemprop="url">
-      <img src="<%= partner.logo %>" alt="<%= partner.name %>" class="photo" itemprop="image">
+    <a href="{{ this.url }}" class="partner-logo partner-link" itemprop="url">
+      <img src="{{ this.logo }}" alt="{{ this.name }}" class="photo" itemprop="image">
     </a>
   </li>
-<% end %>
+{{/each}}
   <li class="partner-item">
     <a class="partner-logo partner-link partner-call" href="#">
-    	<img src="<%= @getTheme() %>/img/your-logo.jpg" alt="your logo" class="photo">
+    	<img src="themes/{{ site.theme }}/img/your-logo.jpg" alt="your logo" class="photo">
     </a>
   </li>
 </ul>
