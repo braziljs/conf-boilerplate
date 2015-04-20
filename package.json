@@ -6,6 +6,7 @@
     "watch": "node metalsmith watch"
   },
   "dependencies": {
+    "gh-pages": "^0.2.0",
     "handlebars": "^3.0.2",
     "metalsmith": "^1.6.0",
     "metalsmith-in-place": "^1.0.1",
