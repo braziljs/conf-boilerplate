@@ -6,11 +6,11 @@
     "watch": "docpad run"
   },
   "dependencies": {
-    "docpad": "6.78.x",
-    "docpad-plugin-eco": "2.1.0",
-    "docpad-plugin-marked": "2.1.1",
-    "docpad-plugin-partials": "2.6.1",
-    "docpad-plugin-less": "2.1.3",
-    "docpad-plugin-ghpages": "2.0.2"
+    "docpad": "^6.78.1",
+    "docpad-plugin-eco": "^2.1.0",
+    "docpad-plugin-ghpages": "^2.4.4",
+    "docpad-plugin-less": "^2.4.1",
+    "docpad-plugin-marked": "^2.3.0",
+    "docpad-plugin-partials": "^2.9.2"
   }
 }
