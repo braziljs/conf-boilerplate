@@ -19,7 +19,14 @@
             <span> {{ this.presentation.title }}</span>
         </h3>
 
-        <h3 class="speakers-name">{{ this.name }} {{#if this.link }} title="{{ this.link.text }}">{{ this.link.text }}</a>{{/if}}</h3>
+        <h3 class="speakers-name">
+          {{ this.name }}
+          {{#if this.link }}
+            <a href="{{ this.link.href }}" title="{{ this.link.text }}">
+              {{ this.link.text }}
+            </a>
+          {{/if}}
+        </h3>
         <p class="speakers-bio">{{ this.bio }}</p>
       </li>
     {{/if}}
