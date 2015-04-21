@@ -1,11 +1,5 @@
 var metalsmith = require('metalsmith')(__dirname);
-var layouts    = require('metalsmith-layouts');
-var less       = require('metalsmith-less');
-var meta       = require('metalsmith-metaobject');
-var partial    = require('metalsmith-partial');
-var serve      = require('metalsmith-serve');
-var templates  = require('metalsmith-in-place');
-var watch      = require('metalsmith-watch');
+var plugins    = require('load-metalsmith-plugins')();
 var conf       = require('./conference');
 var ghpages    = require('gh-pages');
 var task       = process.argv[2];
@@ -18,9 +12,9 @@ metalsmith.source('src/documents').destination('out').clean(true);
 /* Plugins
    ========================================================================== */
 metalsmith
-  .use(less())
-  .use(meta(conf))
-  .use(layouts({
+  .use(plugins.less())
+  .use(plugins.metaobject(conf))
+  .use(plugins.layouts({
     directory: 'src/layouts',
     engine: 'handlebars',
     partials: {
@@ -35,7 +29,7 @@ metalsmith
       sponsors : '../partials/section/sponsors'
     }
   }))
-  .use(templates({
+  .use(plugins.inPlace({
     directory: 'src/layouts',
     engine: 'handlebars',
     pattern: '*.html'
@@ -46,11 +40,11 @@ metalsmith
 
 if (task === 'watch') {
   metalsmith
-    .use(serve({
+    .use(plugins.serve({
       port: 9778,
       verbose: true
     }))
-    .use(watch({
+    .use(plugins.watch({
       pattern: 'src/**/*'
     }));
 }
