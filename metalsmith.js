@@ -1,5 +1,4 @@
 var metalsmith = require('metalsmith')(__dirname);
-var assets     = require('metalsmith-assets');
 var layouts    = require('metalsmith-layouts');
 var less       = require('metalsmith-less');
 var meta       = require('metalsmith-metaobject');
@@ -18,8 +17,8 @@ metalsmith.source('src/documents').destination('out').clean(true);
 
 /* Plugins
    ========================================================================== */
-
 metalsmith
+  .use(less())
   .use(meta(conf))
   .use(layouts({
     directory: 'src/layouts',
@@ -38,11 +37,8 @@ metalsmith
   }))
   .use(templates({
     directory: 'src/layouts',
-    engine: 'handlebars'
-  }))
-  .use(assets({
-    source: 'src/themes',
-    destination: 'themes'
+    engine: 'handlebars',
+    pattern: '*.html'
   }));
 
 /* Watch
