@@ -6,6 +6,7 @@
     "watch": "node metalsmith watch"
   },
   "dependencies": {
+    "chalk": "^1.0.0",
     "gh-pages": "^0.2.0",
     "handlebars": "^3.0.2",
     "load-metalsmith-plugins": "^0.1.1",
@@ -16,6 +17,7 @@
     "metalsmith-metaobject": "^0.1.0",
     "metalsmith-partial": "^0.1.0",
     "metalsmith-serve": "0.0.3",
-    "metalsmith-watch": "^0.2.0"
+    "metalsmith-watch": "^0.2.0",
+    "pretty-hrtime": "^1.0.0"
   }
 }

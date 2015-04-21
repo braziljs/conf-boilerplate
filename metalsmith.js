@@ -1,8 +1,12 @@
+var start = process.hrtime();
+var task = process.argv[2];
+
 var metalsmith = require('metalsmith')(__dirname);
 var plugins    = require('load-metalsmith-plugins')();
 var conf       = require('./conference');
+var chalk      = require('chalk');
 var ghpages    = require('gh-pages');
-var task       = process.argv[2];
+var prettytime = require('pretty-hrtime');
 
 /* Config
    ========================================================================== */
@@ -49,16 +53,24 @@ if (task === 'watch') {
     }));
 }
 
-/* Deploy
+/* Build & Deploy
    ========================================================================== */
 
 metalsmith
   .build(function(err) {
-    if (err) throw err;
+    if (err) {
+      throw err;
+    }
+    else {
+      if (task === 'generate') {
+        var end = prettytime(process.hrtime(start));
+        console.log('> done in ' + chalk.green(end));
+      }
 
-    if (task === 'deploy') {
-      ghpages.publish('out', function(err) {
-        if (err) throw err;
-      });
+      if (task === 'deploy') {
+        ghpages.publish('out', function(err) {
+          if (err) throw err;
+        });
+      }
     }
   });
