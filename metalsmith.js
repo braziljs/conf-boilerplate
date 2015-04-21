@@ -49,7 +49,7 @@ if (task === 'watch') {
       verbose: true
     }))
     .use(plugins.watch({
-      pattern: 'src/**/*'
+      pattern: '../../src/**/*'
     }));
 }
 
