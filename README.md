@@ -8,8 +8,6 @@
 
 An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
 
-> **Maintainer:** [Jean Carlo Emer](https://github.com/jcemer)
-
 ## Table of contents
 
 * [See live demo](http://braziljs.github.io/conf-boilerplate/)
@@ -25,9 +23,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 ## How it works?
 
-[![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
-
-We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [GitHub Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*
+We use [Metalsmith](http://www.metalsmith.io), a static generator in Node, to create an easily customizable template. More than that, hosting is free via [GitHub Pages](http://pages.github.com) or you can use your own domain *(more information about that on [Deploy](#custom-domain))*
 
 By default, we have the following sections:
 
@@ -38,13 +34,13 @@ By default, we have the following sections:
 * *Sponsors* - to show the brand of your sponsors.
 * *Partners* - to show the brand of your partners.
 
-*P.S. 1: There is no integration with any registration and/or payment system. For this reason, we recommend [Eventick](http://eventick.com.br/).*
+*P.S. 1: There is no integration with any registration and/or payment system. For this reason, we recommend [Stripe](https://stripe.com/) or [Eventick](http://eventick.com.br/).*
 
 *P.S. 2: We haven't developed a highly automated and customizable solution for contact forms yet. For this reason, we recommend [Wufoo](http://wufoo.com/).*
 
 ## Getting Started
 
-1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
+1. Install [Git](http://git-scm.com/downloads) and [Node](http://nodejs.org/download/), if you don't have it yet.
 
 2. Now clone it:
 
@@ -83,9 +79,9 @@ The basic structure of the project is given in the following way:
 |   |-- documents
 |   |-- layouts
 |   |-- partials
-|-- docpad.js
-|-- package.json
-`-- publish.sh
+|-- conference.js
+|-- metalsmith.js
+`-- package.json
 ```
 
 ### out/
@@ -104,30 +100,30 @@ Contains the default template of the application.
 
 Are blocks of code used to generate the site's main page ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
 
-### [docpad.js](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.js)
+### [conference.js](https://github.com/braziljs/conf-boilerplate/blob/master/conference.js)
 
 Stores most settings of the application.
 
+### [metalsmith.js](https://github.com/braziljs/conf-boilerplate/blob/master/metalsmith.js)
+
+Responsible for setting up the static generation process.
+
 ### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
-List NodeJS modules dependencies.
-
-### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
-
-Shell Script responsible for publishing the site via via [GitHub Pages](http://pages.github.com).
+List Node modules dependencies.
 
 ## Customization
 
 The project already comes with a visual template, feel free to use it, but we recommend you create your own in order to put your own identity in the event.
 
-Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.js` and change the value of variables.
+Anyway, we have prepared something highly customizable for you, so for most of the changes just conference`metalsmith.js` and change the value of variables.
 
 ### Basic information about the conference
 
 Do you want to change the name, date, address, city or price of the conference? Go ahead.
 
-```
-conf:
+```js
+conf: {
   name: "Conference name"
   description: "Conference description"
   date: "November 15"
@@ -135,49 +131,42 @@ conf:
   address: "Boulevard Kukulcan, 30, México"
   venue: "Coco Bongo"
   city: "Cancún"
+}
 ```
 
 ### Basic information about the website
 
 Do you want to change the cover image, Google Analytics code or favicon? Go ahead!
 
-```
-site:
+```js
+site: {
   theme: "yellow-swan"
   url: "http://braziljs.github.io/conf-boilerplate/"
   googleanalytics: "UA-33656081-1"
+}
 ```
 
 ### Active sections
 
-Still don't get a full schedule of the event? No problem, just comment out `schedule` line (using `#`).
-
-Still don't get who is going to speak? Ok, just comment out `speakers` line (using `#`).
-
-And so on.
+Still don't get a full schedule of the event? Still don't get who is going to speak? No problem, just remove the partial call from `src/documents`.
 
 ```
-sections: [
-  "about"
-  "location"
-  #"speakers"
-  #"schedule"
-  "sponsors"
-  "partners"
-  "contact"
-]
+{{> about }}
+{{> location }}
+{{> speakers }}
+{{> schedule }}
+{{> sponsors }}
+{{> partners }}
+{{> contact }}
 ```
 
-You can also change order in which they appear on page and in navigation by changing order of lines here!
+### Labels
 
-### Labels (i18n)
-
-If you want to use different words than default or different language
-just change labels for corresponding elements:
+If you want to use different words than default or different language just change labels for corresponding elements:
 
 
-```
-labels:
+```js
+labels: {
   about: "Sobre"
   location: "Localização"
   speakers: "Palestrantes"
@@ -185,35 +174,37 @@ labels:
   sponsors: "Patrocinadores"
   partners: "Parceiros"
   contact: "Contato"
+}
 ```
 
-You can also use this object to define other labels, which you would like to access in your templates.
+You can also change order in which they appear in the top navigation by changing the order of lines.
 
 ### Speakers List
 
 To add/change/exclude a speaker is equally simple, just see `schedule` variable.
 
-```
+```js
 schedule: [
   name: "Chuck Norris"
   photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
   bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
   company: "Delta Command"
   twitter: "littlechuck"
-  presentation:
+  presentation: {
     title: "How to kill a elephant with one finger"
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
     time: "13h00"
+  }
 ]
 ```
 
-Do you want to list an attribute of the speaker that is not there? Okay just add it on `docpad.js` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
+Do you want to list an attribute of the speaker that is not there? Okay just add it on `conference.js` and then show it with `<%= speaker.yourNewAttribute %>` on [speakers.html.eco](https://github.com/braziljs/conf-boilerplate/blob/master/src/partials/section/speakers.html.eco).
 
 ### List of another items on Agenda
 
 To change the time of check-in, lunch and coffee-break, just see `schedule` variable.
 
-```
+```js
 schedule: [
   name: "Check-in / Breakfast"
   time: "9h00"
@@ -290,13 +281,6 @@ Have you created a website using ConfBoilerplate? Let's us know =D
 
 * [Ruby version of ConfBoilerplate made with Jekyll by Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
 
-## Contributing
-
-If you want to submit a pull request, please do it in `dev` branch.
-
-* `master` contains the stable version of it.
-* `dev` contains features that are being developed.
-
 ## Who is behind it?
 
 We're a group of developers who have been through hard times organizing conferences around Brazil and now just want to help another people to do this hard task.
@@ -306,7 +290,7 @@ We're a group of developers who have been through hard times organizing conferen
 * [Zeno Rocha](http://github.com/zenorocha)
 * [Bernard De Luna](http://github.com/bernarddeluna)
 
-Special thanks to all community members for feedbacks and contributions.
+Special thanks to all community members for feedbacks and [contributions](https://github.com/braziljs/conf-boilerplate/graphs/contributors).
 
 ## License
 
