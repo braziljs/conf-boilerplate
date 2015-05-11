@@ -283,6 +283,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [Meet.us()](http://meetus.github.io/) ([source code](https://github.com/meetus/meetus.github.io))
 * [MPI LAMEC 2014](http://mpilamec.com/)
 * [Front in Cuiabá](http://frontincuiaba.com.br/) ([source code](https://github.com/braziljs/front-in-cuiaba))
+* [JS Day - Feira de Santana](http://jsday.com.br/) ([source code](https://github.com/devfsa/jsday))
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 

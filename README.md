@@ -283,6 +283,7 @@ See the conferences that already used this project as a kickstart:
 * [Meet.us()](http://meetus.github.io/) ([source code](https://github.com/meetus/meetus.github.io))
 * [MPI LAMEC 2014](http://mpilamec.com/)
 * [Front in Cuiabá](http://frontincuiaba.com.br/) ([source code](https://github.com/braziljs/front-in-cuiaba))
+* [JS Day - Feira de Santana](http://jsday.com.br/) ([source code](https://github.com/devfsa/jsday))
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
