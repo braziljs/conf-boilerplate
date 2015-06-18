@@ -27,7 +27,7 @@ An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
-We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [GitHub Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*
+We use [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, to create an easily customizable template. More than that, hosting is free via [GitHub Pages](http://pages.github.com) and you can use your own domain *(more information about that on [Deploy](#custom-domain))*.
 
 By default, we have the following sections:
 
