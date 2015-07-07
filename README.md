@@ -124,7 +124,7 @@ Anyway, we have prepared something highly customizable for you, so for most of t
 
 ### Basic information about the conference
 
-Do you want to change the name, date, address, city or price of the conference? Go ahead.
+Do you want to change the name, date, address, city or price of the conference? Go ahead!
 
 ```
 conf:
