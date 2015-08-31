@@ -285,6 +285,7 @@ Confira os eventos que usaram esse projeto como pontapé inicial:
 * [Front in Cuiabá](http://frontincuiaba.com.br/) ([source code](https://github.com/braziljs/front-in-cuiaba))
 * [JS Day - Feira de Santana](http://jsday.com.br/) ([source code](https://github.com/devfsa/jsday))
 * [V SAICC](http://saicc.furg.br/)
+* [Dia do Codigo](http://diadocodigo.org/)
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
 
