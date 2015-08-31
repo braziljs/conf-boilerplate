@@ -284,6 +284,7 @@ See the conferences that already used this project as a kickstart:
 * [MPI LAMEC 2014](http://mpilamec.com/)
 * [Front in Cuiabá](http://frontincuiaba.com.br/) ([source code](https://github.com/braziljs/front-in-cuiaba))
 * [JS Day - Feira de Santana](http://jsday.com.br/) ([source code](https://github.com/devfsa/jsday))
+* [V SAICC](http://saicc.furg.br/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
