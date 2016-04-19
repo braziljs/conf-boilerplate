@@ -8,7 +8,7 @@ module.exports = {
     // Conference info
     conf: {
       name: "DrupalCamp Campinas 2016",
-      description: "A DrupalCamp tradicional de sempre, agora no interior paulista!",
+      description: "A tradicional DrupalCamp, agora no interior paulista!",
       date: "25 de Junho",
       // If your event is free, just comment this line
       //price: "FREE",
@@ -38,8 +38,8 @@ module.exports = {
     sections: [
       'about',
       'location',
-      'speakers',
-      'schedule',
+      //'speakers',
+      //'schedule',
       'sponsors',
       'partners'
       // 'contact'
@@ -47,7 +47,7 @@ module.exports = {
 
     // Labels which you can translate to other languages
     labels: {
-      about: "O Evento",
+      about: "A tradicional DrupalCamp, agora no interior paulista!",
       location: "Localização",
       speakers: "Palestrantes",
       schedule: "Agenda",
@@ -165,18 +165,28 @@ module.exports = {
     // List of Sponsors
     sponsors: [
       {
-        name: "Eventick",
-        logo: "themes/yellow-swan/img/sponsor.png",
-        url: "http://eventick.com.br"
+        name: "CI&T",
+        logo: "themes/yellow-swan/img/logo_ciandt.jpg",
+        url: "http://ciandt.com"
       }
     ],
 
     // List of Partners
     partners: [
       {
-        name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
+        name: "Metrocamp",
+        logo: "themes/yellow-swan/img/metrocamp_logo.jpg",
+        url: "http://metrocamp.com.br"
+      },
+      {
+        name: "Acquia",
+        logo: "themes/yellow-swan/img/acquia_logo.png",
+        url: "http://acquia.com"
+      },
+      {
+        name: "Associação Drupal Brasil - ADB",
+        logo: "themes/yellow-swan/img/adb_logo.png",
+        url: "http://drupal.org.br"
       }
     ],
 
