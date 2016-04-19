@@ -70,8 +70,13 @@ Pré-requisitos: Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http
     ```sh
     $ npm run watch
     ```
+   Agora você irá ver o site rodando em `localhost:9778` :D
 
-Agora você irá ver o site rodando em `localhost:9778` :D
+6. Quando terminar de editar e quiser publicar o site no GitHub Pages:
+
+    ```sh
+    $ npm run deploy
+    ```
 
 ## Estrutura
 
@@ -86,7 +91,6 @@ A estrutura básica do projeto se dá na seguinte forma:
 |   |-- partials
 |-- docpad.js
 |-- package.json
-`-- publish.sh
 ```
 
 ### out/
@@ -112,10 +116,6 @@ Armazena de forma fácil a maior parte das configurações da aplicação.
 ### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
 Lista as dependências de módulos do NodeJS.
-
-### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
-
-Shell Script responsável pela publicação do site via [GitHub Pages](http://pages.github.com).
 
 ## Customização
 
