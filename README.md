@@ -72,6 +72,12 @@ By default, we have the following sections:
 
 Now you can see the website running in `localhost:9778` :D
 
+6. Once you're done editing and want to publish the site to GitHub Pages:
+
+    ```sh
+    $ npm run deploy
+    ```
+
 ## Structure
 
 The basic structure of the project is given in the following way:
@@ -85,7 +91,6 @@ The basic structure of the project is given in the following way:
 |   |-- partials
 |-- docpad.js
 |-- package.json
-`-- publish.sh
 ```
 
 ### out/
@@ -111,10 +116,6 @@ Stores most settings of the application.
 ### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
 List NodeJS modules dependencies.
-
-### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
-
-Shell Script responsible for publishing the site via via [GitHub Pages](http://pages.github.com).
 
 ## Customization
 
