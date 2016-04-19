@@ -7,34 +7,29 @@ module.exports = {
 
     // Conference info
     conf: {
-      name: "Conference name",
-      description: "Conference description",
-      date: "November 15",
+      name: "DrupalCamp Campinas 2016",
+      description: "A DrupalCamp tradicional de sempre, agora no interior paulista!",
+      date: "25 de Junho",
       // If your event is free, just comment this line
-      price: "$100",
-      venue: "Coco Bongo",
-      address: "Boulevard Kukulcan, 30",
-      city: "Cancún",
-      state: "Quintana"
+      //price: "FREE",
+      venue: "Faculdade Metrocamp",
+      address: "Rua Doutor Salles de Oliveira, 1661 - Vila Industrial",
+      city: "Campinas",
+      state: "São Paulo"
     },
 
     // The Call To Action button at the header,
     // If you don't want this, just remove the callToAction property.
     callToAction: {
-        text: "Register now!",
+        text: "Interesso em participar!",
         link: "http://eventick.com.br"
-    },
-
-    // "Fork me on GitHub", if you don't want this, just remove the forkButton property
-    forkButton: {
-        repository: "https://github.com/braziljs/conf-boilerplate"
     },
 
     // Site info
     site: {
       theme: "yellow-swan",
-      url: "http://braziljs.github.io/conf-boilerplate/",
-      googleanalytics: "UA-33656081-1"
+      url: "http://ciandt-dev.github.io/drupalcamp-cps/",
+      googleanalytics: ""
     },
 
     // Active sections on the website
@@ -52,13 +47,13 @@ module.exports = {
 
     // Labels which you can translate to other languages
     labels: {
-      about: "About",
-      location: "Location",
-      speakers: "Speakers",
-      schedule: "Schedule",
-      sponsors: "Sponsors",
-      partners: "Partners",
-      contact: "Contact"
+      about: "O Evento",
+      location: "Localização",
+      speakers: "Palestrantes",
+      schedule: "Agenda",
+      sponsors: "Patrocínio",
+      partners: "Apoio",
+      contact: "Contato"
     },
 
     // The entire schedule

@@ -8,6 +8,7 @@
 <header class="header">
   <div class="wrapper">
     <h1 class="logo-name">
+      <img src="http://image005.flaticon.com/28/png/256/34/34323.png" class="drupal-logo" />
       <a class="logo-link" href="#" title="<%= @conf.name %>" itemprop="name"><%= @conf.name %></a>
     </h1>
     <h2 class="tagline"><%= @conf.date %>, <%= @conf.venue %>, <%= @conf.city %></h2>
