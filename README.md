@@ -69,8 +69,7 @@ By default, we have the following sections:
     ```sh
     $ npm run watch
     ```
-
-Now you can see the website running in `localhost:9778` :D
+   Now you can see the website running in `localhost:9778` :D
 
 6. Once you're done editing and want to publish the site to GitHub Pages:
 
