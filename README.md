@@ -286,6 +286,7 @@ See the conferences that already used this project as a kickstart:
 * [JS Day - Feira de Santana](http://jsday.com.br/) ([source code](https://github.com/devfsa/jsday))
 * [V SAICC](http://saicc.furg.br/)
 * [Dia do Codigo](http://diadocodigo.org/)
+* [Mulheres Tech Day](http://www.mulherestechday.com.br/)
 
 Have you created a website using ConfBoilerplate? Let's us know =D
 
