@@ -3,7 +3,7 @@
   <ul class="wrapper">
     <% for section in @sections : %>
       <li class="nav-item">
-        <a href="#<%= section %>" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
+        <a href="#<%= section %>" target="_blank" title="<%= @labels[section] %>" class="nav-link"><%= @labels[section] %></a>
       </li>
     <% end %>
   </ul>

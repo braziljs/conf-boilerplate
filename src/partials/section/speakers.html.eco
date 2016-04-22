@@ -17,7 +17,7 @@
           <span> <%= speaker.presentation.title %></span>
       </h3>
 
-      <h3 class="speakers-name"><%= speaker.name %> <% if speaker.link: %><a href="<%= speaker.link.href %>" title="<%= speaker.link.text %>"><%= speaker.link.text %></a><% end %></h3>
+      <h3 class="speakers-name"><%= speaker.name %> <% if speaker.link: %><a href="<%= speaker.link.href %>" target="_blank" title="<%= speaker.link.text %>"><%= speaker.link.text %></a><% end %></h3>
       <p class="speakers-bio"><%= speaker.bio %></p>
     </li>
   <% end %>
