@@ -1,0 +1,495 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Event">
+<head>
+
+  <title itemprop="name">Conference name</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="Conference name">
+  <meta name="description" content="Conference description">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- FACEBOOK -->
+  <meta property="fb:app_id" content="372862979453673">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://braziljs.github.io/conf-boilerplate/">
+  <meta property="og:title" content="Conference name">
+  <meta property="og:description" content="Conference description">
+  <meta property="og:image" content="http://braziljs.github.io/conf-boilerplate//themes/yellow-swan/img/badge.jpg">
+  <!-- / FACEBOOK -->
+
+  <link rel="shortcut icon" href="themes/yellow-swan/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="themes/yellow-swan/img/apple-touch-icon.png">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="themes/yellow-swan/css/main.css">
+  <!-- / STYLES -->
+
+</head>
+<body>
+
+  <div class="global">
+
+    <!-- NAVIGATION -->
+<nav id="nav">
+  <ul class="wrapper">
+    
+      <li class="nav-item">
+        <a href="#about" target="_blank" title="About" class="nav-link">About</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#location" target="_blank" title="Location" class="nav-link">Location</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#speakers" target="_blank" title="Speakers" class="nav-link">Speakers</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#schedule" target="_blank" title="Schedule" class="nav-link">Schedule</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#sponsors" target="_blank" title="Sponsors" class="nav-link">Sponsors</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="#partners" target="_blank" title="Partners" class="nav-link">Partners</a>
+      </li>
+    
+  </ul>
+</nav>
+
+<hr>
+    
+  <a href="https://github.com/braziljs/conf-boilerplate" class="github-link" target="_blank">
+    <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub">
+  </a>
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrapper">
+    <h1 class="logo-name">
+      <a class="logo-link" href="#" title="Conference name" itemprop="name">Conference name</a>
+    </h1>
+    <h2 class="tagline">November 15, Coco Bongo, Cancún</h2>
+
+    
+      <div class="call-action-area">
+        
+          <span class="price">Only $100</span>
+        
+
+        
+          <a href="http://eventick.com.br" class="call-action-link" target="_blank" title="Register now!">Register now!</a>
+        
+      </div>
+    
+  </div>
+</header>
+<!--  / HEADER -->
+
+<hr>
+
+    <!-- CONTENT -->
+    <div class="content" id="content">
+      <div class="wrapper">
+        
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+    <h2 class="section-title">About</h2>
+<p itemprop="description">So you want to organize a conference? That's pretty awesome! But we know that you don't have time to create the website, since you have to worry about contacting sponsors, chossing the right place, buying airplane tickets for speakers and many other things.</p>
+
+<p>That's why we created this project! <a href="https://github.com/braziljs/conf-boilerplate" target="_blank">Conf Boilerplate</a> is an iniciative of <a href="http://braziljs.org" target="_blank">BrazilJS Foundation</a> that provides a simple structure built on top of Docpad, a static generator in NodeJS, with all the things you need to create a event. We also provide a responsive template with i18n!</p>
+
+<p>This is just a live demo, check our <a href="https://github.com/braziljs/conf-boilerplate" target="_blank">repository on Github</a> for more details =D</p>
+  </section>
+
+  <!-- / ABOUT -->
+
+  <!-- LOCATION -->
+
+  <section class="location" id="location">
+    <h2 class="section-title">Location</h2>
+
+<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <span itemprop="streetAddress">Boulevard Kukulcan, 30. </span>
+  <span itemprop="addressLocality">Cancún</span>,
+  <span itemprop="addressRegion"> Quintana</span>
+</p>
+
+<div id="map-canvas" class="location-area" data-address="Boulevard Kukulcan, 30, Cancún - Quintana"></div>
+
+  </section>
+
+  <!-- / LOCATION -->
+
+  <!-- SPEAKERS -->
+
+  <section class="speakers" id="speakers">
+    <h2 class="section-title">Speakers</h2>
+
+<ul class="speakers-list">
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Linus Torvalds" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">10h00</span>
+        
+          <span> Digging into a Linux Kernel</span>
+      </h3>
+
+      <h3 class="speakers-name">Linus Torvalds <a href="http://twitter.com/linus" target="_blank" title="@linus">@linus</a></h3>
+      <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    </li>
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Bill Gates" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">11h00</span>
+        
+          <span> Introducing Windows 12</span>
+      </h3>
+
+      <h3 class="speakers-name">Bill Gates <a href="http://github.com/billy95" target="_blank" title="@billy95">@billy95</a></h3>
+      <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    </li>
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Chuck Norris" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">13h00</span>
+        
+          <span> How to kill a elephant with one finger</span>
+      </h3>
+
+      <h3 class="speakers-name">Chuck Norris <a href="http://twitter.com/littlechuck" target="_blank" title="@littlechuck">@littlechuck</a></h3>
+      <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    </li>
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Steve Jobs" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">14h00</span>
+        
+          <span> Presenting iPad</span>
+      </h3>
+
+      <h3 class="speakers-name">Steve Jobs <a href="http://github.com/stevie" target="_blank" title="@stevie">@stevie</a></h3>
+      <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    </li>
+  
+
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Mark Zuckerberg" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">16h00</span>
+        
+          <span> Revealing Facebook Secrets</span>
+      </h3>
+
+      <h3 class="speakers-name">Mark Zuckerberg <a href="http://twitter.com/zuck" target="_blank" title="@zuck">@zuck</a></h3>
+      <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    </li>
+  
+
+  
+    <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      
+        <span class="speaker-photo">
+          <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Steve Wozniak" itemprop="image">
+        </span>
+      
+
+      <h3 class="speech-title">
+        
+          <span class="speech-time">17h00</span>
+        
+          <span> Why do I prefer Android over iPhone</span>
+      </h3>
+
+      <h3 class="speakers-name">Steve Wozniak <a href="http://twitter.com/woz" target="_blank" title="@woz">@woz</a></h3>
+      <p class="speakers-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    </li>
+  
+
+</ul>
+  </section>
+
+  <!-- / SPEAKERS -->
+
+  <!-- SCHEDULE -->
+
+  <section class="schedule" id="schedule">
+    <h2 class="section-title">Schedule</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<div class="schedule-tbl">
+  <table>
+    <thead>
+      <tr>
+        <th class="schedule-time">Time</th>
+        <th class="schedule-slot">Slot</th>
+        <th class="schedule-description">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      
+        
+          <tr class="schedule-other">
+            <td class="schedule-time">9h00</td>
+            <td class="schedule-slot">Check-in / Breakfast</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        
+      
+        
+          <tr>
+            <td class="schedule-time">10h00</td>
+            <td class="schedule-slot">
+            
+              <span class="speaker-photo">
+                <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Linus Torvalds">
+              </span>
+            
+            Digging into a Linux Kernel
+              <span class="speakers-company">Linux Foundation</span>
+            </td>
+            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+          </tr>
+        
+      
+        
+          <tr>
+            <td class="schedule-time">11h00</td>
+            <td class="schedule-slot">
+            
+              <span class="speaker-photo">
+                <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Bill Gates">
+              </span>
+            
+            Introducing Windows 12
+              <span class="speakers-company">Microsoft</span>
+            </td>
+            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+          </tr>
+        
+      
+        
+          <tr class="schedule-other">
+            <td class="schedule-time">12h00</td>
+            <td class="schedule-slot">Lunch</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        
+      
+        
+          <tr>
+            <td class="schedule-time">13h00</td>
+            <td class="schedule-slot">
+            
+              <span class="speaker-photo">
+                <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Chuck Norris">
+              </span>
+            
+            How to kill a elephant with one finger
+              <span class="speakers-company">Delta Command</span>
+            </td>
+            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+          </tr>
+        
+      
+        
+          <tr>
+            <td class="schedule-time">14h00</td>
+            <td class="schedule-slot">
+            
+              <span class="speaker-photo">
+                <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Steve Jobs">
+              </span>
+            
+            Presenting iPad
+              <span class="speakers-company">Apple, Inc.</span>
+            </td>
+            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+          </tr>
+        
+      
+        
+          <tr class="schedule-other">
+            <td class="schedule-time">15h00</td>
+            <td class="schedule-slot">Coffee-break</td>
+            <td class="schedule-description">-</td>
+          </tr>
+        
+      
+        
+          <tr>
+            <td class="schedule-time">16h00</td>
+            <td class="schedule-slot">
+            
+              <span class="speaker-photo">
+                <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Mark Zuckerberg">
+              </span>
+            
+            Revealing Facebook Secrets
+              <span class="speakers-company">Facebook</span>
+            </td>
+            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+          </tr>
+        
+      
+        
+          <tr>
+            <td class="schedule-time">17h00</td>
+            <td class="schedule-slot">
+            
+              <span class="speaker-photo">
+                <img class="photo" src="themes/yellow-swan/img/speaker.jpg" alt="Steve Wozniak">
+              </span>
+            
+            Why do I prefer Android over iPhone
+              <span class="speakers-company">Apple, Inc.</span>
+            </td>
+            <td class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</td>
+          </tr>
+        
+      
+
+    </tbody>
+  </table>
+</div>
+  </section>
+
+  <!-- / SCHEDULE -->
+
+  <!-- SPONSORS -->
+
+  <section class="sponsors" id="sponsors">
+    <h2 class="section-title">Sponsors</h2>
+<ul class="sponsors-list">
+
+
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://eventick.com.br" class="sponsor--link" itemprop="url" target="_blank">
+      <img src="themes/yellow-swan/img/sponsor.png" alt="Eventick" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="sponsor-item">
+    <a class="sponsor-logo sponsor--link sponsor-call" href="#">
+    	<img src="themes/yellow-swan/img/your-logo.jpg" alt="your logo" class="photo">
+    </a>
+  </li>
+</ul>
+  </section>
+
+  <!-- / SPONSORS -->
+
+  <!-- PARTNERS -->
+
+  <section class="partners" id="partners">
+    <h2 class="section-title">Partners</h2>
+<ul class="partners-list">
+
+
+  <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="http://braziljs.org" class="partner-logo partner-link" itemprop="url" target="_blank">
+      <img src="themes/yellow-swan/img/partner.png" alt="BrazilJS" class="photo" itemprop="image">
+    </a>
+  </li>
+
+  <li class="partner-item">
+    <a class="partner-logo partner-link partner-call" href="#">
+    	<img src="themes/yellow-swan/img/your-logo.jpg" alt="your logo" class="photo">
+    </a>
+  </li>
+</ul>
+  </section>
+
+  <!-- / PARTNERS -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <p>Made with ♥ by <a href="https://github.com/braziljs/conf-boilerplate" target="_blank">Conf Boilerplate</a> :)</p>
+        </footer>
+        <!-- / FOOTER -->
+      </div>
+    </div>
+    <!-- / CONTENT -->
+
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="themes/yellow-swan/js/jquery.js"><\/script>')</script>
+
+  
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="themes/yellow-swan/js/main.js"></script>
+  
+
+  <!-- GOOGLE ANALYTICS -->
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33656081-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
+  <!-- /GOOGLE ANALYTICS -->
+
+</body>
+</html>
