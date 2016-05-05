@@ -35,8 +35,7 @@ metalsmith
   }))
   .use(plugins.inPlace({
     directory: 'src/layouts',
-    engine: 'handlebars',
-    pattern: '*.html'
+    engine: 'handlebars'
   }));
 
 /* Watch
@@ -49,7 +48,11 @@ if (task === 'watch') {
       verbose: true
     }))
     .use(plugins.watch({
-      pattern: 'src/**/*'
+      paths: {
+        "${source}/**/*": true,
+        "src/layouts/**/*": "**/*.html",
+        "src/partials/**/*": "**/*.html"
+      }
     }));
 }
 
