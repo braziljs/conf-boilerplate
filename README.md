@@ -6,7 +6,7 @@
 
 ![image](http://f.cl.ly/items/2i1m3z3i1a3Z0I1X472B/logo.jpg)
 
-An iniciative of [BrazilJS Foundation](http://braziljs.org) to help those people who wants to organize conferences/events and don't have too much time to create the website of it.
+An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people who want to organize conferences/events and don't have too much time to create the website of it.
 
 > **Maintainer:** [Jean Carlo Emer](https://github.com/jcemer)
 
@@ -118,7 +118,7 @@ List NodeJS modules dependencies.
 
 ## Customization
 
-The project already comes with a visual template, feel free to use it, but we recommend you create your own in order to put your own identity in the event.
+The project already comes with a visual template. Feel free to use it, but we recommend that you create your own in order to put your own identity in the event.
 
 Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.js` and change the value of variables.
 
