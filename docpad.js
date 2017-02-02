@@ -12,10 +12,10 @@ module.exports = {
       date: "November 15",
       // If your event is free, just comment this line
       price: "$100",
-      venue: "Coco Bongo",
-      address: "Boulevard Kukulcan, 30",
-      city: "Cancún",
-      state: "Quintana"
+      venue: "Teatro do Bourbon Country",
+      address: "Avenida Túlio de Rose, 80",
+      city: "Porto Alegre",
+      state: "Rio Grande do Sul"
     },
 
     // The Call To Action button at the header,

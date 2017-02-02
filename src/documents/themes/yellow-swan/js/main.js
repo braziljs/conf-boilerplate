@@ -5,7 +5,7 @@
 
     // Init functions, called on DOMContentLoaded event
     conf.init = function () {
-        conf.map.init($('#map-canvas'));
+        conf.map.init(document.getElementById('map-canvas'));
         conf.menu.init();
     };
 
@@ -13,53 +13,32 @@
         Google Maps implementation
     ***/
     conf.map = {
-        marker: 'themes/yellow-swan/img/marker-default.png'
+        marker: (function () {
+            // Google Maps doesn't work using localhost
+            if (/^localhost(:\d+)?$/.test(location.host)) {
+                return 'http://braziljs.github.io/conf-boilerplate/themes/yellow-swan/img/marker-default.png';
+            } else {
+                return location.href.replace(location.hash, '') + 'themes/yellow-swan/img/marker-default.png';
+            }
+        }()),
+        zoom: 15
     };
 
     // Google Maps configs
     conf.map.init = function ($element) {
-        conf.map.element = $element;
+        var mapURL = 'http://maps.googleapis.com/maps/api/staticmap?';
 
-        conf.map.geocoder = new google.maps.Geocoder();
+        // Add address to URI
+        mapURL += 'zoom=' + conf.map.zoom;
+        mapURL += '&size=482x302';
+        mapURL += '&markers=icon:' + encodeURIComponent(conf.map.marker);
+        mapURL += encodeURIComponent('|' + $element.dataset.address);
 
-        conf.map.latlng = new google.maps.LatLng(0, 0);
+        // Set background image
+        $element.style.backgroundImage = 'url(' + mapURL + ')';
 
-        conf.map.options = {
-            zoom: 16,
-            center: conf.map.latlng,
-            scrollwheel: false,
-            streetViewControl: true,
-            labels: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        conf.map.canvas = new google.maps.Map(conf.map.element.get(0), conf.map.options);
-        conf.map.canvas.setCenter(conf.map.latlng);
-
-        conf.map.createMarker();
-    };
-
-    conf.map.createMarker = function () {
-        
-        conf.map.address = conf.map.element.attr('data-address');
-
-        conf.map.geocoder.geocode({ 'address': conf.map.address}, function (results, status) {
-
-            if (status === google.maps.GeocoderStatus.OK) {
-
-                conf.map.canvas.setCenter(results[0].geometry.location);
-
-                new google.maps.Marker({
-                    map: conf.map.canvas,
-                    position: results[0].geometry.location,
-                    icon: conf.map.marker
-                });
-            } else {
-                if (window.console) {
-                    console.log('Google Maps was not loaded: ', status);
-                }
-            }
-        });
+        // Set Google Maps href
+        $element.href = 'https://www.google.com/maps/search/' + encodeURIComponent($element.dataset.address);
     };
 
     /***
@@ -86,7 +65,7 @@
         var $link = $(link),
             href = $link.attr('href'),
             offSetTop = $(href).offset().top;
-        
+
         conf.menu.document.finish().animate({scrollTop : offSetTop}, conf.menu.animationSpeed, function () {
             location.hash = href;
         });
