@@ -9,6 +9,20 @@
 .content {padding: 50px 0;}
 .content section {padding-top: 50px;}
 
+
+/*Scroll up feature */
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('../img/icon_top.png') no-repeat;
+}
+
 /* =============================================================================
    BASIC STYLES
    ========================================================================== */
