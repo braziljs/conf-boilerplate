@@ -293,6 +293,7 @@ Have you created a website using ConfBoilerplate? Let's us know =D
 ## Forks
 
 * [Ruby version of ConfBoilerplate made with Jekyll by Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
+* [Hugo version of ConfBoilerplate by Jonhnny Weslley](https://github.com/jweslley/hugo-conference)
 
 ## Contributing
 
