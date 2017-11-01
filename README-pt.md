@@ -293,6 +293,7 @@ Criou um site usando o ConfBoilerplate? Nos avise =D
 ## Forks
 
 * [Versão em Ruby do ConfBoilerplate usando Jekyll por Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
+* [Versão do ConfBoilerplate usando Hugo por Jonhnny Weslley](https://github.com/jweslley/hugo-conference)
 
 ## Contribuindo
 
