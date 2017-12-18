@@ -263,29 +263,18 @@ Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, dep
 
 Confira os eventos que usaram esse projeto como pontapé inicial:
 
-* [FrontInterior](http://frontinterior.com.br)
-* [Random Hacks of Kindness](http://www.myskills.com.br/rhok-recife/)
 * [yoLab](http://yodojo.github.com/yoLab/) ([source code](https://github.com/yodojo/yoLab))
-* [Payphone Hackday](http://payphonehackday.com/) ([source code](https://github.com/octanebaby/conf-boilerplate))
 * [RSJS](http://rsjs.org/) ([source code](https://github.com/braziljs/rsjs))
 * [Front in BH](http://frontinbh.com.br/) ([source code](https://github.com/braziljs/front-in-bh))
 * [Front in Rio](http://frontinrio.com.br/)
-* [Front in Bahia](http://frontinbahia.com.br/)
-* [Dev in Company BH](http://devincompanybh.github.io/setembro-2013/) ([source code](https://github.com/devincompanybh/setembro-2013/))
-* [TEDx Recife](http://tedxrecife.com.br/)
-* [DevFest](http://www.devfest.com.br/2013/)
-* [DevFest Sul](http://www.devfestsul.com.br/)
 * [Front in Floripa](http://frontinfloripa.com.br/)
-* [Front in POA](http://frontinpoa.com.br/) ([source code](https://github.com/braziljs/front-in-poa))
 * [mloc.js](http://mloc-js.com/2014/)
 * [Craft Conf](http://craft-conf.com/2014/) ([source code](https://github.com/ustream/craftconf))
 * [Stretch Conference](http://stretchcon.com/2013/)
 * [Meet.us()](http://meetus.github.io/) ([source code](https://github.com/meetus/meetus.github.io))
-* [MPI LAMEC 2014](http://mpilamec.com/)
 * [Front in Cuiabá](http://frontincuiaba.com.br/) ([source code](https://github.com/braziljs/front-in-cuiaba))
 * [JS Day - Feira de Santana](http://jsday.com.br/) ([source code](https://github.com/devfsa/jsday))
 * [V SAICC](http://saicc.furg.br/)
-* [Dia do Codigo](http://diadocodigo.org/)
 * [Mulheres Tech Day](http://www.mulherestechday.com.br/)
 
 Criou um site usando o ConfBoilerplate? Nos avise =D
