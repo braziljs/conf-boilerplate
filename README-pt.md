@@ -1,4 +1,4 @@
-*[Read the documentation in English](https://github.com/braziljs/conf-boilerplate/blob/master/README.md)*
+*[Read the documentation in English](https://github.com/braziljs/conf-boilerplate/blob/master/README.md)*isn't it amazing!
 
 ---
 
