@@ -1,3 +1,4 @@
+This is an amazing project
 *[Read the documentation in English](https://github.com/braziljs/conf-boilerplate/blob/master/README.md)*
 
 ---
