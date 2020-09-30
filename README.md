@@ -10,7 +10,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 > **Maintainer:** [Jean Carlo Emer](https://github.com/jcemer)
 
-## Table of contents
+## Table of content
 
 * [See live demo](http://braziljs.github.io/conf-boilerplate/)
 * [How it works?](#how-it-works)
