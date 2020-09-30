@@ -19,7 +19,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Customization](#customization)
 * [Deploy](#deploy)
 * [Showcase](#showcase)
-* [Contributing](#contributing)
+* [Contribution](#contributing)
 * [Who is behind it?](#who-is-behind-it)
 * [License](#license)
 
