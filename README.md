@@ -42,7 +42,7 @@ By default, we have the following sections:
 
 *P.S. 2: We haven't developed a highly automated and customizable solution for contact forms yet. For this reason, we recommend [Wufoo](http://wufoo.com/).*
 
-## Getting Started
+## Getting Started With Easy Steps
 
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
