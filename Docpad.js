@@ -111,7 +111,7 @@ module.exports = {
           text: "@littlechuck"
         },
         presentation: {
-          title: "How to kill a elephant with one finger",
+          title: "How To Kill An Elephant With One Finger",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
           time: "13h00"
         }
@@ -160,7 +160,7 @@ module.exports = {
           text: "@woz"
         },
         presentation: {
-          title: "Why do I prefer Android over iPhone",
+          title: "Why do I prefer Android over iPhone?",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
           time: "17h00"
         }
