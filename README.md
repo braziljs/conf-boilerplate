@@ -1,7 +1,7 @@
 *[Leia a documentação em Português](https://github.com/braziljs/conf-boilerplate/blob/master/README-pt.md)*
 
 ---
-
+#[Leia a documentação em Português]  (read the documentation)
 # Conf Boilerplate [![Build Status](https://secure.travis-ci.org/braziljs/conf-boilerplate.png?branch=master)](https://travis-ci.org/braziljs/conf-boilerplate)
 
 ![image](http://f.cl.ly/items/2i1m3z3i1a3Z0I1X472B/logo.jpg)
