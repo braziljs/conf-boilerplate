@@ -46,7 +46,7 @@ By default, we have the following sections:
 
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
-2. Now clone it:
+2. Then clone it:
 
     ```sh
     $ git clone git://github.com/braziljs/conf-boilerplate.git
@@ -58,13 +58,13 @@ By default, we have the following sections:
     $ cd conf-boilerplate
     ```
 
-4. Install all dependencies:
+4. Install all the dependencies:
 
     ```sh
     $ npm install
     ```
 
-5. And finally run:
+5. And finally run it:
 
     ```sh
     $ npm run watch
