@@ -1,5 +1,5 @@
 *[Read the documentation in English](https://github.com/braziljs/conf-boilerplate/blob/master/README.md)*
-
+logr - amazoning web site cool
 ---
 
 # Conf Boilerplate [![Build Status](https://secure.travis-ci.org/braziljs/conf-boilerplate.png?branch=master)](https://travis-ci.org/braziljs/conf-boilerplate)
