@@ -77,7 +77,7 @@ By default, we have the following sections:
     $ npm run deploy
     ```
 
-## Structure
+## Basic Structure
 
 The basic structure of the project is given in the following way:
 
