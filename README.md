@@ -251,7 +251,7 @@ If you don't want to use GitHub domain, you can use your own with a few steps.
 1. Create a `CNAME` file under `src/files` folder and fill with your domain: `yourevent.com`.
 2. Change the DNS of your domain [following GitHub instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).
 
-### How to Deploy without GitHub Pages
+### How to Deploy without GitHub Pages in the website:-
 
 If you want to use your own server to host the website:
 
@@ -259,7 +259,7 @@ If you want to use your own server to host the website:
 
 This command will generate a folder called `out` that contains just static files, then just upload them to your server.
 
-## Showcase
+## Showcase your project
 
 See the conferences that already used this project as a kickstart:
 
@@ -295,7 +295,7 @@ Have you created a website using ConfBoilerplate? Let's us know =D
 * [Ruby version of ConfBoilerplate made with Jekyll by Mauro George](https://github.com/maurogeorge/conf_boilerplate_ruby)
 * [Hugo version of ConfBoilerplate by Jonhnny Weslley](https://github.com/jweslley/hugo-conference)
 
-## Contributing
+## Contribution in github
 
 If you want to submit a pull request, please do it in `dev` branch.
 
@@ -311,8 +311,8 @@ We're a group of developers who have been through hard times organizing conferen
 * [Zeno Rocha](http://github.com/zenorocha)
 * [Bernard De Luna](http://github.com/bernarddeluna)
 
-Special thanks to all community members for feedbacks and contributions.
+Special thanks to all community members for their feedbacks and contributions.
 
-## License
+## Licensed
 
 [MIT License](http://braziljs.mit-license.org/) © BrazilJS Foundation
