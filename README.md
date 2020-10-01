@@ -52,13 +52,13 @@ By default, we have the following sections:
     $ git clone git://github.com/braziljs/conf-boilerplate.git
     ```
 
-3. Then go to the project's folder:
+3. Then go to the project's folder:-
 
     ```sh
     $ cd conf-boilerplate
     ```
 
-4. Install all dependencies:
+4. Install all dependencies:-
 
     ```sh
     $ npm install
