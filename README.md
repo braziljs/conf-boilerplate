@@ -46,32 +46,32 @@ By default, we have the following sections:
 
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
-2. Now clone it:
+2. Now clone it:-
 
     ```sh
     $ git clone git://github.com/braziljs/conf-boilerplate.git
     ```
 
-3. Then go to the project's folder:
+3. Then go to the project's folder:-
 
     ```sh
     $ cd conf-boilerplate
     ```
 
-4. Install all dependencies:
+4. Install all dependencies:-
 
     ```sh
     $ npm install
     ```
 
-5. And finally run:
+5. And finally run:-
 
     ```sh
     $ npm run watch
     ```
    Now you can see the website running in `localhost:9778` :D
 
-6. Once you're done editing and want to publish the site to GitHub Pages:
+6. Once you're done editing and want to publish the site to GitHub Pages:-
 
     ```sh
     $ npm run deploy
@@ -173,7 +173,7 @@ You can also change order in which they appear on page and in navigation by chan
 ### Labels (i18n)
 
 If you want to use different words than default or different language
-just change labels for corresponding elements:
+just change labels for corresponding elements:-
 
 
 ```
