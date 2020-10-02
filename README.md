@@ -23,7 +23,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Who is behind it?](#who-is-behind-it)
 * [License](#license)
 
-## How it works?
+## How it works??
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
