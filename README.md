@@ -10,7 +10,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 > **Maintainer:** [Jean Carlo Emer](https://github.com/jcemer)
 
-## Table of contents
+## Table of Contents
 
 * [See live demo](http://braziljs.github.io/conf-boilerplate/)
 * [How it works?](#how-it-works)
@@ -23,7 +23,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Who is behind it?](#who-is-behind-it)
 * [License](#license)
 
-## How it works?
+## How it Works?
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
@@ -122,7 +122,7 @@ The project already comes with a visual template. Feel free to use it, but we re
 
 Anyway, we have prepared something highly customizable for you, so for most of the changes just go to the `docpad.js` and change the value of variables.
 
-### Basic information about the conference
+### Basic information about the Conference
 
 Do you want to change the name, date, address, city or price of the conference? Go ahead!
 
@@ -137,7 +137,7 @@ conf:
   city: "Cancún"
 ```
 
-### Basic information about the website
+### Basic information about the Website
 
 Do you want to change the cover image, Google Analytics code or favicon? Go ahead!
 
@@ -148,7 +148,7 @@ site:
   googleanalytics: "UA-33656081-1"
 ```
 
-### Active sections
+### Active Sections
 
 Still don't get a full schedule of the event? No problem, just comment out `schedule` line (using `#`).
 
@@ -244,7 +244,7 @@ $ npm run deploy
 
 Wait a few minutes until GitHub send you an email telling that everything went well. Then just access: `http://yourUser.github.io/yourFork`
 
-### Custom domain
+### Custom Domain
 
 If you don't want to use GitHub domain, you can use your own with a few steps.
 
