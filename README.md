@@ -137,7 +137,7 @@ conf:
   city: "Cancún"
 ```
 
-### Basic information about the website
+### Some Basic information about the website
 
 Do you want to change the cover image, Google Analytics code or favicon? Go ahead!
 
