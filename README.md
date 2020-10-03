@@ -311,7 +311,7 @@ We're a group of developers who have been through hard times organizing conferen
 * [Zeno Rocha](http://github.com/zenorocha)
 * [Bernard De Luna](http://github.com/bernarddeluna)
 
-Special thanks to all community members for feedbacks and contributions.
+Special thanks to all community members for their feedbacks and contributions.
 
 ## License
 
