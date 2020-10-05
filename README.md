@@ -175,7 +175,6 @@ You can also change order in which they appear on page and in navigation by chan
 If you want to use different words than default or different language
 just change labels for corresponding elements:
 
-
 ```
 labels:
   about: "Sobre"
