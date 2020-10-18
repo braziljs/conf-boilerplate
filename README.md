@@ -38,7 +38,7 @@ By default, we have the following sections:
 * *Sponsors* - to show the brand of your sponsors.
 * *Partners* - to show the brand of your partners.
 
-*P.S. 1: There is no integration with any registration and/or payment system. For this reason, we recommend [Eventick](http://eventick.com.br/).*
+*P.S. 1: There is no integeration with any registration and/or payment system. For this reason, we recommend [Eventick](http://eventick.com.br/).*
 
 *P.S. 2: We haven't developed a highly automated and customizable solution for contact forms yet. For this reason, we recommend [Wufoo](http://wufoo.com/).*
 
