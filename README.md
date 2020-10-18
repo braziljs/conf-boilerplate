@@ -34,7 +34,7 @@ By default, we have the following sections:
 * *About* - to describe what's the main goal of your event.
 * *Location* - to show where it's going to happen through Google Maps.
 * *Speakers* - to list information about speakers.
-* *Schedule* - to show the agenda.
+* *Schedule* - to show the agenda and timeline.
 * *Sponsors* - to show the brand of your sponsors.
 * *Partners* - to show the brand of your partners.
 
