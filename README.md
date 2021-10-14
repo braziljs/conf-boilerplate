@@ -10,7 +10,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 
 > **Maintainer:** [Jean Carlo Emer](https://github.com/jcemer)
 
-## Table of contents
+## TABLE OF CONTENTS
 
 * [See live demo](http://braziljs.github.io/conf-boilerplate/)
 * [How it works?](#how-it-works)
@@ -23,7 +23,7 @@ An initiative of [BrazilJS Foundation](http://braziljs.org) to help those people
 * [Who is behind it?](#who-is-behind-it)
 * [License](#license)
 
-## How it works?
+## HOW IT WORKS?
 
 [![image](http://f.cl.ly/items/1q3i0r3q0n3y1N070M47/Screen%20Shot%202012-11-16%20at%207.05.44%20PM.png)](http://www.youtube.com/watch?v=EI99oZI3nKY)
 
@@ -42,7 +42,7 @@ By default, we have the following sections:
 
 *P.S. 2: We haven't developed a highly automated and customizable solution for contact forms yet. For this reason, we recommend [Wufoo](http://wufoo.com/).*
 
-## Getting Started
+## GETTING STARTED
 
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have it yet.
 
@@ -77,7 +77,7 @@ By default, we have the following sections:
     $ npm run deploy
     ```
 
-## Structure
+## STRUCTURE
 
 The basic structure of the project is given in the following way:
 
@@ -116,7 +116,7 @@ Stores most settings of the application.
 
 List NodeJS modules dependencies.
 
-## Customization
+## CUSTOMIZATION
 
 The project already comes with a visual template. Feel free to use it, but we recommend that you create your own in order to put your own identity in the event.
 
