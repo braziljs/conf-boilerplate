@@ -61,7 +61,7 @@ By default, we have the following sections:
 4. Install all dependencies:
 
     ```sh
-    $ npm install
+    $ npm ci
     ```
 
 5. And finally run:
