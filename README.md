@@ -2,7 +2,7 @@
 
 ---
 
-# Conf Boilerplate [![Build Status](https://secure.travis-ci.org/braziljs/conf-boilerplate.png?branch=master)](https://travis-ci.org/braziljs/conf-boilerplate)
+# Conf Boilerplate
 
 ![image](http://f.cl.ly/items/2i1m3z3i1a3Z0I1X472B/logo.jpg)
 
@@ -61,7 +61,7 @@ By default, we have the following sections:
 4. Install all dependencies:
 
     ```sh
-    $ npm install
+    $ npm ci
     ```
 
 5. And finally run:
